@@ -1,0 +1,77 @@
+name: Building Kernel ISO Package
+run-name: ${{ github.actor }} Building Kernel Package 🚀
+on:
+  workflow_dispatch:
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Building Wine
+        env: 
+          GUSER: ${{ secrets.GUSER }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          UPLOADURL: ${{ secrets.UPLOADURL }}
+        run: |
+          # 配置环境
+          sudo apt update
+          sudo apt install aria2 debootstrap neofetch python3 curl -y
+          neofetch
+          sudo aria2c -d /usr/bin -o pardus-chroot https://github.com/gfdgd-xi/deep-wine-runner/raw/main/pardus-chroot
+          sudo chmod 777 /usr/bin/pardus-chroot
+
+          # 获取镜像
+          kernel=`cat xxx`
+          deepin15=`cat xxx`
+          deepin20=`cat xxx`
+          deepin23=`cat xxx`
+
+          aria2c -x 16 -s 16 $deepin15 -d ~ -o deepin15.iso
+          aria2c -x 16 -s 16 $deepin20 -d ~ -o deepin20.iso
+          aria2c -x 16 -s 16 $deepin23 -d ~ -o deepin23.iso
+
+          mkdir /tmp/deepin15
+          mkdir /tmp/deepin20
+          mkdir /tmp/deepin23
+          sudo mount ~/deepin15.iso /tmp/deepin15
+          sudo mount ~/deepin20.iso /tmp/deepin20
+          sudo mount ~/deepin23.iso /tmp/deepin23
+
+          sudo unsquashfs /tmp/deepin15/live/filesystem.squashfs
+          sudo mv squashfs-root ~/deepin15
+          sudo unsquashfs /tmp/deepin15/live/filesystem.squashfs
+          sudo mv squashfs-root ~/deepin15
+          sudo unsquashfs /tmp/deepin20/live/filesystem.squashfs
+          sudo mv squashfs-root ~/deepin20
+          sudo unsquashfs /tmp/deepin23/live/filesystem.squashfs
+          sudo mv squashfs-root ~/deepin23
+
+          ## 定制镜像
+          sudo pardus ~/deepin15 
+          sudo chroot ~/deepin15 apt purge linux-image* linux-hea* linux-modu* -y
+          sudo chroot ~/deepin15 rm -rfv /lib/modules/*
+          # 拷贝定制过的 lub
+          xxxxx
+          # 生成 iso
+          curl -F "file=@$HOME/iso/deepin-15-$kernel-amd64.iso" "$UPLOADURL"
+
+          # 以此类推
+
+          #sudo debootstrap --arch amd64 buster ~/debian10-amd64
+          
+          sudo pardus-chroot ~/debian10-amd64
+          # 编译 amd64 wine
+          sudo aria2c -d ~/debian10-amd64 -o wineautobuild-action-7z.sh https://github.com/gfdgd-xi/deep-wine-runner/raw/main/wineautobuild-action-7z.sh
+          git clone https://github.com/gfdgd-xi/auto-building-wine --depth=1
+          sudo cp auto-building-wine/wine-version.txt ~/debian10-amd64 -rv
+          sudo cp auto-building-wine/wine-url.txt ~/debian10-amd64 -rv
+          sudo cp auto-building-wine/wine-type.txt ~/debian10-amd64 -rv
+          sudo chroot ~/debian10-amd64 bash /wineautobuild-action-7z.sh
+          # 提交wine
+          # 获取数据
+          url=`cat auto-building-wine/wine-url.txt`
+          version=`cat auto-building-wine/wine-version.txt`
+          type=`cat auto-building-wine/wine-type.txt`
+          curl -F "file=@$HOME/debian10-amd64/wine/wine-$type-$version-debian10-amd64.7z" "$UPLOADURL"
+          curl -F "file=@$HOME/debian10-amd64/wine/wine-$type-$version-debian10-x86_64.7z" "$UPLOADURL"
+          curl -F "file=@$HOME/debian10-amd64/wine/wine-$type-$version-debian10-i386.7z" "$UPLOADURL"
+      
