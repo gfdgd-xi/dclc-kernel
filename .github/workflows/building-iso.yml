@@ -27,8 +27,8 @@ jobs:
           deepin23=https://cdimage.deepin.com/releases/23-Beta/deepin-desktop-community-23-Beta-amd64.iso
 
           aria2c -x 16 -s 16 $deepin15 -d ~ -o deepin15.iso
-          aria2c -x 16 -s 16 $deepin20 -d ~ -o deepin20.iso
-          aria2c -x 16 -s 16 $deepin23 -d ~ -o deepin23.iso
+          #aria2c -x 16 -s 16 $deepin20 -d ~ -o deepin20.iso
+          #aria2c -x 16 -s 16 $deepin23 -d ~ -o deepin23.iso
 
           mkdir /tmp/deepin15
           mkdir /tmp/deepin20
