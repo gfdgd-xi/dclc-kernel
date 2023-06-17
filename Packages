@@ -1,0 +1,60 @@
+Package: linux-image-6.3.6
+Architecture: amd64
+Version: 6.3.6-4
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@xxx>
+Installed-Size: 482680
+Filename: ./6.3.6/linux-image-6.3.6_6.3.6-4_amd64.deb
+Size: 88684108
+MD5sum: adeb47e333e609cadaa80884b740f859
+SHA1: f65a8260e6dc72e75f9d003248a208fcaf3cd88c
+SHA256: c5117e11f48b71302885e7e65dfc344453936ede1d068f3d0a2405e51f45c28e
+SHA512: 34979bb56f618a92333c14bf693eb7e5d6e79ff631efa56522e886db50cd1e181bc25dc34d88d799bcce4537078eabdc7d4de4999a5f8c088eb6e363289fef96
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.3.6
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.3.6.
+
+Package: linux-headers-6.3.6
+Architecture: amd64
+Version: 6.3.6-4
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@xxx>
+Installed-Size: 53563
+Filename: ./6.3.6/linux-headers-6.3.6_6.3.6-4_amd64.deb
+Size: 9140676
+MD5sum: 2ad384fdbf4eda6d1ae2e8aaf7e7bef1
+SHA1: 54066508bcde35e65f4e6503bbcdc387737b02f7
+SHA256: 076a8f03f8b540c4cb5531fdea0b8d0f3864ca365b3521ce67c871002d63fb7a
+SHA512: d7a6ecfcdfde1388b82aaa3ea0d7cc618610b85173201e76ecbb6ce14e5d9cc8671f2d357e99ba97be6acb19d0eb4412512ed70d7d8a74a2073ffa617371d92f
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.3.6 on amd64
+ This package provides kernel header files for 6.3.6 on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-kernel-dclc-gfdgdxi
+Architecture: amd64
+Version: 6.3.6
+Priority: optional
+Section: utils
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-6.3.6, linux-image-6.3.6
+Filename: ./head/linux-kernel-dclc-gfdgdxi_6.3.6_amd64.deb
+Size: 840
+MD5sum: 24541c1d4cf9df0c7dd24dd346c90313
+SHA1: b973285a102ce4faeeb793640f64ee774af67385
+SHA256: d81adc8646172d7f60c6cfd7f1bd3a20f9b377b677d6cdeb9986f8dfbe580b55
+SHA512: b56b724cc28c80c31604227779339508d8d368232abcafa30974aa2b364f5d5e0695284882ad980d49d2d735cc70fd00287b0bc3f8cc54656b6f56c7f55bd12b
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核 6.3.6（虚包）
+Severity: serious
+Certainty: possible
+Check: binaries
+Type: binary, udeb
+
