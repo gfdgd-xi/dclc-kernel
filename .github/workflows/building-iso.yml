@@ -59,6 +59,9 @@ jobs:
           sudo chroot ~/deepin15 bash -c "echo deb http://kernel.dclc.gfdgdxi.top/ ./ > /etc/apt/sources.list.d/gfdgdxi-kernel-list.list"
           sudo chroot ~/deepin15 apt update
           sudo chroot ~/deepin15 apt clean
+          sudo bash -c "echo Deepin Community Live CD Install 版（Deepin15，$kernel 内核版本） > ~/deepin15/dclc-info.txt"
+          sudo bash -c "echo 镜像构建时间：`date`，内核：$kernel >> ~/deepin15/dclc-info.txt"
+          sudo bash -c "echo By gfdgd xi >> ~/deepin15/dclc-info.txt"
           # 拷贝定制过的 lub
           sudo aria2c -d ~/deepin15/tmp http://github.com/gfdgd-xi/dclc-kernel/raw/main/lub
           sudo chmod 777 ~/deepin15/tmp/lub
@@ -71,26 +74,17 @@ jobs:
           curl -F "file=@$HOME/deepin15/vmlinuz-$kernel" "$UPLOADURL"
           curl -F "file=@$HOME/deepin15/initrd.img-$kernel" "$UPLOADURL"
           curl -F "file=@$HOME/squashfs/deepin-15-$kernel-amd64.squashfs" "$UPLOADURL"
-
+          sudo mv $HOME/squashfs/deepin-15-$kernel-amd64.squashfs ~/deepin15.squashfs
+          sudo mv $HOME/deepin15/initrd.img-$kernel ~/initrd.img
+          sudo mv $HOME/deepin15/vmlinuz-$kernel ~/vmlinuz
           exit
-          # 以此类推
-
-          #sudo debootstrap --arch amd64 buster ~/debian10-amd64
+      - name: upload result
+        uses: actions/upload-artifact@v1
+        with:
+          name: my-artifact
+          path: | 
+            /home/runner/deepin15.squashfs
+            /home/runner/initrd.img
+            /home/runner/vmlinuz
           
-          sudo pardus-chroot ~/debian10-amd64
-          # 编译 amd64 wine
-          sudo aria2c -d ~/debian10-amd64 -o wineautobuild-action-7z.sh https://github.com/gfdgd-xi/deep-wine-runner/raw/main/wineautobuild-action-7z.sh
-          git clone https://github.com/gfdgd-xi/auto-building-wine --depth=1
-          sudo cp auto-building-wine/wine-version.txt ~/debian10-amd64 -rv
-          sudo cp auto-building-wine/wine-url.txt ~/debian10-amd64 -rv
-          sudo cp auto-building-wine/wine-type.txt ~/debian10-amd64 -rv
-          sudo chroot ~/debian10-amd64 bash /wineautobuild-action-7z.sh
-          # 提交wine
-          # 获取数据
-          url=`cat auto-building-wine/wine-url.txt`
-          version=`cat auto-building-wine/wine-version.txt`
-          type=`cat auto-building-wine/wine-type.txt`
-          curl -F "file=@$HOME/debian10-amd64/wine/wine-$type-$version-debian10-amd64.7z" "$UPLOADURL"
-          curl -F "file=@$HOME/debian10-amd64/wine/wine-$type-$version-debian10-x86_64.7z" "$UPLOADURL"
-          curl -F "file=@$HOME/debian10-amd64/wine/wine-$type-$version-debian10-i386.7z" "$UPLOADURL"
-      
+    
