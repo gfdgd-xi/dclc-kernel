@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import os
 import datetime
-htmlstring = """<!DOCTYPE html>
+def Write(path: str):
+    htmlstring = """<!DOCTYPE html>
 <html lang="zh-CN">
     <head>
         <meta name="viewport" content="width=device-width" initial-scale="1" />
@@ -12,11 +13,11 @@ htmlstring = """<!DOCTYPE html>
         <h1>文件目录</h1>
         <ul>
 """
-for i in os.listdir("."):
-    if i == "index.html" or i == "CNAME" or i == "build.py" or i == "build.sh" or i == ".git":
-        continue
-    htmlstring += f'\n          <li><a href="{i}">{i}</a></li>'
-htmlstring += f"""     </ul>
+    for i in os.listdir(path):
+        if i == "index.html" or i == "CNAME" or i == "build.py" or i == "build.sh" or i == ".git" or i == ".github":
+            continue
+        htmlstring += f'\n          <li><a href="{i}">{i}</a></li>'
+    htmlstring += f"""     </ul>
         <hr/>
         <h3>更新时间：{datetime.datetime.now().strftime("%Y年%m月%d日 %H:%M:%S")}</h3>
         <hr/>
@@ -39,6 +40,13 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 }})();
 </script>"""
-with open("index.html", "w") as file:
-    file.write(htmlstring)
+    with open(f"{path}/index.html", "w") as file:
+        file.write(htmlstring)
+def Dir(path: str):
+    Write(path)
+    for i in os.listdir(path):
+        print(f"{path}/{i}")
+        if os.path.isdir(f"{path}/{i}") and i != ".git" and i != ".github":
+            Dir(f"{path}/{i}")
+Dir(".")
 print("构建完成！")
