@@ -47,8 +47,8 @@ jobs:
 
           ## 定制镜像
           sudo pardus-chroot ~/deepin15 
-          sudo chroot ~/deepin15 bash -c "apt purge linux-image* linux-hea* linux-modu*"" -y
-          sudo chroot ~/deepin15 bash -c "rm -rfv /lib/modules/*""
+          sudo chroot ~/deepin15 bash -c 'apt purge linux-image* linux-hea* linux-modu* -y' 
+          sudo chroot ~/deepin15 bash -c "rm -rfv /lib/modules/*"
           # 设置 DNS
           sudo chroot ~/deepin15 bash -c "echo nameserver 8.8.8.8 ./ > /etc/resolv.conf"
           sudo aria2c -d ~/deepin15/tmp http://kernel.dclc.gfdgdxi.top/sources/github.sh
