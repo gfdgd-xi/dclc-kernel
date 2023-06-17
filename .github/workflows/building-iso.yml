@@ -59,9 +59,9 @@ jobs:
           sudo chroot ~/deepin15 bash -c "echo deb http://kernel.dclc.gfdgdxi.top/ ./ > /etc/apt/sources.list.d/gfdgdxi-kernel-list.list"
           sudo chroot ~/deepin15 apt update
           sudo chroot ~/deepin15 apt clean
-          sudo bash -c "echo Deepin Community Live CD Install 版（Deepin15，$kernel 内核版本） > ~/deepin15/dclc-info.txt"
-          sudo bash -c "echo 镜像构建时间：`date`，内核：$kernel >> ~/deepin15/dclc-info.txt"
-          sudo bash -c "echo By gfdgd xi >> ~/deepin15/dclc-info.txt"
+          sudo bash -c "echo Deepin Community Live CD Install 版（Deepin15，$kernel 内核版本） > /home/runner/deepin15/dclc-info.txt"
+          sudo bash -c "echo 镜像构建时间：`date`，内核：$kernel >> /home/runner/deepin15/dclc-info.txt"
+          sudo bash -c "echo By gfdgd xi >> /home/runner/deepin15/dclc-info.txt"
           # 拷贝定制过的 lub
           sudo aria2c -d ~/deepin15/tmp http://github.com/gfdgd-xi/dclc-kernel/raw/main/lub
           sudo chmod 777 ~/deepin15/tmp/lub
