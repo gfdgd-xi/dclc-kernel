@@ -81,10 +81,17 @@ jobs:
       - name: upload result
         uses: actions/upload-artifact@v1
         with:
-          name: my-artifact
-          path: | 
-            /home/runner/deepin15.squashfs
-            /home/runner/initrd.img
-            /home/runner/vmlinuz
+          name: deepin15
+          path: /home/runner/deepin15.squashfs
+      - name: upload result
+        uses: actions/upload-artifact@v1
+        with:
+          name: initrd
+          path: /home/runner/initrd.img
+      - name: upload result
+        uses: actions/upload-artifact@v1
+        with:
+          name: vmlinuz
+          path: /home/runner/vmlinuz
           
     
