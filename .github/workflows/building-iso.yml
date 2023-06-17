@@ -61,6 +61,7 @@ jobs:
           sudo chroot ~/deepin15 apt clean
           # 拷贝定制过的 lub
           sudo aria2c -d ~/deepin15/tmp http://github.com/gfdgd-xi/dclc-kernel/raw/main/lub
+          sudo chmod 777 ~/deepin15/tmp/lub
           sudo chroot ~/deepin15 bash -c "echo -e 'c\n\ny/backup\ny\ny\ny\n\ny\n' | /tmp/lub -b"
           sudo mv ~/deepin15/backup/*.squashfs ~/squashfs/deepin-15-$kernel-amd64.squashfs
           sudo chroot ~/deepin15 mv /boot/initrd.img-* /initrd.img-$kernel
