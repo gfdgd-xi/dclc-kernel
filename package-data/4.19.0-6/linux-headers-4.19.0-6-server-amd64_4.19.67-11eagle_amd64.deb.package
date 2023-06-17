@@ -1,0 +1,24 @@
+Package: linux-headers-4.19.0-6-server-amd64
+Architecture: amd64
+Version: 4.19.67-11eagle
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 4912
+Depends: linux-headers-4.19.0-6-server-common (= 4.19.67-11eagle), linux-kbuild-4.19 (>= 4.19.67-11eagle), linux-compiler-gcc-8-x86
+Filename: ./4.19.0-6/linux-headers-4.19.0-6-server-amd64_4.19.67-11eagle_amd64.deb
+Size: 797516
+MD5sum: 86040fd528416bc0022353103a37e582
+SHA1: 0e678915a2c5b69ebee6943b5becec77681cb9d8
+SHA256: 99b9bdcf824752cf4070cdf103e4f86a4b9d3f277a057443c9c98b26a59a8011
+SHA512: 839a3c5f47eaf224ba938d20830878327a5c4b4e71f98520f8a3096180ac4ebceaf27d8a503f5735d9c4ff0d200959d61abedf22fbbb8b88c6de1a8fcdecf496
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 4.19.0-6-server-amd64
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.19.0-6-server-amd64, generally used for building
+ out-of-tree kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.19.0-6-server-amd64, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.19.0-6-server-amd64 package.
+

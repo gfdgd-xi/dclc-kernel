@@ -37,6 +37,89 @@ Description: Linux kernel headers for 6.3.6 on amd64
  .
  This is useful for people who need to build external modules
 
+Package: linux-headers-deepin-server-amd64
+Architecture: amd64
+Version: 4.19.67-11eagle
+Priority: extra
+Section: metapackages
+Source: linux-deepin-latest-server
+Maintainer: LinuxDeepin Project <linuxdeepin@linuxdeepin.com>
+Installed-Size: 8
+Depends: linux-headers-4.19.0-6-server-amd64 (= 4.19.67-11eagle)
+Filename: ./head/linux-headers-deepin-server-amd64_4.19.67-11eagle_amd64.deb
+Size: 2164
+MD5sum: 4ff71dbbb838a90293111b4d103d842e
+SHA1: 5da3e009b2455e65c03330d08e1f25d27d0c3a29
+SHA256: ddeaee30aa4fc89d73c9714c9fa4848b26e48f0749bb35f3c48f52f1de9e41b0
+SHA512: 848ecc21425bfe5ce0c0855bc9566c65c25f1c763395ec913f44819993b7dfc44c5051e198d36d0a4e746c1a9b9ca5874b78da81c028cd33cd5da3e5e959b4a3
+Homepage: http://www.deepin.com
+Description: Header files for Linux amd64 configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel amd64 configuration.
+
+Package: linux-headers-deepin-stable-amd64
+Architecture: amd64
+Version: 5.15.34-1
+Priority: extra
+Section: metapackages
+Source: linux-deepin-stable
+Maintainer: LinuxDeepin Project <linuxdeepin@linuxdeepin.com>
+Installed-Size: 8
+Depends: linux-headers-5.15.34-amd64-desktop
+Filename: ./head/linux-headers-deepin-stable-amd64_5.15.34-1_amd64.deb
+Size: 2124
+MD5sum: d910a501beb792a5b19131207b290a18
+SHA1: 70f0560ee2d0c116ee64a19f94d1fbbcfe9521da
+SHA256: 1c04de42efd46e9ed84b919c32796e12d343134915bf1f46d579d069f0718c10
+SHA512: bf995e5f9afa424bcbb87f62e13ee0416da70c4f51418c93db937e43de54d7bc880e8d6594d1be500a5ee58b198095dbd7e01ccc23a3fb2d72e8186d6be1446b
+Homepage: http://www.deepin.com
+Description: Header files for Linux amd64 configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel amd64 configuration.
+
+Package: linux-image-deepin-server-amd64
+Architecture: amd64
+Version: 4.19.67-11eagle
+Priority: extra
+Section: metapackages
+Source: linux-deepin-latest-server
+Maintainer: LinuxDeepin Project <linuxdeepin@linuxdeepin.com>
+Installed-Size: 8
+Depends: linux-image-4.19.0-6-server-amd64-unsigned (= 4.19.67-11eagle)
+Filename: ./head/linux-image-deepin-server-amd64_4.19.67-11eagle_amd64.deb
+Size: 2256
+MD5sum: eeeda6ee7992e4017183e0646ad13254
+SHA1: 7593980d22a12bca5d854f4e430194b6e2a39f8d
+SHA256: 5a77f7d81f9fd70e7342ef0fb99ebb97a2681849fd6c4bd00958392c384fbf06
+SHA512: 2cf089d6ba83c39b556155c96c7fb7c6596b915b7f218465909561a27e460fd0fe9e1d29fe3fa8e544eb04500d1802b84b8e74138fdecded59ee775a9c423ff3
+Homepage: http://www.deepin.com
+Description: Linux for 64-bit PCs (meta-package)
+ This package depends on the latest Linux kernel and modules for use on PCs
+ with AMD64, Intel 64 or VIA Nano processors.
+ .
+ This kernel also runs on a Xen hypervisor.  It supports both privileged
+ (dom0) and unprivileged (domU) operation.
+
+Package: linux-headers-deepin-experiment-amd64
+Architecture: amd64
+Version: 5.17.3-1
+Priority: extra
+Section: metapackages
+Source: linux-deepin-experiment
+Maintainer: LinuxDeepin Project <linuxdeepin@linuxdeepin.com>
+Installed-Size: 8
+Depends: linux-headers-5.17.3-amd64-desktop
+Filename: ./head/linux-headers-deepin-experiment-amd64_5.17.3-1_amd64.deb
+Size: 1796
+MD5sum: 181169d2666fba6ede3f953b860c64a1
+SHA1: 209ec39d292ffecf23e7cc01f94fee189cbb020f
+SHA256: e24437ea18004854f1d22847bf8218f1752df500da62e7d66400c07da160ef90
+SHA512: 1d95721a36e1044060343a9e4a8c3ee7f771f2104a9aab8f10c302b368019be1f43b74d3ee1ebab8798903fcf4fa8a34dff2596b634df5f39b6d38af60ba4069
+Homepage: http://www.deepin.com
+Description: Header files for Linux amd64 configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel amd64 configuration.
+
 Package: linux-kernel-dclc-gfdgdxi
 Architecture: amd64
 Version: 6.3.6
@@ -57,6 +140,179 @@ Severity: serious
 Certainty: possible
 Check: binaries
 Type: binary, udeb
+
+Package: linux-image-deepin-stable-amd64
+Architecture: amd64
+Version: 5.15.34-1
+Priority: extra
+Section: metapackages
+Source: linux-deepin-stable
+Maintainer: LinuxDeepin Project <linuxdeepin@linuxdeepin.com>
+Installed-Size: 8
+Depends: linux-image-5.15.34-amd64-desktop
+Filename: ./head/linux-image-deepin-stable-amd64_5.15.34-1_amd64.deb
+Size: 2228
+MD5sum: ef6ec9f0f1f07ed50a47f22d53beea71
+SHA1: 1fdbd932295274175dbd6532911464aeec8d375d
+SHA256: 5013959065786da28b29624f62cd6a5493f54392440ec6f11b37f5e8414301c3
+SHA512: bff54621c0e1818c89f9c494c7f72aa699c58c3ea6bf02ef29ba7c4282b76fb236bab6647c9b26d9eae90057311c722909fb41033ed1a76f1338f4daa4695317
+Homepage: http://www.deepin.com
+Description: Linux for 64-bit PCs (meta-package)
+ This package depends on the latest Linux kernel and modules for use on PCs
+ with AMD64, Intel 64 or VIA Nano processors.
+ .
+ This kernel also runs on a Xen hypervisor.  It supports both privileged
+ (dom0) and unprivileged (domU) operation.
+
+Package: linux-image-deepin-experiment-amd64
+Architecture: amd64
+Version: 5.17.3-1
+Priority: extra
+Section: metapackages
+Source: linux-deepin-experiment
+Maintainer: LinuxDeepin Project <linuxdeepin@linuxdeepin.com>
+Installed-Size: 8
+Depends: linux-image-5.17.3-amd64-desktop
+Filename: ./head/linux-image-deepin-experiment-amd64_5.17.3-1_amd64.deb
+Size: 1892
+MD5sum: eab9bad6a760d991e2a03784fee2eda0
+SHA1: 606a2fcd9295d473aadf00a3ce75121370f9c394
+SHA256: bc700511882ffe6847b7beace909b967cd795ad639ab0f67db2aff99f6e35792
+SHA512: c9f7c69742c8c7218c2d3d93b34eb10b9a853dda0feb2821eb3ca2e9234dd2794d496adc572413797cf1bae3d78789cc4206be08dc6ae80c6974f3a4560f8e3f
+Homepage: http://www.deepin.com
+Description: Linux for 64-bit PCs (meta-package)
+ This package depends on the latest Linux kernel and modules for use on PCs
+ with AMD64, Intel 64 or VIA Nano processors.
+ .
+ This kernel also runs on a Xen hypervisor.  It supports both privileged
+ (dom0) and unprivileged (domU) operation.
+
+Package: linux-headers-5.17.3-amd64-desktop
+Architecture: amd64
+Version: 5.17.3-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: deepin <deepin@wh-k8snode-70>
+Installed-Size: 50241
+Filename: ./5.17.3/linux-headers-5.17.3-amd64-desktop_5.17.3-amd64-desktop-1_amd64.deb
+Size: 8474236
+MD5sum: e19826392086df221e60db1105c03b55
+SHA1: 61cabbd3503cd4d9cf4318935de1b1547e9d6fca
+SHA256: 236c3abec74045f445ec913ae7dbfce4f9a6d9c4ae920e6f2e22b735ad82918d
+SHA512: 585c6d39eb79e23602b609f050c734b5e87a3bd23418276c13cf36788988677ccafce17c9f8434d1b86a448de0260b1d7431d94e2d42c11e52dd2c99fd65358a
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 5.17.3-amd64-desktop on amd64
+ This package provides kernel header files for 5.17.3-amd64-desktop on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-5.17.3-amd64-desktop
+Architecture: amd64
+Version: 5.17.3-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: deepin <deepin@wh-k8snode-70>
+Installed-Size: 314102
+Filename: ./5.17.3/linux-image-5.17.3-amd64-desktop_5.17.3-amd64-desktop-1_amd64.deb
+Size: 70292124
+MD5sum: 729120405f936abe4b256b428ecd2cbf
+SHA1: a14b844bbbdb48e6cf0b5c1d4012e66cf7d4ce83
+SHA256: 1b7b454f5e257573ac9a2c398a9c9eaf35744a0c2fda20b1b2ae437aa032b5bd
+SHA512: 4e9a9933a0ff8da50ea00eef8aac5c2b501105e1cc8bf6d981a9d362706825d2fc0aa969ec5ef1108e6126ae61406a497470bfb730524c8c2ed2778e06d470d7
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 5.17.3-amd64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.17.3-amd64-desktop.
+
+Package: linux-headers-5.15.34-amd64-desktop
+Architecture: amd64
+Version: 5.15.34-amd64-desktop-2
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: deepin <deepin@wh-k8snode-70>
+Installed-Size: 48907
+Filename: ./5.15.34/linux-headers-5.15.34-amd64-desktop_5.15.34-amd64-desktop-2_amd64.deb
+Size: 8255416
+MD5sum: 307338ffc884af60904cdc609bb0f639
+SHA1: 9230337632bb9193fac5a25bbadb4a3b7bf98d49
+SHA256: c54e2357cd35298b95c1581830bf0ff9a1c63ccdf274033338eae03b74e8c788
+SHA512: 6a6db4e1e151af8e033f5964065dadeeb4653b7170f881e012ea6b9f62886374fb2d7bbd221e64301de740d772b09b0e3520e903a4422036ffc6cc7d81151581
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 5.15.34-amd64-desktop on amd64
+ This package provides kernel header files for 5.15.34-amd64-desktop on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-5.15.34-amd64-desktop
+Architecture: amd64
+Version: 5.15.34-amd64-desktop-2
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: deepin <deepin@wh-k8snode-70>
+Installed-Size: 306599
+Filename: ./5.15.34/linux-image-5.15.34-amd64-desktop_5.15.34-amd64-desktop-2_amd64.deb
+Size: 69177452
+MD5sum: 755c0e125a2c1df39f9fe5e49105ad83
+SHA1: 9e272403c4f751099201221c805e7f0eaa3824ba
+SHA256: 410491ae7c513836556a9aba1de19175d83d937f7fb9ed2d7b6e79ae8385d383
+SHA512: 1b14d5f4d2a73fbc94b1f3c53a000af677c064e3956ee4257b09efe162104513f44e45cef078e2ad833d155b54d4daf1370313ce24bce7fa22780024bdfbdf3c
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 5.15.34-amd64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.15.34-amd64-desktop.
+
+Package: linux-headers-4.19.0-6-server-amd64
+Architecture: amd64
+Version: 4.19.67-11eagle
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 4912
+Depends: linux-headers-4.19.0-6-server-common (= 4.19.67-11eagle), linux-kbuild-4.19 (>= 4.19.67-11eagle), linux-compiler-gcc-8-x86
+Filename: ./4.19.0-6/linux-headers-4.19.0-6-server-amd64_4.19.67-11eagle_amd64.deb
+Size: 797516
+MD5sum: 86040fd528416bc0022353103a37e582
+SHA1: 0e678915a2c5b69ebee6943b5becec77681cb9d8
+SHA256: 99b9bdcf824752cf4070cdf103e4f86a4b9d3f277a057443c9c98b26a59a8011
+SHA512: 839a3c5f47eaf224ba938d20830878327a5c4b4e71f98520f8a3096180ac4ebceaf27d8a503f5735d9c4ff0d200959d61abedf22fbbb8b88c6de1a8fcdecf496
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 4.19.0-6-server-amd64
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.19.0-6-server-amd64, generally used for building
+ out-of-tree kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.19.0-6-server-amd64, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.19.0-6-server-amd64 package.
+
+Package: linux-image-4.19.0-6-server-amd64-unsigned
+Architecture: amd64
+Version: 4.19.67-11eagle
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 261576
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: linux-firmware
+Suggests: linux-doc-4.19, debian-kernel-handbook, grub-pc | grub-efi-amd64 | extlinux
+Conflicts: linux-image-4.19.0-6-server-amd64
+Breaks: initramfs-tools (<< 0.120+deb8u2), xserver-xorg-input-vmmouse (<< 1:13.0.99)
+Replaces: linux-image-4.19.0-6-server-amd64
+Filename: ./4.19.0-6/linux-image-4.19.0-6-server-amd64-unsigned_4.19.67-11eagle_amd64.deb
+Size: 47119592
+MD5sum: 309330d18efb00e05226e645374f038f
+SHA1: fba9bcdb4c16b52abe580288e73adc20c503c148
+SHA256: 27bf47680fd9167a8658d6c830ca895166d08ea1bceefb0bb31ea9b2a274f9b3
+SHA512: b0294125e68088859f9448629708dcb8e5e8ddbf679aab8f30505bf9ba5de2b3836747b863f41f7fdae4a51d14c93239936ae3cf60019274097a2d65ad852a5d
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for 64-bit PCs
+ The Linux kernel 4.19 and modules for use on PCs with AMD64, Intel 64 or
+ VIA Nano processors.
 
 Package: linux-image-5.18.17-amd64-desktop-community-hwe
 Architecture: amd64

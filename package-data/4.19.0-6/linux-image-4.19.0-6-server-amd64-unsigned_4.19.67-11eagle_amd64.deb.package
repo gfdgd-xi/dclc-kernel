@@ -1,0 +1,25 @@
+Package: linux-image-4.19.0-6-server-amd64-unsigned
+Architecture: amd64
+Version: 4.19.67-11eagle
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 261576
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: linux-firmware
+Suggests: linux-doc-4.19, debian-kernel-handbook, grub-pc | grub-efi-amd64 | extlinux
+Conflicts: linux-image-4.19.0-6-server-amd64
+Breaks: initramfs-tools (<< 0.120+deb8u2), xserver-xorg-input-vmmouse (<< 1:13.0.99)
+Replaces: linux-image-4.19.0-6-server-amd64
+Filename: ./4.19.0-6/linux-image-4.19.0-6-server-amd64-unsigned_4.19.67-11eagle_amd64.deb
+Size: 47119592
+MD5sum: 309330d18efb00e05226e645374f038f
+SHA1: fba9bcdb4c16b52abe580288e73adc20c503c148
+SHA256: 27bf47680fd9167a8658d6c830ca895166d08ea1bceefb0bb31ea9b2a274f9b3
+SHA512: b0294125e68088859f9448629708dcb8e5e8ddbf679aab8f30505bf9ba5de2b3836747b863f41f7fdae4a51d14c93239936ae3cf60019274097a2d65ad852a5d
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for 64-bit PCs
+ The Linux kernel 4.19 and modules for use on PCs with AMD64, Intel 64 or
+ VIA Nano processors.
+
