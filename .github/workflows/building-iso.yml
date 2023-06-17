@@ -1,12 +1,12 @@
 name: Building Kernel ISO Package
-run-name: ${{ github.actor }} Building Kernel Package 🚀
+run-name: ${{ github.actor }} Building Kernel ISO Package 🚀
 on:
   workflow_dispatch:
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Building Wine
+      - name: Building ISO
         env: 
           GUSER: ${{ secrets.GUSER }}
           PASSWORD: ${{ secrets.PASSWORD }}
