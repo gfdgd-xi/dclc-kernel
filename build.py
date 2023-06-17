@@ -12,11 +12,15 @@ def Write(path: str):
     <body>
         <h1>文件目录</h1>
         <ul>
+            <li><a href="..">../</a></li>
 """
     for i in os.listdir(path):
         if i == "index.html" or i == "CNAME" or i == "build.py" or i == "build.sh" or i == ".git" or i == ".github":
             continue
-        htmlstring += f'\n          <li><a href="{i}">{i}</a></li>'
+        if os.path.isdir(f"{path}/{i}"):
+            htmlstring += f'\n          <li><a href="{i}">{i}/</a></li>'
+        else:
+            htmlstring += f'\n          <li><a href="{i}">{i}</a></li>'
     htmlstring += f"""     </ul>
         <hr/>
         <h3>更新时间：{datetime.datetime.now().strftime("%Y年%m月%d日 %H:%M:%S")}</h3>

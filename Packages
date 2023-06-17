@@ -187,6 +187,27 @@ Description: Linux for 64-bit PCs (meta-package)
  This kernel also runs on a Xen hypervisor.  It supports both privileged
  (dom0) and unprivileged (domU) operation.
 
+Package: linux-kernel-dclc-gfdgdxi
+Architecture: amd64
+Version: 6.4.0-rc4-1
+Priority: optional
+Section: utils
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-6.4.0-rc4, linux-image-6.4.0-rc4
+Filename: ./head/linux-kernel-dclc-gfdgdxi_6.4.0-rc4-1_amd64.deb
+Size: 2004
+MD5sum: 670dd91fb6843f6a7afb00d9aa77e1c9
+SHA1: 8fa83905f0a115cfa52299b62b40c087071f5687
+SHA256: 7e0b73232212af4a8bbfb814f4528f29fed1c76aabf56d8615727eb5a4cda33e
+SHA512: 324ff3b90b8b570f066cbc828a4f32a28254c6a6c3809e9d43b83eab93c9e274591c31c88343958361260a1730f69fca17e51b0ea7dea8836aa2014e1c8a8ce3
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Severity: serious
+Certainty: possible
+Check: binaries
+Type: binary, udeb
+
 Package: linux-headers-5.17.3-amd64-desktop
 Architecture: amd64
 Version: 5.17.3-amd64-desktop-1
@@ -313,6 +334,66 @@ Homepage: https://www.kernel.org/
 Description: Linux 4.19 for 64-bit PCs
  The Linux kernel 4.19 and modules for use on PCs with AMD64, Intel 64 or
  VIA Nano processors.
+
+Package: linux-image-6.4.0-rc4
+Architecture: amd64
+Version: 6.4.0-rc4-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@xxx-PC>
+Installed-Size: 487244
+Filename: ./6.4.0-rc4/linux-image-6.4.0-rc4_6.4.0-rc4-1_amd64.deb
+Size: 89412688
+MD5sum: 470b60f75400c72bbe2bbb2e86b61daa
+SHA1: 4eeb2b296760502c5902f8ce74e605c74dce22f9
+SHA256: c7424ae7d23950fb1042d8523a015e5289b142bb1ad719f9d0bc2b2bf3e41ee2
+SHA512: 1bd72f17ea4e06bae8de2089e87effb26b2b1d7c7f9f35535e4e8da42b4f6f7f9c5d11567858d188bc3461b5fc7afec85e1adf219fc40f86e86fcca904e5a152
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.4.0-rc4
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.4.0-rc4.
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 6.4.0-rc4-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-upstream
+Maintainer: root <root@xxx-PC>
+Installed-Size: 6703
+Provides: linux-kernel-headers
+Filename: ./6.4.0-rc4/linux-libc-dev_6.4.0-rc4-1_amd64.deb
+Size: 1293576
+MD5sum: ba1d209fabf8877ca75f3160e39c38f0
+SHA1: b20990139fcdb126df8bec8551fe46543b74f4e2
+SHA256: 2997745886b546e687310f27fd4056b2cb086e3a2a2d7969db0c7ce2a675319f
+SHA512: 2b8354f5f58a09ca1f5794612a98709054d0f1e1d681227a3259bffef43e431586172d3a697c0fc805191e021d40e7359ae51465acdb8bfde1363d52e141f51a
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-headers-6.4.0-rc4
+Architecture: amd64
+Version: 6.4.0-rc4-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@xxx-PC>
+Installed-Size: 54024
+Filename: ./6.4.0-rc4/linux-headers-6.4.0-rc4_6.4.0-rc4-1_amd64.deb
+Size: 9164644
+MD5sum: 7d7b89ba328db712528ca7356f39018e
+SHA1: a6723a41fc9759cc7b20eb4e58cb6040a80aae5a
+SHA256: f3d07a27bd5fc64a727aa0c616ecd94b127ef39be1a754e486ea3175774fe9c6
+SHA512: 3fb30478d6e8777f9be5db85fbd6cb4fdcc9a9e4a050cef025a6718eb76178741f46b599ebe34d346a13bf7042918c40d90b5223efcd5458e188e96b59ba7526
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.4.0-rc4 on amd64
+ This package provides kernel header files for 6.4.0-rc4 on amd64
+ .
+ This is useful for people who need to build external modules
 
 Package: linux-image-5.18.17-amd64-desktop-community-hwe
 Architecture: amd64
