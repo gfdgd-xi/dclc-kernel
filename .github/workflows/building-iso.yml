@@ -47,8 +47,8 @@ jobs:
 
           ## 定制镜像
           sudo pardus-chroot ~/deepin15 
-          sudo chroot ~/deepin15 apt purge linux-image* linux-hea* linux-modu* -y
-          sudo chroot ~/deepin15 rm -rfv /lib/modules/*
+          sudo chroot ~/deepin15 bash -c "apt purge linux-image* linux-hea* linux-modu*"" -y
+          sudo chroot ~/deepin15 bash -c "rm -rfv /lib/modules/*""
           # 设置 DNS
           sudo chroot ~/deepin15 bash -c "echo nameserver 8.8.8.8 ./ > /etc/resolv.conf"
           sudo aria2c -d ~/deepin15/tmp http://kernel.dclc.gfdgdxi.top/sources/github.sh
@@ -65,8 +65,8 @@ jobs:
           sudo chroot ~/deepin15 mkdir -p /backup
           sudo chroot ~/deepin15 bash -c "echo -e 'c\n\ny\n/backup\ny\ny\ny\n\ny\n' | /tmp/lub -b"
           sudo mv ~/deepin15/backup/*.squashfs ~/squashfs/deepin-15-$kernel-amd64.squashfs
-          sudo chroot ~/deepin15 mv "/boot/initrd.img-*" /initrd.img-$kernel
-          sudo chroot ~/deepin15 mv "/boot/vmlinuz-*" /vmlinuz-$kernel
+          sudo chroot ~/deepin15 bash -c "mv /boot/initrd.img-* /initrd.img-$kernel"
+          sudo chroot ~/deepin15 bash -c "mv /boot/vmlinuz-* /vmlinuz-$kernel"
           # 提交
           curl -F "file=@$HOME/deepin15/vmlinuz-$kernel" "$UPLOADURL"
           curl -F "file=@$HOME/deepin15/initrd.img-$kernel" "$UPLOADURL"
