@@ -27,23 +27,14 @@ jobs:
           deepin23=https://cdimage.deepin.com/releases/23-Beta/deepin-desktop-community-23-Beta-amd64.iso
 
           aria2c -x 16 -s 16 $deepin15 -d ~ -o deepin15.iso
-          aria2c -x 16 -s 16 $deepin20 -d ~ -o deepin20.iso
-          aria2c -x 16 -s 16 $deepin23 -d ~ -o deepin23.iso
-
           mkdir /tmp/deepin15
-          mkdir /tmp/deepin20
-          mkdir /tmp/deepin23
           sudo mount ~/deepin15.iso /tmp/deepin15
-          sudo mount ~/deepin20.iso /tmp/deepin20
-          sudo mount ~/deepin23.iso /tmp/deepin23
-
           sudo unsquashfs /tmp/deepin15/live/filesystem.squashfs
           sudo mv squashfs-root ~/deepin15
+
           
-          sudo unsquashfs /tmp/deepin20/live/filesystem.squashfs
-          sudo mv squashfs-root ~/deepin20
-          sudo unsquashfs /tmp/deepin23/live/filesystem.squashfs
-          sudo mv squashfs-root ~/deepin23
+
+          
 
           ## 定制镜像(Deepin15)
           sudo pardus-chroot ~/deepin15 
@@ -70,8 +61,16 @@ jobs:
           sudo mv ~/deepin15/backup/*.squashfs ~/squashfs/deepin-15-$kernel-amd64.squashfs
           sudo chroot ~/deepin15 bash -c "mv /boot/initrd.img-* /initrd.img-$kernel"
           sudo chroot ~/deepin15 bash -c "mv /boot/vmlinuz-* /vmlinuz-$kernel"
+          curl -F "file=@$HOME/deepin15/vmlinuz-$kernel" "$UPLOADURL"
+          curl -F "file=@$HOME/deepin15/initrd.img-$kernel" "$UPLOADURL"
+          curl -F "file=@$HOME/squashfs/deepin-15-$kernel-amd64.squashfs" "$UPLOADURL"
+          
 
-
+          aria2c -x 16 -s 16 $deepin20 -d ~ -o deepin20.iso
+          mkdir /tmp/deepin20
+          sudo mount ~/deepin20.iso /tmp/deepin20
+          sudo unsquashfs /tmp/deepin20/live/filesystem.squashfs
+          sudo mv squashfs-root ~/deepin20
           ## 定制镜像(Deepin20)
           sudo pardus-chroot ~/deepin20
           sudo chroot ~/deepin20 bash -c 'apt purge linux-image* linux-hea* -y' 
@@ -95,7 +94,13 @@ jobs:
           sudo chroot ~/deepin20 mkdir -p /backup
           sudo chroot ~/deepin20 bash -c "echo -e 'c\n\ny\n/backup\ny\ny\ny\n\ny\n' | /tmp/lub -b"
           sudo mv ~/deepin20/backup/*.squashfs ~/squashfs/deepin-20-$kernel-amd64.squashfs
+          curl -F "file=@$HOME/squashfs/deepin-20-$kernel-amd64.squashfs" "$UPLOADURL"
 
+          aria2c -x 16 -s 16 $deepin23 -d ~ -o deepin23.iso
+          mkdir /tmp/deepin23
+          sudo mount ~/deepin23.iso /tmp/deepin23
+          sudo unsquashfs /tmp/deepin23/live/filesystem.squashfs
+          sudo mv squashfs-root ~/deepin23
           ## 定制镜像(Deepin23)
           sudo pardus-chroot ~/deepin23
           sudo chroot ~/deepin23 bash -c 'apt purge linux-image* linux-hea* -y' 
@@ -121,10 +126,8 @@ jobs:
           sudo mv ~/deepin23/backup/*.squashfs ~/squashfs/deepin-23-$kernel-amd64.squashfs
 
           # 提交
-          curl -F "file=@$HOME/deepin15/vmlinuz-$kernel" "$UPLOADURL"
-          curl -F "file=@$HOME/deepin15/initrd.img-$kernel" "$UPLOADURL"
-          curl -F "file=@$HOME/squashfs/deepin-15-$kernel-amd64.squashfs" "$UPLOADURL"
-          curl -F "file=@$HOME/squashfs/deepin-20-$kernel-amd64.squashfs" "$UPLOADURL"
+          
+          
           curl -F "file=@$HOME/squashfs/deepin-23-$kernel-amd64.squashfs" "$UPLOADURL"
           sudo mv $HOME/squashfs/deepin-15-$kernel-amd64.squashfs ~/deepin15.squashfs
           sudo mv $HOME/squashfs/deepin-20-$kernel-amd64.squashfs ~/deepin20.squashfs
