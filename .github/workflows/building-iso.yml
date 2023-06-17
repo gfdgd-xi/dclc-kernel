@@ -50,7 +50,7 @@ jobs:
           sudo pardus-chroot ~/deepin15 
           sudo chroot ~/deepin15 apt purge linux-image* linux-hea* linux-modu* -y
           sudo chroot ~/deepin15 rm -rfv /lib/modules/*
-          sudo chroot ~/deepin15 bash /tmp/gitlink.sh
+          sudo chroot ~/deepin15 bash /tmp/github.sh
           sudo chroot ~/deepin15 bash -c "echo deb http://github.com/gfdgd-xi/dclc-kernel/raw/main/ ./ > /etc/apt/sources.list.d/gfdgdxi-kernel-list.list"
           sudo chroot ~/deepin15 apt update
           sudo chroot ~/deepin15 apt install linux-kernel-dclc-gfdgdxi -y
