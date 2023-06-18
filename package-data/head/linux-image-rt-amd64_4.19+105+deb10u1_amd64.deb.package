@@ -1,0 +1,22 @@
+Package: linux-image-rt-amd64
+Architecture: amd64
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 17
+Provides: linux-latest-modules-4.19.0-6-rt-amd64
+Depends: linux-image-4.19.0-6-rt-amd64
+Filename: ./head/linux-image-rt-amd64_4.19+105+deb10u1_amd64.deb
+Size: 8132
+MD5sum: c73c8f8eb5bd15ff69166a0963b03c00
+SHA1: 04a7f90124a00ef2bb64c00bbf24551ecf00a7a4
+SHA256: 8080f02cb412dc69ef01a6b69bc669539c7abfd042e67efd79eb09f5944f249e
+SHA512: 3fc5d0009df3fe55a78514a17c8ad6011f98e1fc278fb9c49296794894239be4860af0af77867684f4847190c7a12219b748023f14dcd351b23dbab2e1ae6a4b
+Description: Linux for 64-bit PCs (meta-package), PREEMPT_RT
+ This package depends on the latest Linux kernel and modules for use on PCs
+ with AMD64, Intel 64 or VIA Nano processors.
+ .
+ This kernel includes the PREEMPT_RT realtime patch set.
+

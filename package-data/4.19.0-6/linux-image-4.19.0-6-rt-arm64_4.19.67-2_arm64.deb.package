@@ -1,0 +1,29 @@
+Package: linux-image-4.19.0-6-rt-arm64
+Architecture: arm64
+Version: 4.19.67-2
+Built-Using: linux (= 4.19.67-2)
+Priority: optional
+Section: kernel
+Source: linux-signed-arm64 (4.19.67+2)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 220258
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook
+Conflicts: linux-image-4.19.0-6-rt-arm64-unsigned
+Breaks: initramfs-tools (<< 0.120+deb8u2), libmozjs-24-0 (<< 24.2.0-5.1~), libmozjs185-1.0
+Replaces: linux-image-4.19.0-6-rt-arm64-unsigned
+Filename: ./4.19.0-6/linux-image-4.19.0-6-rt-arm64_4.19.67-2_arm64.deb
+Size: 40397932
+MD5sum: bf0efdc2bc41577b51981e98c91b8e30
+SHA1: c8db680146de30ae2bb2271bbe30e0e2ac64bc47
+SHA256: 78fbb6a8bcbcb073effa7f2c4bd7f0b4e71e0b4b72dfd881689efbd32303143e
+SHA512: e6a6c3829eaf9b8cb31ec595a8730e687b7346bcfc381901d098b98c4531b0d3c145e6775fb4e7fe7b394c4522e5ff366f46a252475e003caf7e523f0c876b3c
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for 64-bit ARMv8 machines, PREEMPT_RT (signed)
+ The Linux kernel 4.19 and modules for use on 64-bit ARMv8 machines.
+ .
+ This kernel includes the PREEMPT_RT realtime patch set.
+ .
+ The kernel image and modules are signed for use with Secure Boot.
+

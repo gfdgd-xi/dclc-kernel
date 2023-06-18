@@ -1,0 +1,24 @@
+Package: linux-headers-4.19.0-6-octeon
+Architecture: mips64el
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 3337
+Depends: linux-headers-4.19.0-6-common (= 4.19.67-2), linux-kbuild-4.19 (>= 4.19.67-2), gcc-8
+Filename: ./4.19.0-6/linux-headers-4.19.0-6-octeon_4.19.67-2_mips64el.deb
+Size: 651680
+MD5sum: 974d53daaabc8161212172ff9b2d8ef5
+SHA1: 9bbe0d53db67c3f7dc5d793a8e114414b1175ff7
+SHA256: 4932adc26614e803eafbd83e1ae6610333be00971e857933e81e9e4ee2120a8e
+SHA512: 9116590db470d39b058f93f3b3a46360f6a27a5ae463d334a6beff3d3e7167898f46bb49ae159c4dbb94d83c2baebf92f0ebfaf2242252a105eb3db23733054a
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 4.19.0-6-octeon
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.19.0-6-octeon, generally used for building out-of-tree
+ kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.19.0-6-octeon, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.19.0-6-octeon package.
+

@@ -177,6 +177,25 @@ Description: Header files for Linux amd64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel amd64 configuration.
 
+Package: linux-headers-arm64
+Architecture: arm64
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 12
+Depends: linux-headers-4.19.0-6-arm64
+Filename: ./head/linux-headers-arm64_4.19+105+deb10u1_arm64.deb
+Size: 6688
+MD5sum: d3cea46f49e0f931e9b6fd43033b82fa
+SHA1: 1b85b21b3252365b7928333a3f5569301018b8af
+SHA256: 775b6e3a8576517708a5a469c56c1378ed5357854dd1f7a5c557ca9661291fc2
+SHA512: f98d8edb4a102f508af78cd24ed6f247c207e14d8b61ce5e95fdba9ae4c52743dd9e634857165ac1801d5fdc8917578876fbfe3652ef06549c1dc4597d75bfb9
+Description: Header files for Linux arm64 configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel arm64 configuration.
+
 Package: linux-headers-deepin-stable-amd64
 Architecture: amd64
 Version: 5.15.34-1
@@ -196,6 +215,26 @@ Homepage: http://www.deepin.com
 Description: Header files for Linux amd64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel amd64 configuration.
+
+Package: linux-image-octeon
+Architecture: mips64el
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 17
+Provides: linux-latest-modules-4.19.0-6-octeon
+Depends: linux-image-4.19.0-6-octeon
+Filename: ./head/linux-image-octeon_4.19+105+deb10u1_mips64el.deb
+Size: 8064
+MD5sum: 5c01060234c00df0673fb38c91a0fa96
+SHA1: a704e49bb7c26deda3506b19d7cf67b6d83a818d
+SHA256: fd0a82e23926b740ebc9e1c8cb7b0fad3b0389a0447d03500bb7afb599d99e1f
+SHA512: 2c61076565b54955f1028f62dba231862bbbd5f10d7320a172706a9f045537344598173f4f5f8ec69bb6145df9fc440f0e1fe505165d1f9b931f36853e19c06c
+Description: Linux for Octeon (meta-package)
+ This package depends on the latest Linux kernel and modules for use on
+ Cavium Networks Octeon.
 
 Package: linux-kernel-dclc-gfdgdxi
 Architecture: amd64
@@ -217,6 +256,45 @@ Severity: serious
 Certainty: possible
 Check: binaries
 Type: binary, udeb
+
+Package: linux-headers-loongson-3
+Architecture: mips64el
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 12
+Depends: linux-headers-4.19.0-6-loongson-3
+Filename: ./head/linux-headers-loongson-3_4.19+105+deb10u1_mips64el.deb
+Size: 6704
+MD5sum: 435bc9036b9ef8297703915411b8ce44
+SHA1: b120aa3144062a8041d363fdbe787e4a09938ac9
+SHA256: dad1acfbb3d8dc24ddf388ffcf40461c84d232add0eb08e71095b0e3de34a348
+SHA512: d43d2e7c7d42bd2a1fc4cf05bab3373837c98558f5c2d5c256759b74e6211e7f0185027ab07b0631dc9b4cf1f805c9caceb37ddb97256ef3dc7f96a0b10a971a
+Description: Header files for Linux loongson-3 configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel loongson-3 configuration.
+
+Package: linux-image-arm64
+Architecture: arm64
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 17
+Provides: linux-latest-modules-4.19.0-6-arm64
+Depends: linux-image-4.19.0-6-arm64
+Filename: ./head/linux-image-arm64_4.19+105+deb10u1_arm64.deb
+Size: 8056
+MD5sum: 108022b979f5c4258a2bf7714b976b1c
+SHA1: 2d5f76499fe67267b868089e2e1bab4912bc9f7a
+SHA256: f9c9db3d3eacaf53c03bc822c9ccb0a3ceec2b265b9d4347d35807b99e4b5f95
+SHA512: 6311861a7ead55fb5b7254bfdb108d4c504b26b9c9c4e0c13d04d8f0eaa42f6983f8256250b8b2b3eb8eb8d254692476443b69226d99ed184ee509c7df7d5619
+Description: Linux for 64-bit ARMv8 machines (meta-package)
+ This package depends on the latest Linux kernel and modules for use on
+ 64-bit ARMv8 machines.
 
 Package: linux-image-deepin-server-amd64
 Architecture: amd64
@@ -241,6 +319,25 @@ Description: Linux for 64-bit PCs (meta-package)
  This kernel also runs on a Xen hypervisor.  It supports both privileged
  (dom0) and unprivileged (domU) operation.
 
+Package: linux-headers-octeon
+Architecture: mips64el
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 12
+Depends: linux-headers-4.19.0-6-octeon
+Filename: ./head/linux-headers-octeon_4.19+105+deb10u1_mips64el.deb
+Size: 6696
+MD5sum: 91c957bd72800e936d320a427d7cf487
+SHA1: 18334795638754babb821f3d4ad65bbe515056e8
+SHA256: bd9f94ff57a63f9af148df8ef8cb3e2d56b22ce3e26800a7ee28a961d56bbae2
+SHA512: 3dc2c16cabb6b5108e70a46197b016473ebe826edaa55115b60459e20811b7ac5cf459709d2fa30d856c78a859abceedbfe76101ef622d4831ff9ea9557fcbd3
+Description: Header files for Linux octeon configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel octeon configuration.
+
 Package: linux-headers-deepin-experiment-amd64
 Architecture: amd64
 Version: 5.17.3-1
@@ -260,6 +357,83 @@ Homepage: http://www.deepin.com
 Description: Header files for Linux amd64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel amd64 configuration.
+
+Package: linux-headers-rt-arm64
+Architecture: arm64
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 12
+Depends: linux-headers-4.19.0-6-rt-arm64
+Filename: ./head/linux-headers-rt-arm64_4.19+105+deb10u1_arm64.deb
+Size: 6696
+MD5sum: 4151abb8bc5ba6e0329325ae7724b530
+SHA1: f7b896b95a9d131ad9e794cf5b9d1d553180496b
+SHA256: 677a828ff7ce48c51ef0d17751bf9555c69e07cad45429509b64550fa3515297
+SHA512: 0c729d3dce6148550171ccc41d1e21d3504fef48b021bac2e0a961b27ea59761b40048678b47f773028e9aca0853e01f5e9b2cd604a749c9b48fd41eba78d0e0
+Description: Header files for Linux rt-arm64 configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel rt-arm64 configuration.
+
+Package: linux-image-5kc-malta
+Architecture: mips64el
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 17
+Provides: linux-latest-modules-4.19.0-6-5kc-malta
+Depends: linux-image-4.19.0-6-5kc-malta
+Filename: ./head/linux-image-5kc-malta_4.19+105+deb10u1_mips64el.deb
+Size: 8064
+MD5sum: 09e154c10433a974adce77566955de9c
+SHA1: 2433132f4bbbfb0c5c5a00ce8579884804b33653
+SHA256: ca850d1de8be81b01f3426bba19685e00925640ddefcf92dac689c82fbb656a0
+SHA512: d1c2e4b564972bd51a17efaa4235a29be381973851498083a2aee7b99a2ed985c978234c560c8600ad485b3e6e249b54864107f68dbf13c6b3aab30c93684f9f
+Description: Linux for MIPS Malta (64-bit) (meta-package)
+ This package depends on the latest Linux kernel and modules for use on
+ MIPS Malta boards (64-bit).
+
+Package: linux-headers-5kc-malta
+Architecture: mips64el
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 12
+Depends: linux-headers-4.19.0-6-5kc-malta
+Filename: ./head/linux-headers-5kc-malta_4.19+105+deb10u1_mips64el.deb
+Size: 6700
+MD5sum: 9b817f91b6e643b21847ce81353d80a5
+SHA1: daadf3b768e969ae394989f86b9d88486035d0ea
+SHA256: a834b4e954c61d7966f5485d6f76c2141cc5d2dece12ff4f7eb7a58b8fdd608a
+SHA512: a12838d1f4efb778abaa228d95e9c95a51bd11f3175c4521354ccf399412f2a2fdcbbc61089f227b0dc0caf3d6799f59827af1590c683b8ada6b36f39e65cfa4
+Description: Header files for Linux 5kc-malta configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel 5kc-malta configuration.
+
+Package: linux-headers-rt-amd64
+Architecture: amd64
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 12
+Depends: linux-headers-4.19.0-6-rt-amd64
+Filename: ./head/linux-headers-rt-amd64_4.19+105+deb10u1_amd64.deb
+Size: 6700
+MD5sum: 611a154bde60cb17573522d7c3a6abf8
+SHA1: 01da5688078e34d5ce289f3d068b96c3f71eb7dd
+SHA256: cbdee5a5ff5ddd7b9100c5d390e74e6c878daefdfb9fea11af2432536e23c6bd
+SHA512: c21b9864e1186c6c1388a5a6816e639447e4ff2842730df137cd8793319939890fd86c5fa71e00ef5ec0aa863d5cb63c16151e23b7dbb99e8f77cd6da0b98c35
+Description: Header files for Linux rt-amd64 configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel rt-amd64 configuration.
 
 Package: linux-kernel-dclc-gfdgdxi
 Architecture: amd64
@@ -281,6 +455,28 @@ Severity: serious
 Certainty: possible
 Check: binaries
 Type: binary, udeb
+
+Package: linux-image-rt-arm64
+Architecture: arm64
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 17
+Provides: linux-latest-modules-4.19.0-6-rt-arm64
+Depends: linux-image-4.19.0-6-rt-arm64
+Filename: ./head/linux-image-rt-arm64_4.19+105+deb10u1_arm64.deb
+Size: 8104
+MD5sum: 8ad9cfa2ea39d7453c16e4c27ccd8883
+SHA1: 6d01e8c2ae938eccd7ca7a412984ac3bda121bde
+SHA256: 67c7ddc86d2a4437b8aeb31f1c28a42414366c8240cd7260236ac023a2238a2d
+SHA512: 2ce61f4ec040ee29a2bd19608d5305a1d21df93ee5925c949035945304d5b728ae981bc849e2280c43e37692b5edb4da809b63b27bacc5c23942cb589888fcb9
+Description: Linux for 64-bit ARMv8 machines (meta-package), PREEMPT_RT
+ This package depends on the latest Linux kernel and modules for use on
+ 64-bit ARMv8 machines.
+ .
+ This kernel includes the PREEMPT_RT realtime patch set.
 
 Package: linux-image-deepin-stable-amd64
 Architecture: amd64
@@ -304,6 +500,48 @@ Description: Linux for 64-bit PCs (meta-package)
  .
  This kernel also runs on a Xen hypervisor.  It supports both privileged
  (dom0) and unprivileged (domU) operation.
+
+Package: linux-image-loongson-3
+Architecture: mips64el
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 17
+Provides: linux-latest-modules-4.19.0-6-loongson-3
+Depends: linux-image-4.19.0-6-loongson-3
+Filename: ./head/linux-image-loongson-3_4.19+105+deb10u1_mips64el.deb
+Size: 8084
+MD5sum: dfa5b3bd2ca2f264b68c03af0362412e
+SHA1: ba45e0c21c959983bf1311f8d756faeee8a0d09a
+SHA256: c1308dd7086feb4aa4b353d460bed264e9abc7f6b6e66f9de9aa1db9380330a0
+SHA512: 439c73a6fed3d85267e4987ffe7f33a781271a9618d7babda44d99aa56deb7fa559914bfa48b466621559424f3a9eb8f680df01cb201443c68821dfdc013deb5
+Description: Linux for Loongson 3A/3B (meta-package)
+ This package depends on the latest Linux kernel and modules for use on
+ Loongson 3A or 3B based systems (e.g.  from Loongson or Lemote).
+
+Package: linux-image-rt-amd64
+Architecture: amd64
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 17
+Provides: linux-latest-modules-4.19.0-6-rt-amd64
+Depends: linux-image-4.19.0-6-rt-amd64
+Filename: ./head/linux-image-rt-amd64_4.19+105+deb10u1_amd64.deb
+Size: 8132
+MD5sum: c73c8f8eb5bd15ff69166a0963b03c00
+SHA1: 04a7f90124a00ef2bb64c00bbf24551ecf00a7a4
+SHA256: 8080f02cb412dc69ef01a6b69bc669539c7abfd042e67efd79eb09f5944f249e
+SHA512: 3fc5d0009df3fe55a78514a17c8ad6011f98e1fc278fb9c49296794894239be4860af0af77867684f4847190c7a12219b748023f14dcd351b23dbab2e1ae6a4b
+Description: Linux for 64-bit PCs (meta-package), PREEMPT_RT
+ This package depends on the latest Linux kernel and modules for use on PCs
+ with AMD64, Intel 64 or VIA Nano processors.
+ .
+ This kernel includes the PREEMPT_RT realtime patch set.
 
 Package: linux-image-deepin-experiment-amd64
 Architecture: amd64
@@ -487,6 +725,201 @@ Description: Linux kernel, version 5.15.34-amd64-desktop
  This package contains the Linux kernel, modules and corresponding other
  files, version: 5.15.34-amd64-desktop.
 
+Package: linux-headers-4.19.0-6-rt-amd64
+Architecture: amd64
+Version: 4.19.67-13eagle
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 4891
+Depends: linux-headers-4.19.0-6-common-rt (= 4.19.67-13eagle), linux-kbuild-4.19 (>= 4.19.67-13eagle), linux-compiler-gcc-8-x86
+Filename: ./4.19.0-6/linux-headers-4.19.0-6-rt-amd64_4.19.67-13eagle_amd64.deb
+Size: 795556
+MD5sum: d02d6d92f0f18d4537c732af5f39be65
+SHA1: 5957d4f4b81788c58a6b0091f7a9267c53add805
+SHA256: 96ba50d81a0ed7d315de40c2e0cc633e452d13191ffabeebd2adc5b62defc648
+SHA512: 75f306f59b2c0254ba965933a5ce966b838ed139e5d6fdb206bdaea6b5cd19e991c4348d90aecf7d6e5d69f71c78e0e9a9da1cbca777af2942bf92c5e8fab857
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 4.19.0-6-rt-amd64
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.19.0-6-rt-amd64, generally used for building out-of-tree
+ kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.19.0-6-rt-amd64, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.19.0-6-rt-amd64 package.
+
+Package: linux-image-4.19.0-6-loongson-3
+Architecture: mips64el
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 200833
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook
+Breaks: initramfs-tools (<< 0.120+deb8u2)
+Filename: ./4.19.0-6/linux-image-4.19.0-6-loongson-3_4.19.67-2_mips64el.deb
+Size: 34772020
+MD5sum: dae8038f2af6d6b9d43dc36776b1bde8
+SHA1: c3da6150e5664d8f0ff776e8c8455d66be6baebe
+SHA256: b16cedcf751849f80371dc46ce5d5f234a44332407098c7cde6c49d3d5cf3938
+SHA512: 3a73f05b5c14ecadd80cd531172d0be020a959cd4b8a1cae4056d0fb783378ddc09f01cedb6a46a2735e1ee434a113fb9d0bf655ea78234864e7acfd5a7c06e4
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for Loongson 3A/3B
+ The Linux kernel 4.19 and modules for use on Loongson 3A or 3B based
+ systems (e.g.  from Loongson or Lemote).
+
+Package: linux-headers-4.19.0-6-octeon
+Architecture: mips64el
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 3337
+Depends: linux-headers-4.19.0-6-common (= 4.19.67-2), linux-kbuild-4.19 (>= 4.19.67-2), gcc-8
+Filename: ./4.19.0-6/linux-headers-4.19.0-6-octeon_4.19.67-2_mips64el.deb
+Size: 651680
+MD5sum: 974d53daaabc8161212172ff9b2d8ef5
+SHA1: 9bbe0d53db67c3f7dc5d793a8e114414b1175ff7
+SHA256: 4932adc26614e803eafbd83e1ae6610333be00971e857933e81e9e4ee2120a8e
+SHA512: 9116590db470d39b058f93f3b3a46360f6a27a5ae463d334a6beff3d3e7167898f46bb49ae159c4dbb94d83c2baebf92f0ebfaf2242252a105eb3db23733054a
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 4.19.0-6-octeon
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.19.0-6-octeon, generally used for building out-of-tree
+ kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.19.0-6-octeon, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.19.0-6-octeon package.
+
+Package: linux-headers-4.19.0-6-loongson-3
+Architecture: mips64el
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 3446
+Depends: linux-headers-4.19.0-6-common (= 4.19.67-2), linux-kbuild-4.19 (>= 4.19.67-2), gcc-8
+Filename: ./4.19.0-6/linux-headers-4.19.0-6-loongson-3_4.19.67-2_mips64el.deb
+Size: 668240
+MD5sum: 349711a5afdba5aadf353d809142e082
+SHA1: 2702cba2db612fa60ba5aceedb7782a2cb0de240
+SHA256: 8fa4fd93aa8db42d739fd9fb4cf6000da1b1734f2638193ae6c4f05d072e1b4d
+SHA512: 81418c7228f7853c3a24dfd1983be2bd78ae2d93c7a926ee76f9d74f67f7fe6f679e5261330b3dd62719604fc0cf13d19cdcef4de6a6777b7f5b1c84c945de8e
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 4.19.0-6-loongson-3
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.19.0-6-loongson-3, generally used for building out-of-tree
+ kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.19.0-6-loongson-3, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.19.0-6-loongson-3 package.
+
+Package: linux-image-4.19.0-6-rt-amd64
+Architecture: amd64
+Version: 4.19.67-2
+Built-Using: linux (= 4.19.67-2)
+Priority: optional
+Section: kernel
+Source: linux-signed-amd64 (4.19.67+2)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 263322
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook, grub-pc | grub-efi-amd64 | extlinux
+Conflicts: linux-image-4.19.0-6-rt-amd64-unsigned
+Breaks: initramfs-tools (<< 0.120+deb8u2), xserver-xorg-input-vmmouse (<< 1:13.0.99)
+Replaces: linux-image-4.19.0-6-rt-amd64-unsigned
+Filename: ./4.19.0-6/linux-image-4.19.0-6-rt-amd64_4.19.67-2_amd64.deb
+Size: 47960096
+MD5sum: b31bd9313060afb601fd6d987ada66c3
+SHA1: c07f07c31beb6babae3a9f184fa03def205db2b7
+SHA256: 90bfe84875301125f73e100f91470a7a0ef9d08c0bb969d6abc898fb48d5090d
+SHA512: 4e6648258df2418acda315596525043d6f22fc79e4faf3e92e13ec7e71d8816927b7429a9c1d0a7d95926699d77187b6b09e046452c25504f28f93611fd88f28
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for 64-bit PCs, PREEMPT_RT (signed)
+ The Linux kernel 4.19 and modules for use on PCs with AMD64, Intel 64 or
+ VIA Nano processors.
+ .
+ This kernel includes the PREEMPT_RT realtime patch set.
+ .
+ The kernel image and modules are signed for use with Secure Boot.
+
+Package: linux-headers-4.19.0-6-5kc-malta
+Architecture: mips64el
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 3604
+Depends: linux-headers-4.19.0-6-common (= 4.19.67-2), linux-kbuild-4.19 (>= 4.19.67-2), gcc-8
+Filename: ./4.19.0-6/linux-headers-4.19.0-6-5kc-malta_4.19.67-2_mips64el.deb
+Size: 683220
+MD5sum: 2616e8d30ead461e85e873658a72af09
+SHA1: bcd3ca6901c69b05032a6c1479405a914198d802
+SHA256: b13b307e8b816ef823f887e7a850f3471fe2e071fba839f13749aff79cb9be39
+SHA512: 96e47f3f387715c48c8c21d9f764f484b23f52b98e4ef9e271b02c36f603eeeb7cbeee08a15c5b3ac08616183b732f81a0e7e978efba97b9b9500fe67a476ee5
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 4.19.0-6-5kc-malta
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.19.0-6-5kc-malta, generally used for building out-of-tree
+ kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.19.0-6-5kc-malta, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.19.0-6-5kc-malta package.
+
+Package: linux-headers-4.19.0-6-rt-arm64
+Architecture: arm64
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 4370
+Depends: linux-headers-4.19.0-6-common-rt (= 4.19.67-2), linux-kbuild-4.19 (>= 4.19.67-2), gcc-8
+Filename: ./4.19.0-6/linux-headers-4.19.0-6-rt-arm64_4.19.67-2_arm64.deb
+Size: 750288
+MD5sum: 58b6887ab129f9648f38b1e96042d38d
+SHA1: 2cd4ee7a60bf5e58f7f52272bb295aa23779c288
+SHA256: 138f9ef6077209dbf5d72478128d26449225393cb699abe5b395afdcc9430794
+SHA512: 8c4eae3a7e4b8f5ade16b89eed6825b9fdb2ee1dd1f1fe9f0f2e719d7e35734db69f82f3a5171ad78e0f4535e88b7f8eb9b26495350302e2600dcb73b68d0325
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 4.19.0-6-rt-arm64
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.19.0-6-rt-arm64, generally used for building out-of-tree
+ kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.19.0-6-rt-arm64, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.19.0-6-rt-arm64 package.
+
+Package: linux-image-4.19.0-6-5kc-malta
+Architecture: mips64el
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 213954
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook
+Breaks: initramfs-tools (<< 0.120+deb8u2)
+Filename: ./4.19.0-6/linux-image-4.19.0-6-5kc-malta_4.19.67-2_mips64el.deb
+Size: 36745460
+MD5sum: 12955496a094942a100eae828aa6d7bb
+SHA1: 016ba18bf255cbd089268fb9a3453b410b308362
+SHA256: 97c0ead4e3d8f397ef314bd412f7ed4d3b521589954805b170863ace53316432
+SHA512: 617d71c02a682346e51b9ebc7ddff5c65ed6ebd893380ae742cb92b4de1fc9c0588fd8d620000fc95b1e2a32be3fb6f30c59d83d0de335676773d63326ef332b
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for MIPS Malta (64-bit)
+ The Linux kernel 4.19 and modules for use on MIPS Malta boards (64-bit).
+
 Package: linux-headers-4.19.0-6-server-amd64
 Architecture: amd64
 Version: 4.19.67-11eagle
@@ -510,6 +943,202 @@ Description: Header files for Linux 4.19.0-6-server-amd64
  /usr/src/linux-headers-4.19.0-6-server-amd64, and can be used for building
  modules that load into the kernel provided by the
  linux-image-4.19.0-6-server-amd64 package.
+
+Package: linux-headers-4.19.0-loongson-3-desktop
+Architecture: loongarch64
+Version: 1:4.19.90-5408
+Priority: optional
+Section: kernel
+Source: linux-4.19.0-loongson-3-desktop
+Maintainer: Anonymous <root@loongarch-compiler>
+Installed-Size: 58470
+Provides: linux-headers, linux-headers-2.6
+Filename: ./4.19.0-6/linux-headers-4.19.0-loongson-3-desktop_1%3a4.19.90-5408_loongarch64.deb
+Size: 8917136
+MD5sum: 3fadc778144ada8137119ccfe1cc7d5e
+SHA1: 40480d8fe5585dc493859ff944d727f5dbae58f5
+SHA256: 5dbbdd8cb4c8576172e7a7b99414068549561b4f39065ae3c863ec5b8c4e8f40
+SHA512: 2ebd2d207113c17d76b79a4a7d9b5eaa0fb3652ee0a9c694038719ae18705edfe60c397ea38f12f083001ea11f08bfbb1bdafd9368a3970df98f6c10aaa14c77
+Homepage: http://www.kernel.org/
+Description: Linux kernel headers for 4.19.0-loongson-3-desktop on loongarch64
+ This package provides kernel header files for 4.19.0-loongson-3-desktop on loongarch64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-headers-4.19.0-6-arm64
+Architecture: arm64
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 4422
+Depends: linux-headers-4.19.0-6-common (= 4.19.67-2), linux-kbuild-4.19 (>= 4.19.67-2), gcc-8
+Filename: ./4.19.0-6/linux-headers-4.19.0-6-arm64_4.19.67-2_arm64.deb
+Size: 753348
+MD5sum: 30f3998dba669ba459ae6eeb0fce77a4
+SHA1: 4365f35e954c5b690d1be892bcb130ee664e07f8
+SHA256: 66ce1b092918d28064ad0f61071ba2bc1c33a5dbde497bda601b9bd061589512
+SHA512: 4cf73a21ddc54fa0a089abfc5f25d679f6ccae9452aa1ead5c69ca8d2851f12aa9b33ea7bde823954f9965ac07737c7d70e0df71f5862c9a343397a535274c6e
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 4.19.0-6-arm64
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.19.0-6-arm64, generally used for building out-of-tree
+ kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.19.0-6-arm64, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.19.0-6-arm64 package.
+
+Package: linux-image-4.19.0-6-octeon
+Architecture: mips64el
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 188968
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook
+Breaks: initramfs-tools (<< 0.120+deb8u2)
+Filename: ./4.19.0-6/linux-image-4.19.0-6-octeon_4.19.67-2_mips64el.deb
+Size: 32917688
+MD5sum: bac47d1a61c25431ab34d40b908a8b3c
+SHA1: 408a5a3b0db26b448b7ee193427850edcc6e9c5f
+SHA256: a5e29f4779bd9da3ccc5edbac905589144e147ae7e557b9e73d2625010e6c3f3
+SHA512: 08e85262b00428a24d943daeba334144e60be7748f6246f1c0279f4589c418c55f231be11a109491dce18edab9f751cca99ef88e76fa34f7c56d97c23a292f3b
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for Octeon
+ The Linux kernel 4.19 and modules for use on Cavium Networks Octeon.
+
+Package: linux-image-4.19.0-6-amd64
+Architecture: amd64
+Version: 4.19.67-2
+Built-Using: linux (= 4.19.67-2)
+Priority: optional
+Section: kernel
+Source: linux-signed-amd64 (4.19.67+2)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 262477
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook, grub-pc | grub-efi-amd64 | extlinux
+Conflicts: linux-image-4.19.0-6-amd64-unsigned
+Breaks: initramfs-tools (<< 0.120+deb8u2), xserver-xorg-input-vmmouse (<< 1:13.0.99)
+Replaces: linux-image-4.19.0-6-amd64-unsigned
+Filename: ./4.19.0-6/linux-image-4.19.0-6-amd64_4.19.67-2_amd64.deb
+Size: 47974096
+MD5sum: 11a611b6d5872399e465230eca4664be
+SHA1: a069a66764ac3055f8b2e57a9d9f8f77f9505fec
+SHA256: 5c7ecc8b3c3abb868e999454b6e7ec13f6473cbb8fe7e86f03e80892fa9aad38
+SHA512: 8bce95d1291a4a6cf23c560d2e92321e04c0f19b124003f3db0527c2c3af8704d2b8a2898fe91f922cb94a25e3bd0fb4f13780cb061292b20ffbdad4f639fcb6
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for 64-bit PCs (signed)
+ The Linux kernel 4.19 and modules for use on PCs with AMD64, Intel 64 or
+ VIA Nano processors.
+ .
+ The kernel image and modules are signed for use with Secure Boot.
+
+Package: linux-image-4.19.0-loongson-3-desktop
+Architecture: loongarch64
+Version: 1:4.19.90-5408
+Priority: optional
+Section: kernel
+Source: linux-4.19.0-loongson-3-desktop
+Maintainer: Anonymous <root@loongarch-compiler>
+Installed-Size: 662357
+Provides: linux-image, linux-image-2.6, linux-modules-4.19.0-loongson-3-desktop
+Suggests: linux-firmware-image-4.19.0-loongson-3-desktop
+Filename: ./4.19.0-6/linux-image-4.19.0-loongson-3-desktop_1%3a4.19.90-5408_loongarch64.deb
+Size: 64805564
+MD5sum: c6f5767a276ccef782128bcfa1d8d628
+SHA1: c555b3367d6e87c0e20c1b3ffda4ae866980e162
+SHA256: 084b163f2aed598efe3726bac3ce40f9ff961ea2f0c61e38608d8da7403ac9bd
+SHA512: 38d0d4903f660aee5c8406360eda70fba3d2ef5e5296f6ab398333c5df51f152a772d99e43bc22cbcbf89dfb56c0b0d7b28caa0ab0b4763f97525f65f2aa2d6f
+Homepage: http://www.kernel.org/
+Description: Linux kernel, version 4.19.0-loongson-3-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 4.19.0-loongson-3-desktop.
+
+Package: linux-headers-4.19.0-6-amd64
+Architecture: amd64
+Version: 4.19.67-13eagle
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 4915
+Depends: linux-headers-4.19.0-6-common (= 4.19.67-13eagle), linux-kbuild-4.19 (>= 4.19.67-13eagle), linux-compiler-gcc-8-x86
+Filename: ./4.19.0-6/linux-headers-4.19.0-6-amd64_4.19.67-13eagle_amd64.deb
+Size: 797080
+MD5sum: 52e82315c1215459484645a2723e15a2
+SHA1: f5e17a5e8be87c28900de52a2c9f9b76d6705be0
+SHA256: 2d9034a17108005f14e5ebf8cb83965215f0f761b64e6f77ddff895946837059
+SHA512: 06c8e081573d3afa3749503ba00f8d2e3b0d5b12fcb03e8ccec865c985ae463f3c3a69bd5c59dcdd9a27bf0620e0766dc52f7febe0a1e8246e44d6b7bb602f24
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 4.19.0-6-amd64
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.19.0-6-amd64, generally used for building out-of-tree
+ kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.19.0-6-amd64, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.19.0-6-amd64 package.
+
+Package: linux-image-4.19.0-6-arm64
+Architecture: arm64
+Version: 4.19.67-2
+Built-Using: linux (= 4.19.67-2)
+Priority: optional
+Section: kernel
+Source: linux-signed-arm64 (4.19.67+2)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 221366
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook
+Conflicts: linux-image-4.19.0-6-arm64-unsigned
+Breaks: initramfs-tools (<< 0.120+deb8u2), libmozjs-24-0 (<< 24.2.0-5.1~), libmozjs185-1.0
+Replaces: linux-image-4.19.0-6-arm64-unsigned
+Filename: ./4.19.0-6/linux-image-4.19.0-6-arm64_4.19.67-2_arm64.deb
+Size: 40603400
+MD5sum: 0a6d34da60ab44ad3235eea9f7202f17
+SHA1: 88f11a12ce0b1914a1c7404db9dc155d21ad6a38
+SHA256: 425677b66fd3cbbad5d7be421b521fba25b86e8d2440ca4c5c753eda74b961ae
+SHA512: 8fb469df115afa90cee2cf272bc5f1be2c46ef890214d71ca0c583d2896cbfe51c1597c385212bbac8f6d6d0ba6ed70a30e34728379246aa4f77cdb1f34d7eea
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for 64-bit ARMv8 machines (signed)
+ The Linux kernel 4.19 and modules for use on 64-bit ARMv8 machines.
+ .
+ The kernel image and modules are signed for use with Secure Boot.
+
+Package: linux-image-4.19.0-6-rt-arm64
+Architecture: arm64
+Version: 4.19.67-2
+Built-Using: linux (= 4.19.67-2)
+Priority: optional
+Section: kernel
+Source: linux-signed-arm64 (4.19.67+2)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 220258
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook
+Conflicts: linux-image-4.19.0-6-rt-arm64-unsigned
+Breaks: initramfs-tools (<< 0.120+deb8u2), libmozjs-24-0 (<< 24.2.0-5.1~), libmozjs185-1.0
+Replaces: linux-image-4.19.0-6-rt-arm64-unsigned
+Filename: ./4.19.0-6/linux-image-4.19.0-6-rt-arm64_4.19.67-2_arm64.deb
+Size: 40397932
+MD5sum: bf0efdc2bc41577b51981e98c91b8e30
+SHA1: c8db680146de30ae2bb2271bbe30e0e2ac64bc47
+SHA256: 78fbb6a8bcbcb073effa7f2c4bd7f0b4e71e0b4b72dfd881689efbd32303143e
+SHA512: e6a6c3829eaf9b8cb31ec595a8730e687b7346bcfc381901d098b98c4531b0d3c145e6775fb4e7fe7b394c4522e5ff366f46a252475e003caf7e523f0c876b3c
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for 64-bit ARMv8 machines, PREEMPT_RT (signed)
+ The Linux kernel 4.19 and modules for use on 64-bit ARMv8 machines.
+ .
+ This kernel includes the PREEMPT_RT realtime patch set.
+ .
+ The kernel image and modules are signed for use with Secure Boot.
 
 Package: linux-image-4.19.0-6-server-amd64-unsigned
 Architecture: amd64

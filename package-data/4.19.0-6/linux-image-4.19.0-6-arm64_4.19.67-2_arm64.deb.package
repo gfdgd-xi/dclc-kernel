@@ -1,0 +1,27 @@
+Package: linux-image-4.19.0-6-arm64
+Architecture: arm64
+Version: 4.19.67-2
+Built-Using: linux (= 4.19.67-2)
+Priority: optional
+Section: kernel
+Source: linux-signed-arm64 (4.19.67+2)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 221366
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook
+Conflicts: linux-image-4.19.0-6-arm64-unsigned
+Breaks: initramfs-tools (<< 0.120+deb8u2), libmozjs-24-0 (<< 24.2.0-5.1~), libmozjs185-1.0
+Replaces: linux-image-4.19.0-6-arm64-unsigned
+Filename: ./4.19.0-6/linux-image-4.19.0-6-arm64_4.19.67-2_arm64.deb
+Size: 40603400
+MD5sum: 0a6d34da60ab44ad3235eea9f7202f17
+SHA1: 88f11a12ce0b1914a1c7404db9dc155d21ad6a38
+SHA256: 425677b66fd3cbbad5d7be421b521fba25b86e8d2440ca4c5c753eda74b961ae
+SHA512: 8fb469df115afa90cee2cf272bc5f1be2c46ef890214d71ca0c583d2896cbfe51c1597c385212bbac8f6d6d0ba6ed70a30e34728379246aa4f77cdb1f34d7eea
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for 64-bit ARMv8 machines (signed)
+ The Linux kernel 4.19 and modules for use on 64-bit ARMv8 machines.
+ .
+ The kernel image and modules are signed for use with Secure Boot.
+

@@ -1,0 +1,30 @@
+Package: linux-image-4.19.0-6-rt-amd64
+Architecture: amd64
+Version: 4.19.67-2
+Built-Using: linux (= 4.19.67-2)
+Priority: optional
+Section: kernel
+Source: linux-signed-amd64 (4.19.67+2)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 263322
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook, grub-pc | grub-efi-amd64 | extlinux
+Conflicts: linux-image-4.19.0-6-rt-amd64-unsigned
+Breaks: initramfs-tools (<< 0.120+deb8u2), xserver-xorg-input-vmmouse (<< 1:13.0.99)
+Replaces: linux-image-4.19.0-6-rt-amd64-unsigned
+Filename: ./4.19.0-6/linux-image-4.19.0-6-rt-amd64_4.19.67-2_amd64.deb
+Size: 47960096
+MD5sum: b31bd9313060afb601fd6d987ada66c3
+SHA1: c07f07c31beb6babae3a9f184fa03def205db2b7
+SHA256: 90bfe84875301125f73e100f91470a7a0ef9d08c0bb969d6abc898fb48d5090d
+SHA512: 4e6648258df2418acda315596525043d6f22fc79e4faf3e92e13ec7e71d8816927b7429a9c1d0a7d95926699d77187b6b09e046452c25504f28f93611fd88f28
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for 64-bit PCs, PREEMPT_RT (signed)
+ The Linux kernel 4.19 and modules for use on PCs with AMD64, Intel 64 or
+ VIA Nano processors.
+ .
+ This kernel includes the PREEMPT_RT realtime patch set.
+ .
+ The kernel image and modules are signed for use with Secure Boot.
+

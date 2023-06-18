@@ -1,0 +1,22 @@
+Package: linux-image-4.19.0-6-5kc-malta
+Architecture: mips64el
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 213954
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook
+Breaks: initramfs-tools (<< 0.120+deb8u2)
+Filename: ./4.19.0-6/linux-image-4.19.0-6-5kc-malta_4.19.67-2_mips64el.deb
+Size: 36745460
+MD5sum: 12955496a094942a100eae828aa6d7bb
+SHA1: 016ba18bf255cbd089268fb9a3453b410b308362
+SHA256: 97c0ead4e3d8f397ef314bd412f7ed4d3b521589954805b170863ace53316432
+SHA512: 617d71c02a682346e51b9ebc7ddff5c65ed6ebd893380ae742cb92b4de1fc9c0588fd8d620000fc95b1e2a32be3fb6f30c59d83d0de335676773d63326ef332b
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for MIPS Malta (64-bit)
+ The Linux kernel 4.19 and modules for use on MIPS Malta boards (64-bit).
+
