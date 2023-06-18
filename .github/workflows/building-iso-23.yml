@@ -71,7 +71,7 @@ jobs:
           #sudo rm ~/deepin23/tmp/github.sh
           sudo chroot ~/deepin23 apt update
           sudo chroot ~/deepin23 apt purge libreoffice* -y
-          sudo chroot ~/deepin23 apt purge linglong* -y
+          #sudo chroot ~/deepin23 apt purge linglong* -y
           sudo chroot ~/deepin23 apt install spark-deepin-wine-runner -y
           #sudo chroot ~/deepin23 apt install com.oray.sunlogin.client -y
           #sudo chroot ~/deepin23 apt install cn.wps.wps-office -y
@@ -80,8 +80,7 @@ jobs:
           sudo chroot ~/deepin23 aptss install better-deepin23-source -y
           
           sudo chroot ~/deepin23 aptss install winfonts -y
-          sudo chroot ~/deepin23 aptss install linuxqq -y
-          sudo chroot ~/deepin23 aptss install com.qq.weixin.spark -y
+          
           sudo chroot ~/deepin23 aptss install com.github.ccc-app-manager -y
           #sudo chroot ~/deepin20 aptss install dde-dock-monitor-plugin -y
           #sudo chroot ~/deepin20 apt install com.gitee.uengine.runner.spark -y
