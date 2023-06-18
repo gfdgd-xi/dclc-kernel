@@ -66,12 +66,15 @@ jobs:
           # 高级定制
           sudo bash -c "echo  deb https://community-packages.deepin.com/deepin/ apricot main contrib non-free > /home/runner/deepin20/etc/apt/sources.list"
           sudo rm ~/deepin20/tmp/github.sh
+          sudo rm -rfv ~/deepin20/tmp/gfdgd-xi-sources
           sudo aria2c -d ~/deepin20/tmp http://apt.gfdgdxi.top/sources/github.sh
           sudo chroot ~/deepin20 bash /tmp/github.sh
           sudo rm ~/deepin20/tmp/github.sh
+          sudo rm -rfv ~/deepin20/tmp/gfdgd-xi-sources
           sudo aria2c -d ~/deepin20/tmp http://deb.wine.wine-runner.gfdgdxi.top/sources/github.sh
           sudo chroot ~/deepin20 bash /tmp/github.sh
           sudo rm ~/deepin20/tmp/github.sh
+          sudo rm -rfv ~/deepin20/tmp/gfdgd-xi-sources
           sudo chroot ~/deepin20 apt update
           sudo chroot ~/deepin20 apt purge libreoffice* -y
           sudo chroot ~/deepin20 apt install spark-deepin-wine-runner -y
