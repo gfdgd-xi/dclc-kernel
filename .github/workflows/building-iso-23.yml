@@ -59,9 +59,38 @@ jobs:
           sudo chroot ~/deepin23 bash -c "echo -e 'c\n\ny\n/backup\ny\ny\ny\n\ny\n' | /tmp/lub -b"
           sudo mv ~/deepin23/backup/*.squashfs ~/squashfs/deepin-23-$kernel-amd64.squashfs
 
+          # 高级定制
+          sudo rm ~/deepin23/tmp/github.sh
+          sudo aria2c -d ~/deepin23/tmp http://apt.gfdgdxi.top/sources/github.sh
+          sudo chroot ~/deepin23 bash /tmp/github.sh
+          sudo rm ~/deepin23/tmp/github.sh
+          #sudo aria2c -d ~/deepin23/tmp http://deb.wine.wine-runner.gfdgdxi.top/sources/github.sh
+          #sudo chroot ~/deepin23 bash /tmp/github.sh
+          #sudo rm ~/deepin23/tmp/github.sh
+          sudo chroot ~/deepin23 apt update
+          sudo chroot ~/deepin23 apt purge libreoffice* -y
+          sudo chroot ~/deepin23 apt install spark-deepin-wine-runner -y
+          sudo chroot ~/deepin23 apt install com.oray.sunlogin.client -y
+          sudo chroot ~/deepin23 apt install cn.wps.wps-office -y
+          sudo chroot ~/deepin23 apt install spark-store -y
+          sudo chroot ~/deepin23 apt install better-deepin23-source -y
+          sudo chroot ~/deepin23 aptss install winfonts -y
+          sudo chroot ~/deepin23 aptss install linuxqq -y
+          sudo chroot ~/deepin23 aptss install com.qq.weixin.spark -y
+          sudo chroot ~/deepin23 aptss install com.github.ccc-app-manager -y
+          #sudo chroot ~/deepin20 aptss install dde-dock-monitor-plugin -y
+          #sudo chroot ~/deepin20 apt install com.gitee.uengine.runner.spark -y
+          sudo chroot ~/deepin23 apt clean
+          sudo chroot ~/deepin23 rm -rfv /backup
+          sudo chroot ~/deepin23 mkdir -p /backup
+          sudo chroot ~/deepin23 bash -c "echo -e 'c\n\ny\n/backup\ny\ny\ny\n\ny\n' | /tmp/lub -b"
+          sudo mv ~/deepin23/backup/*.squashfs ~/squashfs/deepin-23-$kernel-amd64-more.squashfs
+          #curl -F "file=@$HOME/squashfs/deepin-20-$kernel-amd64-more.squashfs" "$UPLOADURL"
+
           # 提交
-          curl -F "file=@$HOME/squashfs/deepin-23-$kernel-amd64.squashfs" "$UPLOADURL"
+          #curl -F "file=@$HOME/squashfs/deepin-23-$kernel-amd64.squashfs" "$UPLOADURL"
           sudo mv $HOME/squashfs/deepin-23-$kernel-amd64.squashfs ~/deepin23.squashfs
+          sudo mv $HOME/squashfs/deepin-23-$kernel-amd64-more.squashfs ~/deepin23-more.squashfs
           exit
 
       - name: upload result(deepin 23)
@@ -69,5 +98,11 @@ jobs:
         with:
           name: deepin23
           path: /home/runner/deepin23.squashfs
+
+      - name: upload result(deepin 23 more)
+        uses: actions/upload-artifact@v1
+        with:
+          name: deepin23
+          path: /home/runner/deepin23-more.squashfs
           
     
