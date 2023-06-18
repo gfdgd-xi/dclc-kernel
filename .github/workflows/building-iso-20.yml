@@ -76,7 +76,7 @@ jobs:
           sudo chroot ~/deepin20 apt purge libreoffice* -y
           sudo chroot ~/deepin20 apt install spark-deepin-wine-runner -y
           sudo chroot ~/deepin20 apt install com.oray.sunlogin.client -y
-          sudo chroot ~/deepin20 apt install cn.wps.wps-office -y
+          #sudo chroot ~/deepin20 apt install cn.wps.wps-office -y
           sudo chroot ~/deepin20 apt install spark-store -y
           sudo chroot ~/deepin20 aptss ssupdate
           sudo chroot ~/deepin20 aptss install winfonts -y
