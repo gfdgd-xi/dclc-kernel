@@ -32,6 +32,7 @@ jobs:
           sudo mount ~/deepin23.iso /tmp/deepin23
           sudo unsquashfs /tmp/deepin23/live/filesystem.squashfs
           sudo mv squashfs-root ~/deepin23
+          sudo rm -rfv ~/deepin23.iso
           ## 定制镜像(Deepin23)
           sudo pardus-chroot ~/deepin23
           sudo chroot ~/deepin23 bash -c 'apt purge linux-image* linux-hea* -y' 
@@ -72,7 +73,7 @@ jobs:
           sudo chroot ~/deepin23 apt purge libreoffice* -y
           sudo chroot ~/deepin23 apt install spark-deepin-wine-runner -y
           #sudo chroot ~/deepin23 apt install com.oray.sunlogin.client -y
-          sudo chroot ~/deepin23 apt install cn.wps.wps-office -y
+          #sudo chroot ~/deepin23 apt install cn.wps.wps-office -y
           sudo chroot ~/deepin23 apt install spark-store -y
           sudo chroot ~/deepin23 apt install better-deepin23-source -y
           sudo chroot ~/deepin23 aptss install winfonts -y
@@ -92,7 +93,17 @@ jobs:
           #curl -F "file=@$HOME/squashfs/deepin-23-$kernel-amd64.squashfs" "$UPLOADURL"
           sudo mv $HOME/squashfs/deepin-23-$kernel-amd64.squashfs ~/deepin23.squashfs
           sudo mv $HOME/squashfs/deepin-23-$kernel-amd64-more.squashfs ~/deepin23-more.squashfs
-          exit
+          
+          sudo umount ~/deepin23/dev/pts
+          sudo umount ~/deepin23/dev/shm
+          sudo umount ~/deepin23/tmp
+          sudo umount ~/deepin23/dev
+          sudo umount ~/deepin23/run
+          sudo umount ~/deepin23/media
+          sudo umount ~/deepin23/sys/firmware/efi/efivars | true
+          sudo umount ~/deepin23/sys
+          sudo umount ~/deepin23/proc
+          sudo rm -rfv ~/deepin23
 
       - name: upload result(deepin 23)
         uses: actions/upload-artifact@v1

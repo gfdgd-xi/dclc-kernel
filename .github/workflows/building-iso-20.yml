@@ -34,6 +34,7 @@ jobs:
           sudo mount ~/deepin20.iso /tmp/deepin20
           sudo unsquashfs /tmp/deepin20/live/filesystem.squashfs
           sudo mv squashfs-root ~/deepin20
+          sudo rm -rfv ~/deepin20.iso
           ## 定制镜像(Deepin20)
           sudo pardus-chroot ~/deepin20
           sudo chroot ~/deepin20 bash -c 'apt purge linux-image* linux-hea* -y' 
@@ -92,7 +93,18 @@ jobs:
           # 提交
           sudo mv $HOME/squashfs/deepin-20-$kernel-amd64.squashfs ~/deepin20.squashfs
           sudo mv $HOME/squashfs/deepin-20-$kernel-amd64-more.squashfs ~/deepin20-more.squashfs
-          exit
+          
+          sudo umount ~/deepin20/dev/pts
+          sudo umount ~/deepin20/dev/shm
+          sudo umount ~/deepin20/tmp
+          sudo umount ~/deepin20/dev
+          sudo umount ~/deepin20/run
+          sudo umount ~/deepin20/media
+          sudo umount ~/deepin20/sys/firmware/efi/efivars | true
+          sudo umount ~/deepin20/sys
+          sudo umount ~/deepin20/proc
+          sudo rm -rfv ~/deepin20
+          
       - name: upload result(deepin 20)
         uses: actions/upload-artifact@v1
         with:
