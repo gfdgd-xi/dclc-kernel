@@ -46,6 +46,9 @@ jobs:
           sudo chroot ~/deepin23 bash -c "echo deb http://kernel.dclc.gfdgdxi.top/ ./ > /etc/apt/sources.list.d/gfdgdxi-kernel-list.list"
           sudo chroot ~/deepin23 apt update
           sudo chroot ~/deepin23 apt clean
+          sudo mv ~/deepin23/usr/share/wallpapers/deepin/desktop.jpg ~/deepin23/usr/share/wallpapers/deepin/desktop-default.jpg
+          sudo aria2c https://raw.githubusercontent.com/gfdgd-xi/dclc-kernel/main/wallpaper.jpg -x 16 -s 16 -d ~/deepin23/usr/share/wallpapers/deepin -o dclc-new-kernel-wallpaper.jpg
+          sudo aria2c https://raw.githubusercontent.com/gfdgd-xi/dclc-kernel/main/wallpaper.jpg -x 16 -s 16 -d ~/deepin23/usr/share/wallpapers/deepin -o desktop.jpg
           sudo bash -c "echo Deepin Community Live CD Install 版（Deepin23，$kernel 内核版本） > /home/runner/deepin23/dclc-info.txt"
           sudo bash -c "echo 镜像构建时间：`date`，内核：$kernel >> /home/runner/deepin23/dclc-info.txt"
           sudo bash -c "echo By gfdgd xi >> /home/runner/deepin23/dclc-info.txt"

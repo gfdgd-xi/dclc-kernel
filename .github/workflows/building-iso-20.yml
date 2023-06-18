@@ -23,7 +23,7 @@ jobs:
           # 获取镜像
           wget https://github.com/gfdgd-xi/dclc-kernel/raw/main/kernel.txt
           kernel=`cat kernel.txt`
-          #deepin15=https://cdimage.deepin.com/releases-archive/15.11/deepin-15.11-amd64.iso
+          
           deepin20=https://cdimage.deepin.com/releases/20.9/deepin-desktop-community-20.9-amd64.iso
           #deepin23=https://cdimage.deepin.com/releases/23-Beta/deepin-desktop-community-23-Beta-amd64.iso
 
@@ -48,6 +48,9 @@ jobs:
           sudo chroot ~/deepin20 bash -c "echo deb http://kernel.dclc.gfdgdxi.top/ ./ > /etc/apt/sources.list.d/gfdgdxi-kernel-list.list"
           sudo chroot ~/deepin20 apt update
           sudo chroot ~/deepin20 apt clean
+          sudo mv ~/deepin20/usr/share/wallpapers/deepin/desktop.jpg ~/deepin20/usr/share/wallpapers/deepin/desktop-default.jpg
+          sudo aria2c https://raw.githubusercontent.com/gfdgd-xi/dclc-kernel/main/wallpaper.jpg -x 16 -s 16 -d ~/deepin20/usr/share/wallpapers/deepin -o dclc-new-kernel-wallpaper.jpg
+          sudo aria2c https://raw.githubusercontent.com/gfdgd-xi/dclc-kernel/main/wallpaper.jpg -x 16 -s 16 -d ~/deepin20/usr/share/wallpapers/deepin -o desktop.jpg
           sudo bash -c "echo Deepin Community Live CD Install 版（Deepin20，$kernel 内核版本） > /home/runner/deepin20/dclc-info.txt"
           sudo bash -c "echo 镜像构建时间：`date`，内核：$kernel >> /home/runner/deepin20/dclc-info.txt"
           sudo bash -c "echo By gfdgd xi >> /home/runner/deepin20/dclc-info.txt"
