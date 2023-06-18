@@ -1,3 +1,63 @@
+Package: linux-libc-dev
+Architecture: amd64
+Version: 6.3.8-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-upstream
+Maintainer: root <root@xxx-PC>
+Installed-Size: 6651
+Provides: linux-kernel-headers
+Filename: ./6.3.8-only-for-intel/linux-libc-dev_6.3.8-1_amd64.deb
+Size: 1283272
+MD5sum: 1a0b5da5244eeba9e833824b3ae8dd9d
+SHA1: c4582bce09ba4729df34f95817d272de3d8f45a6
+SHA256: ce581ba4a68bda363e229decd5fd1c7987a0e9423251f15bff1945572d95386d
+SHA512: e31d84eb69dcb535a7000c0cd9042fac3de00ef289f2efa5e120434db09b2003c3d90eecb861df5311519f56ed0282ce6f323bd95c320d3a34f89bb63c7cbb4c
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-image-6.3.8xxtxtop
+Architecture: amd64
+Version: 6.3.8-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@xxx-PC>
+Installed-Size: 469123
+Filename: ./6.3.8-only-for-intel/linux-image-6.3.8xxtxtop_6.3.8-1_amd64.deb
+Size: 86510848
+MD5sum: 084f31292260c176145baf50a50aed5e
+SHA1: 2ffb69956e01938bfbf4c94a6f45e55946dca2a2
+SHA256: 326a33ecd113d220715bd78fc30aab918e635ee85dd3c274a717073d3092da6b
+SHA512: 84e1111d508ae04cd1577b801deaecdada0ec76d2ff19d19731beb95a4ed077cbfba207d0f3abaa2890e3a60d3a5dc4fbc99ae584739a45c0b74da698d20dcb0
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.3.8xxtxtop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.3.8xxtxtop.
+
+Package: linux-headers-6.3.8xxtxtop
+Architecture: amd64
+Version: 6.3.8-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@xxx-PC>
+Installed-Size: 53745
+Filename: ./6.3.8-only-for-intel/linux-headers-6.3.8xxtxtop_6.3.8-1_amd64.deb
+Size: 9144160
+MD5sum: 858bed565622a45d6db351b263a6735b
+SHA1: b92e9ecd1d8939a406af2b5eb15e22f36300d836
+SHA256: d06dd3aafceb7f4c8aaede21d4d1a69db42e780c8945fbed2a782013a0b9b143
+SHA512: c5b93818cda171867dc449a4b2f0aa5770faf65a6294af08b64507b89f5f50dc4097c5608b76a2ff17372eae7f254ead86fafd0dbb5112b8fed8a145fdca3f93
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.3.8xxtxtop on amd64
+ This package provides kernel header files for 6.3.8xxtxtop on amd64
+ .
+ This is useful for people who need to build external modules
+
 Package: linux-image-6.4.0-rc5
 Architecture: amd64
 Version: 6.4.0-rc5-1
@@ -475,6 +535,66 @@ Homepage: https://www.kernel.org/
 Description: Linux 4.19 for 64-bit PCs
  The Linux kernel 4.19 and modules for use on PCs with AMD64, Intel 64 or
  VIA Nano processors.
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 6.3.7-2
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-upstream
+Maintainer: root <root@xxx-PC>
+Installed-Size: 6651
+Provides: linux-kernel-headers
+Filename: ./6.3.7-only-for-intel/linux-libc-dev_6.3.7-2_amd64.deb
+Size: 1283216
+MD5sum: 70275712a88e5a43925f02c2165790e8
+SHA1: cb0d87216116e4d4192079bc0224e228a0c528bc
+SHA256: 9954ed05b957012bbcdf4e907a40739198b6ff5f9f6a49a3235f1d7a8e41a6c8
+SHA512: 7a276de917b23227e2b02e9488c0e0b3715ed5fb4f3a1015b7bef449f733be72dad568e50ab0961233de4196091dce0ae283fccb3cb4d54e3ca7a71133895597
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-image-6.3.7xxtxtop
+Architecture: amd64
+Version: 6.3.7-2
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@xxx-PC>
+Installed-Size: 469093
+Filename: ./6.3.7-only-for-intel/linux-image-6.3.7xxtxtop_6.3.7-2_amd64.deb
+Size: 86398292
+MD5sum: b5753214e5e04d89dd2f49580c251912
+SHA1: 79998d8ae337dd6cd40d765bf713ae6dbdb40e71
+SHA256: c7a6837da6c2cae9d8b89092078bf56f329346e1b6fc515028893ff1731d0985
+SHA512: a8fe6cd5104bd3c9bd56401e6fb48b6af813782fa94b261e182e4cc1c3ba9c1e5ecef6ff5fe68cdb11e9a15b553de3b1eb563527344441bfde06112dbfb0f24d
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.3.7xxtxtop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.3.7xxtxtop.
+
+Package: linux-headers-6.3.7xxtxtop
+Architecture: amd64
+Version: 6.3.7-2
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@xxx-PC>
+Installed-Size: 53743
+Filename: ./6.3.7-only-for-intel/linux-headers-6.3.7xxtxtop_6.3.7-2_amd64.deb
+Size: 9144100
+MD5sum: ea653053c85c76d147143c486934c8c9
+SHA1: 319cb8f0fdc5579b6c2f1509ab1caae578b090c5
+SHA256: 99c375fedf66044429dc94dffd89c27c58f2bbf81d1344c5f4a3ab95c584b659
+SHA512: 52d1f3da34b7ece051d2e2a69aec5c491d43810582439819a6e1267bfc3b5d3cc8d8eca425b157658be09bf52b0efff3116bd0e51cfb9b54220ff80f21f7b58f
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.3.7xxtxtop on amd64
+ This package provides kernel header files for 6.3.7xxtxtop on amd64
+ .
+ This is useful for people who need to build external modules
 
 Package: linux-image-6.4.0-rc4
 Architecture: amd64
