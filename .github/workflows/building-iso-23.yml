@@ -60,6 +60,7 @@ jobs:
           sudo mv ~/deepin23/backup/*.squashfs ~/squashfs/deepin-23-$kernel-amd64.squashfs
 
           # 高级定制
+          sudo bash -c "echo  deb https://community-packages.deepin.com/beige/ beige main commercial community > /home/runner/deepin23/etc/apt/sources.list"
           sudo rm ~/deepin23/tmp/github.sh
           sudo aria2c -d ~/deepin23/tmp http://apt.gfdgdxi.top/sources/github.sh
           sudo chroot ~/deepin23 bash /tmp/github.sh

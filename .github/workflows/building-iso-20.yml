@@ -63,6 +63,7 @@ jobs:
           #curl -F "file=@$HOME/squashfs/deepin-20-$kernel-amd64.squashfs" "$UPLOADURL"
 
           # 高级定制
+          sudo bash -c "echo  deb https://community-packages.deepin.com/deepin/ apricot main contrib non-free > /home/runner/deepin20/etc/apt/sources.list"
           sudo rm ~/deepin20/tmp/github.sh
           sudo aria2c -d ~/deepin20/tmp http://apt.gfdgdxi.top/sources/github.sh
           sudo chroot ~/deepin20 bash /tmp/github.sh
