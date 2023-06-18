@@ -54,9 +54,9 @@ jobs:
           sudo mv ~/deepin15/usr/share/wallpapers/deepin/desktop.jpg ~/deepin15/usr/share/wallpapers/deepin/desktop-default.jpg
           sudo aria2c https://raw.githubusercontent.com/gfdgd-xi/dclc-kernel/main/wallpaper.jpg -x 16 -s 16 -d ~/deepin15/usr/share/wallpapers/deepin -o dclc-new-kernel-wallpaper.jpg
           sudo aria2c https://raw.githubusercontent.com/gfdgd-xi/dclc-kernel/main/wallpaper.jpg -x 16 -s 16 -d ~/deepin15/usr/share/wallpapers/deepin -o desktop.jpg
-          sudo bash -c "echo Deepin Community Live CD Install 版（Deepin15，$kernel 内核版本） > /home/runner/deepin15/dclc-info.txt"
-          sudo bash -c "echo 镜像构建时间：`date`，内核：$kernel >> /home/runner/deepin15/dclc-info.txt"
-          sudo bash -c "echo By gfdgd xi >> /home/runner/deepin15/dclc-info.txt"
+          sudo bash -c "echo Deepin Community Live CD Install 版（Deepin15，$kernel 内核版本） > /home/runner/deepin15/etc/dclc-info.txt"
+          sudo bash -c "echo 镜像构建时间：`date`，内核：$kernel >> /home/runner/deepin15/etc/dclc-info.txt"
+          sudo bash -c "echo By gfdgd xi >> /home/runner/deepin15/etc/dclc-info.txt"
           # 拷贝定制过的 lub
           sudo aria2c -d ~/deepin15/tmp http://github.com/gfdgd-xi/dclc-kernel/raw/main/lub
           sudo chmod 777 ~/deepin15/tmp/lub
