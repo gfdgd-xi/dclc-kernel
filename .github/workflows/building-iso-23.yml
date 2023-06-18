@@ -95,15 +95,15 @@ jobs:
           sudo mv $HOME/squashfs/deepin-23-$kernel-amd64.squashfs ~/deepin23.squashfs
           sudo mv $HOME/squashfs/deepin-23-$kernel-amd64-more.squashfs ~/deepin23-more.squashfs
           
-          sudo umount ~/deepin23/dev/pts
-          sudo umount ~/deepin23/dev/shm
-          sudo umount ~/deepin23/tmp
-          sudo umount ~/deepin23/dev
-          sudo umount ~/deepin23/run
-          sudo umount ~/deepin23/media
+          sudo umount ~/deepin23/dev/pts | true
+          sudo umount ~/deepin23/dev/shm | true
+          sudo umount ~/deepin23/tmp | true
+          sudo umount ~/deepin23/dev | true
+          sudo umount ~/deepin23/run | true
+          sudo umount ~/deepin23/media | true
           sudo umount ~/deepin23/sys/firmware/efi/efivars | true
-          sudo umount ~/deepin23/sys
-          sudo umount ~/deepin23/proc
+          sudo umount ~/deepin23/sys | true
+          sudo umount ~/deepin23/proc | true
           sudo rm -rfv ~/deepin23
 
       - name: upload result(deepin 23)

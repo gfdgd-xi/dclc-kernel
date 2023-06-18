@@ -94,15 +94,15 @@ jobs:
           sudo mv $HOME/squashfs/deepin-20-$kernel-amd64.squashfs ~/deepin20.squashfs
           sudo mv $HOME/squashfs/deepin-20-$kernel-amd64-more.squashfs ~/deepin20-more.squashfs
           
-          sudo umount ~/deepin20/dev/pts
-          sudo umount ~/deepin20/dev/shm
-          sudo umount ~/deepin20/tmp
-          sudo umount ~/deepin20/dev
-          sudo umount ~/deepin20/run
-          sudo umount ~/deepin20/media
+          sudo umount ~/deepin20/dev/pts | true
+          sudo umount ~/deepin20/dev/shm | true
+          sudo umount ~/deepin20/tmp | true
+          sudo umount ~/deepin20/dev | true
+          sudo umount ~/deepin20/run | true
+          sudo umount ~/deepin20/media | true
           sudo umount ~/deepin20/sys/firmware/efi/efivars | true
-          sudo umount ~/deepin20/sys
-          sudo umount ~/deepin20/proc
+          sudo umount ~/deepin20/sys | true
+          sudo umount ~/deepin20/proc | true
           sudo rm -rfv ~/deepin20
           
       - name: upload result(deepin 20)
