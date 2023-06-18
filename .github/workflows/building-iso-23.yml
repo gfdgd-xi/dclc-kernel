@@ -21,7 +21,8 @@ jobs:
           mkdir ~/squashfs -p
 
           # 获取镜像
-          kernel=`curl https://github.com/gfdgd-xi/dclc-kernel/raw/main/kernel.txt`
+          wget https://github.com/gfdgd-xi/dclc-kernel/raw/main/kernel.txt
+          kernel=`cat kernel.txt`
           deepin23=https://cdimage.deepin.com/releases/23-Beta/deepin-desktop-community-23-Beta-amd64.iso
 
           
