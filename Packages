@@ -1,3 +1,63 @@
+Package: linux-image-6.4.0-rc5
+Architecture: amd64
+Version: 6.4.0-rc5-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@xxx-PC>
+Installed-Size: 485219
+Filename: ./6.4.0-rc5/linux-image-6.4.0-rc5_6.4.0-rc5-1_amd64.deb
+Size: 89065160
+MD5sum: 6a1f32c66020e200c76cbbd0192d2bc3
+SHA1: f7ca116e67f2fe60b11dcf95d77ecc45b3253b64
+SHA256: 51dc6ffbbc5a8e1934d147c4d5e4652c4710e2c824e2b0b12c2213cfcc35d2ac
+SHA512: 13c12519200f05bb7d3daf05f1f2c534075cf9442027fc37d71b4a3903ee25e05a12792272a2edbdbca7226757bf623064ce1629a531add49c9b20898aea3513
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.4.0-rc5
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.4.0-rc5.
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 6.4.0-rc5-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-upstream
+Maintainer: root <root@xxx-PC>
+Installed-Size: 6703
+Provides: linux-kernel-headers
+Filename: ./6.4.0-rc5/linux-libc-dev_6.4.0-rc5-1_amd64.deb
+Size: 1293420
+MD5sum: 1b0fda11db06121dca8144f742e0814d
+SHA1: 434574983eec2a4a4c571678c721f43005a297a5
+SHA256: 2da2b35415f9263c21de9c3997d9d470716ad8cd84aee365a41751d077ee1385
+SHA512: 3a5eaad00c4534c7aa4426fc1ffd3db5590b415c667f6ee5e1161d96cc9ace8396d16511d851ca24a3645804d766319b3681f7fa89f2b1b506adfd7407c4d90b
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-headers-6.4.0-rc5
+Architecture: amd64
+Version: 6.4.0-rc5-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@xxx-PC>
+Installed-Size: 53790
+Filename: ./6.4.0-rc5/linux-headers-6.4.0-rc5_6.4.0-rc5-1_amd64.deb
+Size: 9165032
+MD5sum: e3c8fa0656ac82333046f6c4b3603257
+SHA1: 9cebf43f877943db2c07a596d7800dcb18ab3292
+SHA256: 3e678f52572a975c668cab9887c60b23d7c0ef7480288b0c856ffe99f73a7fcf
+SHA512: f301bc861c1f298fb15105d83c4822835a5dce226a6f980f35628d9f2372faa351828e47fcf91c64b51490ed2bf4ae9b964c6868583dee898e5b732b65ef54ca
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.4.0-rc5 on amd64
+ This package provides kernel header files for 6.4.0-rc5 on amd64
+ .
+ This is useful for people who need to build external modules
+
 Package: linux-image-6.3.6
 Architecture: amd64
 Version: 6.3.6-4
@@ -76,6 +136,27 @@ Homepage: http://www.deepin.com
 Description: Header files for Linux amd64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel amd64 configuration.
+
+Package: linux-kernel-dclc-gfdgdxi
+Architecture: amd64
+Version: 6.4.0-rc5-1
+Priority: optional
+Section: utils
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-6.4.0-rc5, linux-image-6.4.0-rc5
+Filename: ./head/linux-kernel-dclc-gfdgdxi_6.4.0-rc5-1_amd64.deb
+Size: 2004
+MD5sum: e67983075c9e905346b7f2dc771466ea
+SHA1: 8b23904babf543c8db50e3b747a0b5b8067da39e
+SHA256: 72e91f67c59d4de049052804d54f3b18050add254b3f3f2b50bad7c9a1c71a54
+SHA512: 412dabcae6a1851efc3a640febf7ff76b525c73b3fd7c6de115f5ca0f22ff4a2e5ec2d34aea68ed77b338f27c819a4f52a7ac6ffeb809aeb55b9c788da21dbed
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Severity: serious
+Certainty: possible
+Check: binaries
+Type: binary, udeb
 
 Package: linux-image-deepin-server-amd64
 Architecture: amd64
