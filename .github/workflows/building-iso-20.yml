@@ -60,18 +60,48 @@ jobs:
           sudo chroot ~/deepin20 mkdir -p /backup
           sudo chroot ~/deepin20 bash -c "echo -e 'c\n\ny\n/backup\ny\ny\ny\n\ny\n' | /tmp/lub -b"
           sudo mv ~/deepin20/backup/*.squashfs ~/squashfs/deepin-20-$kernel-amd64.squashfs
-          curl -F "file=@$HOME/squashfs/deepin-20-$kernel-amd64.squashfs" "$UPLOADURL"
+          #curl -F "file=@$HOME/squashfs/deepin-20-$kernel-amd64.squashfs" "$UPLOADURL"
 
-
-
+          # 高级定制
+          sudo rm ~/deepin20/tmp/github.sh
+          sudo aria2c -d ~/deepin20/tmp http://apt.gfdgdxi.top/sources/github.sh
+          sudo chroot ~/deepin20 bash /tmp/github.sh
+          sudo rm ~/deepin20/tmp/github.sh
+          sudo aria2c -d ~/deepin20/tmp http://deb.wine.wine-runner.gfdgdxi.top/sources/github.sh
+          sudo chroot ~/deepin20 bash /tmp/github.sh
+          sudo rm ~/deepin20/tmp/github.sh
+          sudo chroot ~/deepin20 apt update
+          sudo chroot ~/deepin20 apt purge libreoffice* -y
+          sudo chroot ~/deepin20 apt install spark-deepin-wine-runner -y
+          sudo chroot ~/deepin20 apt install com.oray.sunlogin.client -y
+          sudo chroot ~/deepin20 apt install cn.wps.wps-office -y
+          sudo chroot ~/deepin20 apt install spark-store -y
+          sudo chroot ~/deepin20 aptss install winfonts -y
+          sudo chroot ~/deepin20 aptss install linuxqq -y
+          sudo chroot ~/deepin20 aptss install com.qq.weixin.spark -y
+          sudo chroot ~/deepin20 aptss install com.github.ccc-app-manager -y
+          sudo chroot ~/deepin20 aptss install dde-dock-monitor-plugin -y
+          #sudo chroot ~/deepin20 apt install com.gitee.uengine.runner.spark -y
+          sudo chroot ~/deepin20 apt clean
+          sudo chroot ~/deepin20 rm -rfv /backup
+          sudo chroot ~/deepin20 mkdir -p /backup
+          sudo chroot ~/deepin20 bash -c "echo -e 'c\n\ny\n/backup\ny\ny\ny\n\ny\n' | /tmp/lub -b"
+          sudo mv ~/deepin20/backup/*.squashfs ~/squashfs/deepin-20-$kernel-amd64-more.squashfs
+          #curl -F "file=@$HOME/squashfs/deepin-20-$kernel-amd64-more.squashfs" "$UPLOADURL"
           # 提交
           sudo mv $HOME/squashfs/deepin-20-$kernel-amd64.squashfs ~/deepin20.squashfs
+          sudo mv $HOME/squashfs/deepin-20-$kernel-amd64-more.squashfs ~/deepin20-more.squashfs
           exit
       - name: upload result(deepin 20)
         uses: actions/upload-artifact@v1
         with:
           name: deepin20
           path: /home/runner/deepin20.squashfs
+      - name: upload result(deepin 20 more)
+        uses: actions/upload-artifact@v1
+        with:
+          name: deepin20
+          path: /home/runner/deepin20-more.squashfs
 
           
     
