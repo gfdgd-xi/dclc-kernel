@@ -71,6 +71,7 @@ jobs:
           #sudo rm ~/deepin23/tmp/github.sh
           sudo chroot ~/deepin23 apt update
           sudo chroot ~/deepin23 apt purge libreoffice* -y
+          sudo chroot ~/deepin23 apt purge linglong* -y
           sudo chroot ~/deepin23 apt install spark-deepin-wine-runner -y
           #sudo chroot ~/deepin23 apt install com.oray.sunlogin.client -y
           #sudo chroot ~/deepin23 apt install cn.wps.wps-office -y
