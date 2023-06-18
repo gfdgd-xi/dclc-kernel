@@ -104,7 +104,7 @@ jobs:
           sudo umount ~/deepin20/sys/firmware/efi/efivars | true
           sudo umount ~/deepin20/sys | true
           sudo umount ~/deepin20/proc | true
-          sudo rm -rfv ~/deepin20
+          sudo rm -rfv ~/deepin20 | true
           
       - name: upload result(deepin 20)
         uses: actions/upload-artifact@v1
