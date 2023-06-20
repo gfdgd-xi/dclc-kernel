@@ -157,6 +157,45 @@ Description: Linux kernel headers for 6.3.6 on amd64
  .
  This is useful for people who need to build external modules
 
+Package: linux-headers-6.3.8-amd64-desktop
+Architecture: amd64
+Version: 6.3.8-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@fv-az351-687>
+Installed-Size: 53651
+Filename: ./6.3.8/linux-headers-6.3.8-amd64-desktop_6.3.8-1_amd64.deb
+Size: 9432944
+MD5sum: 9cc755ed4fbc4818e38f0185b2b32350
+SHA1: ef627ce73fd8a5064830c13ea896cc05dc17f352
+SHA256: 510d01ff3471f76f133aee546fb6431de85980daeb2613023ffb14385dc559c1
+SHA512: ce4e757e472f813fe53e94a7e628a136fbda8520889da69efb3d4f044dcdd72d52693da26e798e3bf7bf887985c7009c0363fe1e236d25df9e9281f0a1144b7b
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.3.8-amd64-desktop on amd64
+ This package provides kernel header files for 6.3.8-amd64-desktop on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-6.3.8-amd64-desktop
+Architecture: amd64
+Version: 6.3.8-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@fv-az351-687>
+Installed-Size: 396628
+Filename: ./6.3.8/linux-image-6.3.8-amd64-desktop_6.3.8-1_amd64.deb
+Size: 85632234
+MD5sum: a34c1dc03e5a33246e9fbb14f94e3693
+SHA1: e54e2cdd784b90da407ad7dbc8ac3a6b94abf8c5
+SHA256: ce18b2c7f676452c6147a59a52bfc0964083f8d3318c06e5d9e770de2a6da4be
+SHA512: 0df8dec62a468ca8ae60bdd03625cf74bf273f6b5d8371426438fb647efd200f40ae935df646fc130eec59077798ad784d7dcaf1965e8fc15eeab4e8442195eb
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.3.8-amd64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.3.8-amd64-desktop.
+
 Package: linux-headers-deepin-server-amd64
 Architecture: amd64
 Version: 4.19.67-11eagle
@@ -236,27 +275,6 @@ Description: Linux for Octeon (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  Cavium Networks Octeon.
 
-Package: linux-kernel-dclc-gfdgdxi
-Architecture: amd64
-Version: 6.4.0-rc5-1
-Priority: optional
-Section: utils
-Maintainer: gfdgd xi <3025613752@qq.com>
-Installed-Size: 0
-Depends: linux-headers-6.4.0-rc5, linux-image-6.4.0-rc5
-Filename: ./head/linux-kernel-dclc-gfdgdxi_6.4.0-rc5-1_amd64.deb
-Size: 2004
-MD5sum: e67983075c9e905346b7f2dc771466ea
-SHA1: 8b23904babf543c8db50e3b747a0b5b8067da39e
-SHA256: 72e91f67c59d4de049052804d54f3b18050add254b3f3f2b50bad7c9a1c71a54
-SHA512: 412dabcae6a1851efc3a640febf7ff76b525c73b3fd7c6de115f5ca0f22ff4a2e5ec2d34aea68ed77b338f27c819a4f52a7ac6ffeb809aeb55b9c788da21dbed
-Homepage: https://github.com/gfdgd-xi/dclc-kernel
-Description: 内核（虚包）
-Severity: serious
-Certainty: possible
-Check: binaries
-Type: binary, udeb
-
 Package: linux-headers-loongson-3
 Architecture: mips64el
 Version: 4.19+105+deb10u1
@@ -318,6 +336,27 @@ Description: Linux for 64-bit PCs (meta-package)
  .
  This kernel also runs on a Xen hypervisor.  It supports both privileged
  (dom0) and unprivileged (domU) operation.
+
+Package: linux-kernel-dclc-gfdgdxi
+Architecture: amd64
+Version: 6.3.8-1
+Priority: optional
+Section: utils
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-6.3.8-amd64-desktop, linux-image-6.3.8-amd64-desktop
+Filename: ./head/linux-kernel-dclc-gfdgdxi_6.3.8_amd64.deb
+Size: 2016
+MD5sum: d8a1b6412a1ebf037fd477fdace559de
+SHA1: d8586f790f3f2e4a647f973a38af5525670d9cac
+SHA256: 535a1adff0857157bd8ea5ebcf10953cfc8b73d49e2e6b94f9ff1e9de6f9b885
+SHA512: ec39ced702ea1b25fe6aa2cc66ed75ba1d2059d7e5f5a00ce51dcadb88b1cfdc50763fc9d65889eeba8740953c28fcfc2ecca444cec94985102af6d315a4fc5b
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Severity: serious
+Certainty: possible
+Check: binaries
+Type: binary, udeb
 
 Package: linux-headers-octeon
 Architecture: mips64el
@@ -565,27 +604,6 @@ Description: Linux for 64-bit PCs (meta-package)
  .
  This kernel also runs on a Xen hypervisor.  It supports both privileged
  (dom0) and unprivileged (domU) operation.
-
-Package: linux-kernel-dclc-gfdgdxi
-Architecture: amd64
-Version: 6.4.0-rc4-1
-Priority: optional
-Section: utils
-Maintainer: gfdgd xi <3025613752@qq.com>
-Installed-Size: 0
-Depends: linux-headers-6.4.0-rc4, linux-image-6.4.0-rc4
-Filename: ./head/linux-kernel-dclc-gfdgdxi_6.4.0-rc4-1_amd64.deb
-Size: 2004
-MD5sum: 670dd91fb6843f6a7afb00d9aa77e1c9
-SHA1: 8fa83905f0a115cfa52299b62b40c087071f5687
-SHA256: 7e0b73232212af4a8bbfb814f4528f29fed1c76aabf56d8615727eb5a4cda33e
-SHA512: 324ff3b90b8b570f066cbc828a4f32a28254c6a6c3809e9d43b83eab93c9e274591c31c88343958361260a1730f69fca17e51b0ea7dea8836aa2014e1c8a8ce3
-Homepage: https://github.com/gfdgd-xi/dclc-kernel
-Description: 内核（虚包）
-Severity: serious
-Certainty: possible
-Check: binaries
-Type: binary, udeb
 
 Package: linux-headers-5.17.3-amd64-desktop
 Architecture: amd64
