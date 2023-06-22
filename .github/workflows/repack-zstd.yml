@@ -16,6 +16,8 @@ jobs:
           git clone https://gfdgd-xi:$PASSWORD@github.com/gfdgd-xi/dclc-kernel
           cd dclc-kernel
           bash ./repack-zstd --scan .
+          git config --global user.email 3025613752@qq.com
+          git config --global user.name gfdgd-xi
           git add .
           git commit -m 转换包格式
           git push
