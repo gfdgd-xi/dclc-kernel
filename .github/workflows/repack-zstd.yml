@@ -1,12 +1,12 @@
 name: Repack ZSTD
-run-name: ${{ github.actor }} Building Kernel ISO Package (deepin 20)🚀
+run-name: ${{ github.actor }} Repack ZSTD (deepin 20)🚀
 on:
   workflow_dispatch:
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Building ISO
+      - name: Repack
         env: 
           GUSER: ${{ secrets.GUSER }}
           PASSWORD: ${{ secrets.PASSWORD }}
