@@ -50,7 +50,7 @@ def Dir(path: str):
     Write(path)
     for i in os.listdir(path):
         print(f"{path}/{i}")
-        if os.path.isdir(f"{path}/{i}") and i != ".git" and i != ".github":
+        if os.path.isdir(f"{path}/{i}") and i != ".git" and i != ".github" and i != "deb":
             Dir(f"{path}/{i}")
 Dir(".")
 print("构建完成！")

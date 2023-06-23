@@ -16,6 +16,9 @@ sudo apt install linux-kernel-dclc-gfdgdxi
 
 ![图片.png](https://storage.deepin.org/thread/202306181811355292_图片.png)
 
+## 如何提交 DEB（PR）
+需要在仓库根目录创建以内核版本号为文件名的文件夹，然后修改 `kernel.txt` 里的内容为内核版本号（不能有换行符，包括行尾）  
+最后再修改仓库的 `head/deb/DEBIAN/control` 文件，修改 `Version:` 和 `Depends:` 字段为内核版本号和内核 deb 包包名  
 
 ## 鸣谢名单
 ### 提供内核
