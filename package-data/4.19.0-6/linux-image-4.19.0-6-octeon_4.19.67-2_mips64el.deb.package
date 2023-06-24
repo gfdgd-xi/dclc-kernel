@@ -1,0 +1,22 @@
+Package: linux-image-4.19.0-6-octeon
+Architecture: mips64el
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 188968
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook
+Breaks: initramfs-tools (<< 0.120+deb8u2)
+Filename: ./4.19.0-6/linux-image-4.19.0-6-octeon_4.19.67-2_mips64el.deb
+Size: 32917688
+MD5sum: bac47d1a61c25431ab34d40b908a8b3c
+SHA1: 408a5a3b0db26b448b7ee193427850edcc6e9c5f
+SHA256: a5e29f4779bd9da3ccc5edbac905589144e147ae7e557b9e73d2625010e6c3f3
+SHA512: 08e85262b00428a24d943daeba334144e60be7748f6246f1c0279f4589c418c55f231be11a109491dce18edab9f751cca99ef88e76fa34f7c56d97c23a292f3b
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for Octeon
+ The Linux kernel 4.19 and modules for use on Cavium Networks Octeon.
+

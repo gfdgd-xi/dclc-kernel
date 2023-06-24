@@ -1,0 +1,20 @@
+Package: linux-image-5kc-malta
+Architecture: mips64el
+Version: 4.19+105+deb10u1
+Priority: optional
+Section: kernel
+Source: linux-latest (105+deb10u1)
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 17
+Provides: linux-latest-modules-4.19.0-6-5kc-malta
+Depends: linux-image-4.19.0-6-5kc-malta
+Filename: ./head/linux-image-5kc-malta_4.19+105+deb10u1_mips64el.deb
+Size: 8064
+MD5sum: 09e154c10433a974adce77566955de9c
+SHA1: 2433132f4bbbfb0c5c5a00ce8579884804b33653
+SHA256: ca850d1de8be81b01f3426bba19685e00925640ddefcf92dac689c82fbb656a0
+SHA512: d1c2e4b564972bd51a17efaa4235a29be381973851498083a2aee7b99a2ed985c978234c560c8600ad485b3e6e249b54864107f68dbf13c6b3aab30c93684f9f
+Description: Linux for MIPS Malta (64-bit) (meta-package)
+ This package depends on the latest Linux kernel and modules for use on
+ MIPS Malta boards (64-bit).
+

@@ -1,0 +1,24 @@
+Package: linux-headers-4.19.0-6-arm64
+Architecture: arm64
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 4422
+Depends: linux-headers-4.19.0-6-common (= 4.19.67-2), linux-kbuild-4.19 (>= 4.19.67-2), gcc-8
+Filename: ./4.19.0-6/linux-headers-4.19.0-6-arm64_4.19.67-2_arm64.deb
+Size: 753348
+MD5sum: 30f3998dba669ba459ae6eeb0fce77a4
+SHA1: 4365f35e954c5b690d1be892bcb130ee664e07f8
+SHA256: 66ce1b092918d28064ad0f61071ba2bc1c33a5dbde497bda601b9bd061589512
+SHA512: 4cf73a21ddc54fa0a089abfc5f25d679f6ccae9452aa1ead5c69ca8d2851f12aa9b33ea7bde823954f9965ac07737c7d70e0df71f5862c9a343397a535274c6e
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 4.19.0-6-arm64
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.19.0-6-arm64, generally used for building out-of-tree
+ kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.19.0-6-arm64, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.19.0-6-arm64 package.
+

@@ -1,0 +1,23 @@
+Package: linux-image-4.19.0-6-loongson-3
+Architecture: mips64el
+Version: 4.19.67-2
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 200833
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-4.19, debian-kernel-handbook
+Breaks: initramfs-tools (<< 0.120+deb8u2)
+Filename: ./4.19.0-6/linux-image-4.19.0-6-loongson-3_4.19.67-2_mips64el.deb
+Size: 34772020
+MD5sum: dae8038f2af6d6b9d43dc36776b1bde8
+SHA1: c3da6150e5664d8f0ff776e8c8455d66be6baebe
+SHA256: b16cedcf751849f80371dc46ce5d5f234a44332407098c7cde6c49d3d5cf3938
+SHA512: 3a73f05b5c14ecadd80cd531172d0be020a959cd4b8a1cae4056d0fb783378ddc09f01cedb6a46a2735e1ee434a113fb9d0bf655ea78234864e7acfd5a7c06e4
+Homepage: https://www.kernel.org/
+Description: Linux 4.19 for Loongson 3A/3B
+ The Linux kernel 4.19 and modules for use on Loongson 3A or 3B based
+ systems (e.g.  from Loongson or Lemote).
+

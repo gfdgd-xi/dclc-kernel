@@ -1,0 +1,24 @@
+Package: linux-headers-4.19.0-6-rt-amd64
+Architecture: amd64
+Version: 4.19.67-13eagle
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 4891
+Depends: linux-headers-4.19.0-6-common-rt (= 4.19.67-13eagle), linux-kbuild-4.19 (>= 4.19.67-13eagle), linux-compiler-gcc-8-x86
+Filename: ./4.19.0-6/linux-headers-4.19.0-6-rt-amd64_4.19.67-13eagle_amd64.deb
+Size: 795556
+MD5sum: d02d6d92f0f18d4537c732af5f39be65
+SHA1: 5957d4f4b81788c58a6b0091f7a9267c53add805
+SHA256: 96ba50d81a0ed7d315de40c2e0cc633e452d13191ffabeebd2adc5b62defc648
+SHA512: 75f306f59b2c0254ba965933a5ce966b838ed139e5d6fdb206bdaea6b5cd19e991c4348d90aecf7d6e5d69f71c78e0e9a9da1cbca777af2942bf92c5e8fab857
+Homepage: https://www.kernel.org/
+Description: Header files for Linux 4.19.0-6-rt-amd64
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.19.0-6-rt-amd64, generally used for building out-of-tree
+ kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.19.0-6-rt-amd64, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.19.0-6-rt-amd64 package.
+
