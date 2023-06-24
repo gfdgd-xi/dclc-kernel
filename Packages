@@ -866,6 +866,66 @@ Description: Linux kernel, version 5.10.185-amd64-desktop
  This package contains the Linux kernel, modules and corresponding other
  files, version: 5.10.185-amd64-desktop.
 
+Package: linux-libc-dev
+Architecture: arm64
+Version: 23.00.00.06-alpha
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-5.10.0-arm64-desktop
+Maintainer: uosserver <uosserver@uosserver-PC>
+Installed-Size: 5792
+Provides: linux-kernel-headers
+Filename: ./5.10.0/linux-libc-dev_23.00.00.06-alpha_arm64.deb
+Size: 1116704
+MD5sum: 96817bf0c699cb9618a867daea66aa7f
+SHA1: cddda665e693aebdce2290061560e8be58fcebf4
+SHA256: 0c0d3a5fc9fa750b0c8b568c872599c06ab0b102648c9e2fb6e6ec39d083aff4
+SHA512: 452bb8ebc6eeb6c8fd932c9e0935b59bc1132a31db3e1b7de1101e3b3c340187cdf8c38067d916d13db77c4a2c80e58ee83a4f2764f571d6a382a3b2ccb48ebe
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-headers-5.10.0-arm64-desktop
+Architecture: arm64
+Version: 23.00.00.06-alpha
+Priority: optional
+Section: kernel
+Source: linux-5.10.0-arm64-desktop
+Maintainer: uosserver <uosserver@uosserver-PC>
+Installed-Size: 47575
+Filename: ./5.10.0/linux-headers-5.10.0-arm64-desktop_23.00.00.06-alpha_arm64.deb
+Size: 7646220
+MD5sum: 3607216abaf7a2f695bbd1223687aec4
+SHA1: 06c8e82383cc744cccfc2854088fa46a16ed8faa
+SHA256: 34f915406946278c4f1abe0212f457988bd5bb17acebf866c172811674b1ee1e
+SHA512: 997e8329d35a94f64409c9c8deecbfebba2cc54ec203bccfdcbfc583629aa97451addd2765e3a565be0fa74ac47309dc6cffa237eeff6125558e09ea6b3c8f4d
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 5.10.0-arm64-desktop on arm64
+ This package provides kernel header files for 5.10.0-arm64-desktop on arm64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-5.10.0-arm64-desktop
+Architecture: arm64
+Version: 23.00.00.06-alpha
+Priority: optional
+Section: kernel
+Source: linux-5.10.0-arm64-desktop
+Maintainer: uosserver <uosserver@uosserver-PC>
+Installed-Size: 226607
+Filename: ./5.10.0/linux-image-5.10.0-arm64-desktop_23.00.00.06-alpha_arm64.deb
+Size: 47064696
+MD5sum: 7816f48dca78a9bd5181cd9723d566e1
+SHA1: 583cbb70f803520cc3c02dad73ff8073531e7ff7
+SHA256: db6862b76ee0ef6cc0d7e8fd9f2ea26d6868162f6a2330db5deb7d600421dac4
+SHA512: 0c5bd926a94d1ab6b0beb9f7c7275e7111aa7f29f1b301c7588ac7f140be0ca52f063f62b4924ba548b0d36437ec4bfcaf523c28bd138400beb6c56f783c2834
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 5.10.0-arm64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.10.0-arm64-desktop.
+
 Package: linux-image-6.3.9-amd64-desktop-xanmod1
 Architecture: amd64
 Version: 6.3.9-1
@@ -988,6 +1048,45 @@ Description: Header files for Linux 4.19.0-6-rt-amd64
  /usr/src/linux-headers-4.19.0-6-rt-amd64, and can be used for building
  modules that load into the kernel provided by the
  linux-image-4.19.0-6-rt-amd64 package.
+
+Package: linux-headers-4.19.0-arm64-desktop
+Architecture: arm64
+Version: 4.19.90-5107
+Priority: optional
+Section: kernel
+Source: linux-4.19.0-arm64-desktop
+Maintainer: jinxiaobo <jinxiaobo@uosserver-PC>
+Installed-Size: 74570
+Filename: ./4.19.0-6/linux-headers-4.19.0-arm64-desktop_4.19.90-5107_arm64.deb
+Size: 11302288
+MD5sum: 1f289c8b99ff6887d3ecf4019be5d970
+SHA1: 69fbb4ff1b79c9045b0a1e8d3a8e207d8f092c17
+SHA256: 40c61e11ee293a23747575a744ca86d17c92ce4d8c262546fe6e5a4cfd97fd03
+SHA512: 2edb8cd5c216ef95693fb58d502697b0b7bfe257a73ce1eb8cd5258cb96c550d5f5be608a964ec0aad409b8c93fcda247538a7139d2a6c25cd5c3e71df1f8a1d
+Homepage: http://www.kernel.org/
+Description: Linux kernel headers for 4.19.0-arm64-desktop on arm64
+ This package provides kernel header files for 4.19.0-arm64-desktop on arm64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-4.19.0-arm64-desktop
+Architecture: arm64
+Version: 4.19.90-5107
+Priority: optional
+Section: kernel
+Source: linux-4.19.0-arm64-desktop
+Maintainer: jinxiaobo <jinxiaobo@uosserver-PC>
+Installed-Size: 240200
+Filename: ./4.19.0-6/linux-image-4.19.0-arm64-desktop_4.19.90-5107_arm64.deb
+Size: 49366300
+MD5sum: ea7629663e0f3957bd14637d8d7f1c50
+SHA1: ce1e033bf5e77967202b974c881108e35cdad2e0
+SHA256: 3741df57cb8c98a52b36f176a59efcb4ab328f4748417662455ab510697800eb
+SHA512: ab2edf5793af7771b2482b05f8f3123c260cb1f38022415677c0f6043d78592aa2dbb5fa125ee61fb7b1a4b9fb39da7b8c7a3d3ff7c27368dbf358303c8cbce7
+Homepage: http://www.kernel.org/
+Description: Linux kernel, version 4.19.0-arm64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 4.19.0-arm64-desktop.
 
 Package: linux-image-4.19.0-6-loongson-3
 Architecture: mips64el
