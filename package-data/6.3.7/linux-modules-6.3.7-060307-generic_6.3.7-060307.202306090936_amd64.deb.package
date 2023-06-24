@@ -1,0 +1,27 @@
+Package: linux-modules-6.3.7-060307-generic
+Architecture: amd64
+Version: 6.3.7-060307.202306090936
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 552925
+Filename: ./6.3.7/linux-modules-6.3.7-060307-generic_6.3.7-060307.202306090936_amd64.deb
+Size: 96013448
+MD5sum: d8de11f090656c28c84bb205f2461be8
+SHA1: 4c370ad9f0a68f92b71c72c9b4b7ac79b67ed34b
+SHA256: 44a309bb44e25935178db4db990ee378e0dc9886e534c6664e90cc4bdfc9e2e1
+SHA512: 7f376ea5c28f84c1f978b38c382c7ee983c45dae9ac04666a19df78703c729cf97fa28733ba95e64678cc8e5c60ac8a568ce4c0427968e828ba672e886d268ac
+Description: Linux kernel extra modules for version 6.3.7 on 64 bit x86 SMP
+ Contains the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+

@@ -1,0 +1,31 @@
+Package: linux-image-unsigned-6.3.7-060307-generic
+Architecture: amd64
+Version: 6.3.7-060307.202306090936
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 13477
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, virtualbox-guest-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-6.3.7-060307-generic
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc | linux-source-6.3.7, linux-tools, linux-headers-6.3.7-060307-generic, linux-modules-extra-6.3.7-060307-generic
+Conflicts: linux-image-6.3.7-060307-generic
+Filename: ./6.3.7/linux-image-unsigned-6.3.7-060307-generic_6.3.7-060307.202306090936_amd64.deb
+Size: 13813952
+MD5sum: 35a250931f0f82da6c815037dfb2eeba
+SHA1: 92600f58154419adf3010e3848cfbc224a01f363
+SHA256: 5e1b83c7f7024c7004ec98bde80393928a3ff795c6f83322c369eb450fc3684d
+SHA512: d7c999452524c9806dee4f7766378460dda7032cf088d1603317806e8b10525d0187f39f976305f09822bf87862dca9c4dd34204506c851127e5f947887c9f1a
+Description: Linux kernel image for version 6.3.7 on 64 bit x86 SMP
+ This package contains the unsigned Linux kernel image for version 6.3.7 on
+ 64 bit x86 SMP.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+

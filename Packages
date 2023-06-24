@@ -1,3 +1,105 @@
+Package: linux-headers-6.3.7-060307
+Architecture: all
+Version: 6.3.7-060307.202306090936
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 80086
+Depends: coreutils
+Filename: ./6.3.7/linux-headers-6.3.7-060307_6.3.7-060307.202306090936_all.deb
+Size: 12975812
+MD5sum: 6f165e3d0357a7a78609efaa678699c2
+SHA1: d53949a7a4013088fa55a03499102a2321e8e687
+SHA256: 894838978277a369cb5c28272313918775b10aa4ac342b1b8d2523c50dfabad4
+SHA512: 8d503a089a22c24504bdee5ed1ac8cf7485326d18afb7ad58e5499d1213a00f6e13d2039727c5cd7204017a0b4bc593c9b1530003611e31a3ff030416d5e11c1
+Description: Header files related to Linux kernel version 6.3.7
+ This package provides kernel header files for version 6.3.7, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-headers-6.3.7-060307/debian.README.gz for details
+
+Package: linux-modules-6.3.7-060307-generic
+Architecture: amd64
+Version: 6.3.7-060307.202306090936
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 552925
+Filename: ./6.3.7/linux-modules-6.3.7-060307-generic_6.3.7-060307.202306090936_amd64.deb
+Size: 96013448
+MD5sum: d8de11f090656c28c84bb205f2461be8
+SHA1: 4c370ad9f0a68f92b71c72c9b4b7ac79b67ed34b
+SHA256: 44a309bb44e25935178db4db990ee378e0dc9886e534c6664e90cc4bdfc9e2e1
+SHA512: 7f376ea5c28f84c1f978b38c382c7ee983c45dae9ac04666a19df78703c729cf97fa28733ba95e64678cc8e5c60ac8a568ce4c0427968e828ba672e886d268ac
+Description: Linux kernel extra modules for version 6.3.7 on 64 bit x86 SMP
+ Contains the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-unsigned-6.3.7-060307-generic
+Architecture: amd64
+Version: 6.3.7-060307.202306090936
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 13477
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, virtualbox-guest-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-6.3.7-060307-generic
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc | linux-source-6.3.7, linux-tools, linux-headers-6.3.7-060307-generic, linux-modules-extra-6.3.7-060307-generic
+Conflicts: linux-image-6.3.7-060307-generic
+Filename: ./6.3.7/linux-image-unsigned-6.3.7-060307-generic_6.3.7-060307.202306090936_amd64.deb
+Size: 13813952
+MD5sum: 35a250931f0f82da6c815037dfb2eeba
+SHA1: 92600f58154419adf3010e3848cfbc224a01f363
+SHA256: 5e1b83c7f7024c7004ec98bde80393928a3ff795c6f83322c369eb450fc3684d
+SHA512: d7c999452524c9806dee4f7766378460dda7032cf088d1603317806e8b10525d0187f39f976305f09822bf87862dca9c4dd34204506c851127e5f947887c9f1a
+Description: Linux kernel image for version 6.3.7 on 64 bit x86 SMP
+ This package contains the unsigned Linux kernel image for version 6.3.7 on
+ 64 bit x86 SMP.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-headers-6.3.7-060307-generic
+Architecture: amd64
+Version: 6.3.7-060307.202306090936
+Priority: optional
+Section: devel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 26423
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-headers-6.3.7-060307, libc6 (>= 2.34), libelf1 (>= 0.144), libssl3 (>= 3.0.0), zlib1g (>= 1:1.2.3.3)
+Filename: ./6.3.7/linux-headers-6.3.7-060307-generic_6.3.7-060307.202306090936_amd64.deb
+Size: 3246830
+MD5sum: 7437bacf6931b1a06ddc20ca0604b9b7
+SHA1: 84eeca7f533d96d44c0f8257158780547be80d11
+SHA256: c32ba88ff3c9d4bee51c9d1da0b51412b70247f41d6124240080101846766a69
+SHA512: db9a130a99b1403da7d938ef10229c0212ac85523f7c88909fc03e10e2fd13576ff41faf23d93c757e60749d663f6da29353e98ee6a5541d23b39de7e82d7f17
+Description: Linux kernel headers for version 6.3.7 on 64 bit x86 SMP
+ This package provides kernel header files for version 6.3.7 on
+ 64 bit x86 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-6.3.7-060307/debian.README.gz for details.
+
 Package: linux-libc-dev
 Architecture: amd64
 Version: 6.3.8-1
