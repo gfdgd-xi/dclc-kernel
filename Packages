@@ -1629,3 +1629,62 @@ Description: Linux for 64-bit PCs (meta-package)
  This kernel also runs on a Xen hypervisor.  It supports both privileged
  (dom0) and unprivileged (domU) operation.
 
+Package: linux-libc-dev
+Architecture: amd64
+Version: 4.19.287-amd64-desktop-1
+Priority: optional
+Section: devel
+Source: linux-4.19.287-amd64-desktop
+Maintainer: root <root@fv-az565-420.g5zjwapuycbepc44mdivmxuwya.dx.internal.cloudapp.net>
+Installed-Size: 5277
+Provides: linux-kernel-headers
+Filename: ./4.19.287/linux-libc-dev_4.19.287-amd64-desktop-1_amd64.deb
+Size: 1048140
+MD5sum: 77d471cce6582433af170589c25e033c
+SHA1: 074447a11a8a54448f245e23bda96e07aee88860
+SHA256: 27d1b2cb1ae315885604c2958c2c005bc244ce84eafb9587abce133ddf1c3963
+SHA512: 0480d6eb397974cabf119f4798147466fb648c2fb0e368e0765962d88f25a90196d7458eba1dc30116f008195a6ea1afc2df964f6051a09ac0ddbfe2c5ba53dc
+Homepage: http://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-headers-4.19.287-amd64-desktop
+Architecture: amd64
+Version: 4.19.287-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-4.19.287-amd64-desktop
+Maintainer: root <root@fv-az565-420.g5zjwapuycbepc44mdivmxuwya.dx.internal.cloudapp.net>
+Installed-Size: 74438
+Filename: ./4.19.287/linux-headers-4.19.287-amd64-desktop_4.19.287-amd64-desktop-1_amd64.deb
+Size: 11516800
+MD5sum: 0b8000502cf18080d76728b771a9afe0
+SHA1: fa0659611c90662e3c5f419d2a1378a4580aad25
+SHA256: a016792a6abba03816f2697f8df3d87e16de1b5f4945233f0ebb3d230bc6eb2d
+SHA512: ac9d2a416aef9445e4c65d56b01b857bf063fa762782568bd50fc48099c4dbbd70389143eff158a0cf0810c51511e478852a8dfa14a3ad2131552295c5a49362
+Homepage: http://www.kernel.org/
+Description: Linux kernel headers for 4.19.287-amd64-desktop on amd64
+ This package provides kernel header files for 4.19.287-amd64-desktop on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-4.19.287-amd64-desktop
+Architecture: amd64
+Version: 4.19.287-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-4.19.287-amd64-desktop
+Maintainer: root <root@fv-az565-420.g5zjwapuycbepc44mdivmxuwya.dx.internal.cloudapp.net>
+Installed-Size: 248159
+Filename: ./4.19.287/linux-image-4.19.287-amd64-desktop_4.19.287-amd64-desktop-1_amd64.deb
+Size: 57876322
+MD5sum: b281aedef03ee3522177be51b4df7cb8
+SHA1: 2b9e8f3ee4356a4fbf5e0a52f5e283db06660ef9
+SHA256: 4c475ffbb92f539beb3cc89e90887ce2b9ebf208afd1573cf6a141c86cc88c7c
+SHA512: bcecf397c02ad0ba3e45a994e6781ace6a58de296ffc32403d3f0b8c4d1b8b9fc6ff02909b59ef7566eb5245552341014aa0be554919907c1f014b96cdaef932
+Homepage: http://www.kernel.org/
+Description: Linux kernel, version 4.19.287-amd64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 4.19.287-amd64-desktop.
+
