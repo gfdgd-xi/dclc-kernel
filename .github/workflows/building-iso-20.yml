@@ -45,7 +45,7 @@ jobs:
           sudo chroot ~/deepin20 bash /tmp/github.sh
           sudo chroot ~/deepin20 bash -c "echo deb http://github.com/gfdgd-xi/dclc-kernel/raw/main/ ./ > /etc/apt/sources.list.d/gfdgdxi-kernel-list.list"
           sudo chroot ~/deepin20 apt update
-          sudo chroot ~/deepin20 apt install linux-kernel-dclc-gfdgdxi -y
+          sudo chroot ~/deepin20 apt install linux-kernel-dclc-qitong -y
           sudo chroot ~/deepin20 bash -c "echo deb http://kernel.dclc.gfdgdxi.top/ ./ > /etc/apt/sources.list.d/gfdgdxi-kernel-list.list"
           sudo chroot ~/deepin20 apt update
           sudo chroot ~/deepin20 apt clean
@@ -61,8 +61,7 @@ jobs:
           sudo chroot ~/deepin20 mkdir -p /backup
           sudo chroot ~/deepin20 bash -c "echo -e 'c\n\ny\n/backup\ny\ny\ny\n\ny\n' | /tmp/lub -b"
           sudo mv ~/deepin20/backup/*.squashfs ~/squashfs/deepin-20-$kernel-amd64.squashfs
-          #curl -F "file=@$HOME/squashfs/deepin-20-$kernel-amd64.squashfs" "$UPLOADURL"
-
+      
           # 高级定制
           sudo bash -c "echo  deb https://community-packages.deepin.com/deepin/ apricot main contrib non-free > /home/runner/deepin20/etc/apt/sources.list"
           sudo rm ~/deepin20/tmp/github.sh
@@ -76,18 +75,7 @@ jobs:
           sudo rm ~/deepin20/tmp/github.sh
           sudo rm -rfv ~/deepin20/tmp/gfdgd-xi-sources
           sudo chroot ~/deepin20 apt update
-          sudo chroot ~/deepin20 apt purge libreoffice* -y
-          sudo chroot ~/deepin20 apt install spark-deepin-wine-runner -y
-          sudo chroot ~/deepin20 apt install com.oray.sunlogin.client -y
-          #sudo chroot ~/deepin20 apt install cn.wps.wps-office -y
-          sudo chroot ~/deepin20 apt install spark-store -y
-          sudo chroot ~/deepin20 aptss ssupdate
-          sudo chroot ~/deepin20 aptss install winfonts -y
-          sudo chroot ~/deepin20 aptss install linuxqq -y
-          sudo chroot ~/deepin20 aptss install com.qq.weixin.spark -y
-          sudo chroot ~/deepin20 aptss install com.github.ccc-app-manager -y
-          sudo chroot ~/deepin20 aptss install dde-dock-monitor-plugin -y
-          #sudo chroot ~/deepin20 apt install com.gitee.uengine.runner.spark -y
+          sudo chroot ~/deepin20 apt autoremove  --purge libreoffice* -y
           sudo chroot ~/deepin20 apt clean
           sudo chroot ~/deepin20 rm -rfv /backup
           sudo chroot ~/deepin20 mkdir -p /backup
