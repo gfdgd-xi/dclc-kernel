@@ -1,3 +1,186 @@
+Package: linux-headers-6.3.7-060307
+Architecture: all
+Version: 6.3.7-060307.202306090936
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 80086
+Depends: coreutils
+Filename: ./6.3.7/linux-headers-6.3.7-060307_6.3.7-060307.202306090936_all.deb
+Size: 12975812
+MD5sum: 6f165e3d0357a7a78609efaa678699c2
+SHA1: d53949a7a4013088fa55a03499102a2321e8e687
+SHA256: 894838978277a369cb5c28272313918775b10aa4ac342b1b8d2523c50dfabad4
+SHA512: 8d503a089a22c24504bdee5ed1ac8cf7485326d18afb7ad58e5499d1213a00f6e13d2039727c5cd7204017a0b4bc593c9b1530003611e31a3ff030416d5e11c1
+Description: Header files related to Linux kernel version 6.3.7
+ This package provides kernel header files for version 6.3.7, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-headers-6.3.7-060307/debian.README.gz for details
+
+Package: linux-modules-6.3.7-060307-generic
+Architecture: amd64
+Version: 6.3.7-060307.202306090936
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 552925
+Filename: ./6.3.7/linux-modules-6.3.7-060307-generic_6.3.7-060307.202306090936_amd64.deb
+Size: 96013448
+MD5sum: d8de11f090656c28c84bb205f2461be8
+SHA1: 4c370ad9f0a68f92b71c72c9b4b7ac79b67ed34b
+SHA256: 44a309bb44e25935178db4db990ee378e0dc9886e534c6664e90cc4bdfc9e2e1
+SHA512: 7f376ea5c28f84c1f978b38c382c7ee983c45dae9ac04666a19df78703c729cf97fa28733ba95e64678cc8e5c60ac8a568ce4c0427968e828ba672e886d268ac
+Description: Linux kernel extra modules for version 6.3.7 on 64 bit x86 SMP
+ Contains the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-unsigned-6.3.7-060307-generic
+Architecture: amd64
+Version: 6.3.7-060307.202306090936
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 13477
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, virtualbox-guest-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-6.3.7-060307-generic
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc | linux-source-6.3.7, linux-tools, linux-headers-6.3.7-060307-generic, linux-modules-extra-6.3.7-060307-generic
+Conflicts: linux-image-6.3.7-060307-generic
+Filename: ./6.3.7/linux-image-unsigned-6.3.7-060307-generic_6.3.7-060307.202306090936_amd64.deb
+Size: 13813952
+MD5sum: 35a250931f0f82da6c815037dfb2eeba
+SHA1: 92600f58154419adf3010e3848cfbc224a01f363
+SHA256: 5e1b83c7f7024c7004ec98bde80393928a3ff795c6f83322c369eb450fc3684d
+SHA512: d7c999452524c9806dee4f7766378460dda7032cf088d1603317806e8b10525d0187f39f976305f09822bf87862dca9c4dd34204506c851127e5f947887c9f1a
+Description: Linux kernel image for version 6.3.7 on 64 bit x86 SMP
+ This package contains the unsigned Linux kernel image for version 6.3.7 on
+ 64 bit x86 SMP.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-headers-6.3.7-060307-generic
+Architecture: amd64
+Version: 6.3.7-060307.202306090936
+Priority: optional
+Section: devel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 26423
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-headers-6.3.7-060307, libc6 (>= 2.34), libelf1 (>= 0.144), libssl3 (>= 3.0.0), zlib1g (>= 1:1.2.3.3)
+Filename: ./6.3.7/linux-headers-6.3.7-060307-generic_6.3.7-060307.202306090936_amd64.deb
+Size: 3246830
+MD5sum: 7437bacf6931b1a06ddc20ca0604b9b7
+SHA1: 84eeca7f533d96d44c0f8257158780547be80d11
+SHA256: c32ba88ff3c9d4bee51c9d1da0b51412b70247f41d6124240080101846766a69
+SHA512: db9a130a99b1403da7d938ef10229c0212ac85523f7c88909fc03e10e2fd13576ff41faf23d93c757e60749d663f6da29353e98ee6a5541d23b39de7e82d7f17
+Description: Linux kernel headers for version 6.3.7 on 64 bit x86 SMP
+ This package provides kernel header files for version 6.3.7 on
+ 64 bit x86 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-6.3.7-060307/debian.README.gz for details.
+
+Package: linux-headers-2.6.27-02062760
+Architecture: all
+Version: 2.6.27-02062760.201805131655
+Priority: optional
+Section: devel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 27642
+Provides: linux-headers, linux-headers-2.6
+Depends: coreutils | fileutils (>= 4.0)
+Filename: ./2.6.27.60/linux-headers-2.6.27-02062760_2.6.27-02062760.201805131655_all.deb
+Size: 5950078
+MD5sum: 4b2512c81cb676d27bace14ad93bc212
+SHA1: 4c93b6b37c74e6f3159c57578e7c1a642ea6e38b
+SHA256: ad52b4028cc2f491072c6de07a0741282043ecc973a631410d53c363cbd8bdae
+SHA512: e1747ebc47ff40cc253c3d030bc06d43873878a7b2f5a442fef8150cef14509fd0d532456b1c9710568b64d181edf368511f399ef16cf9748e7cb94f12cacece
+Description: Header files related to Linux kernel version 2.6.27
+ This package provides kernel header files for version 2.6.27, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-headers-2.6.27-02062760/debian.README.gz for details
+
+Package: linux-headers-5.15.118-amd64-desktop
+Architecture: amd64
+Version: 5.15.118-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@fv-az1131-791>
+Installed-Size: 49278
+Filename: ./5.15.118/linux-headers-5.15.118-amd64-desktop_5.15.118-amd64-desktop-1_amd64.deb
+Size: 8756566
+MD5sum: cb7d68c08c28780d632ea3c0f0d46118
+SHA1: 6abd4f8b752c6c29958c56728d20176c17852dc0
+SHA256: daea19a4d4e360a06b31748f9b3f2fd734c1c6eb3605e69c689ded291855c958
+SHA512: 9a3738460b2100744e28cfa033b5b34ad605f9cde040e2f3c71d5445074edaad750f082d229d789c6f6e14375077b2a7f5ce24eb666c3e833e08f12803fa09f1
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 5.15.118-amd64-desktop on amd64
+ This package provides kernel header files for 5.15.118-amd64-desktop on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 5.15.118-amd64-desktop-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-upstream
+Maintainer: root <root@fv-az1131-791>
+Installed-Size: 6234
+Provides: linux-kernel-headers
+Filename: ./5.15.118/linux-libc-dev_5.15.118-amd64-desktop-1_amd64.deb
+Size: 1239258
+MD5sum: 2f57968632838d820d1553e955a79470
+SHA1: 8992ff10024211b1fd01f2094df971e0d4cf876f
+SHA256: dec2c15784833ab7b4ec3c96c73b17562efad1565430e0dc3b88615af10bada6
+SHA512: e8b645497a0120103f8d4497d39481c8dca641f1a98d66c5641e67d8b2d38b5bb1c60e0b8a7e107f856a2b73aae60af922b3aa7d9c195255c3cfd623d2059991
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-image-5.15.118-amd64-desktop
+Architecture: amd64
+Version: 5.15.118-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@fv-az1131-791>
+Installed-Size: 327419
+Filename: ./5.15.118/linux-image-5.15.118-amd64-desktop_5.15.118-amd64-desktop-1_amd64.deb
+Size: 75837374
+MD5sum: e73f5662c4ad17bc894179b730e692a6
+SHA1: 993fb62a1996b09cb71f63dbfadcf0fb6a4c3e0d
+SHA256: d06e533daeea2713079e6bdb183330fb6933081cfc8ac2d317b6e8415ae16ce5
+SHA512: 42ae2c76ed7e925cae91972c159e94dc4a7822aa865d17e465f62a26971712a6f01b90919b7e589f670bcb0c5680914ae58f0ebb9f5afefabbf0eba9a1d756fe
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 5.15.118-amd64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.15.118-amd64-desktop.
+
 Package: linux-libc-dev
 Architecture: amd64
 Version: 6.3.8-1
@@ -626,6 +809,27 @@ Description: Linux for 64-bit PCs (meta-package)
  This kernel also runs on a Xen hypervisor.  It supports both privileged
  (dom0) and unprivileged (domU) operation.
 
+Package: linux-kernel-dclc-qitong
+Architecture: amd64
+Version: 6.3.9
+Priority: optional
+Section: utils
+Maintainer: linux qitong <sweetcandymini@foxmail.com>
+Installed-Size: 0
+Depends: linux-image-6.3.9-amd64-desktop-xanmod1, linux-headers-6.3.9-amd64-desktop-xanmod1
+Filename: ./head/linux-kernel-dclc-qitong_6.3.9_amd64.deb
+Size: 856
+MD5sum: 0a75709f1a4c768dec1aa47e6ca63f8c
+SHA1: 2a4ec10a8bffa017b52175c0ec9cba1166d99825
+SHA256: fd8cadb801e65cd435567f4f30790fc7b04984d985d37a70c3347059c75351b0
+SHA512: f0b2247f9c8c145fea40447a165cbac71e9e9badb616ca976f5befe34ac4de643e2eebe352ab9fcefacc1b72c27ced91f19113697628e2a8851246ab6b0857cf
+Homepage: https://github.com/Linux-qitong/dclc-kernel/
+Description: 内核 6.3.9xanmod1（虚包）
+Severity: serious
+Certainty: possible
+Check: binaries
+Type: binary, udeb
+
 Package: linux-headers-5.17.3-amd64-desktop
 Architecture: amd64
 Version: 5.17.3-amd64-desktop-1
@@ -725,6 +929,246 @@ Description: Linux kernel headers for 6.3.5 on amd64
  .
  This is useful for people who need to build external modules
 
+Package: linux-headers-6.1.35-amd64-desktop
+Architecture: amd64
+Version: 6.1.35-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@fv-az612-160.gqp4uj4dnjkevoqu2sjlt0n5ta.cx.internal.cloudapp.net>
+Installed-Size: 52875
+Filename: ./6.1.35/linux-headers-6.1.35-amd64-desktop_6.1.35-amd64-desktop-1_amd64.deb
+Size: 9292716
+MD5sum: ed16bea1c74221f590ad0264d5a715b9
+SHA1: 139272ab6ef4203159aa908ab9964885b8fbdcaa
+SHA256: a0f9a98a69b5cf40986f094ec0517f8420b9c8f399f77b3e4a449580f88bc88d
+SHA512: 9cda768f683d5d655c20c71fd7ae856b3afab8e754d7bf58af3a31154876488824bac5efc46bb851e8d346ab41fef7b0fb997875e3dfb79099e9e9e146d6b7fb
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.1.35-amd64-desktop on amd64
+ This package provides kernel header files for 6.1.35-amd64-desktop on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-6.1.35-amd64-desktop
+Architecture: amd64
+Version: 6.1.35-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@fv-az612-160.gqp4uj4dnjkevoqu2sjlt0n5ta.cx.internal.cloudapp.net>
+Installed-Size: 337363
+Filename: ./6.1.35/linux-image-6.1.35-amd64-desktop_6.1.35-amd64-desktop-1_amd64.deb
+Size: 77644826
+MD5sum: 59ed4459b33f2886d4f4b5331132b0d2
+SHA1: e290bb88335d4fb63740d05ee789fada0fb5b514
+SHA256: d6e1ebd5329f023bd6b2563caf09fe1a103f27dc72fda80eea165f4b3ffeae41
+SHA512: 58b295116eca91a6c9055b48a956df4dd4b735adfc549cd2726a962cf940ba70da70ca1790c150e6950cef10a52304d53c87da2a06fe0c294c98dc5d5d603f00
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.1.35-amd64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.1.35-amd64-desktop.
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 6.1.35-amd64-desktop-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-upstream
+Maintainer: root <root@fv-az612-160.gqp4uj4dnjkevoqu2sjlt0n5ta.cx.internal.cloudapp.net>
+Installed-Size: 6620
+Provides: linux-kernel-headers
+Filename: ./6.1.35/linux-libc-dev_6.1.35-amd64-desktop-1_amd64.deb
+Size: 1315828
+MD5sum: dbf1d17b3c41f025138b950aea23cdc6
+SHA1: e99c0cd59b4932614dc661869409d5eaf37edd65
+SHA256: 7d084487d74c0c2b8fbe4e190651553e93b2e00f1bdb70fc5cabb8e171c17ed4
+SHA512: 0c05b9564634b77e5b2e40fd040cc457476f8732c4d0d6ba384619e9d76bed8b264d6ea6b7abfa05df98659d47900d96c59f811dacc0602d1d0ae4d080b8abca
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-headers-5.10.185-amd64-desktop
+Architecture: amd64
+Version: 5.10.185-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-5.10.185-amd64-desktop
+Maintainer: root <root@fv-az586-867.tnmrllozk34ujkoifxudwjbaxh.phxx.internal.cloudapp.net>
+Installed-Size: 51072
+Filename: ./5.10.185/linux-headers-5.10.185-amd64-desktop_5.10.185-amd64-desktop-1_amd64.deb
+Size: 8490454
+MD5sum: f82d037269de96ab3ab7f7f1284796a0
+SHA1: eef934bda8e523c51ebf0ac862d59f325ad30449
+SHA256: 7ec5390da74509c4c67f1addd600921d075e0caf4ca368278f27978942e72d15
+SHA512: 70ee817cacfa22ee0a9c1e6964f58d7a764362a0fad37c086f60bba2831e921cf37bb2178869681a112e9bfcd604b2ce832e22c4b520a96a014a20418fd2cd5e
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 5.10.185-amd64-desktop on amd64
+ This package provides kernel header files for 5.10.185-amd64-desktop on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 5.10.185-amd64-desktop-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-5.10.185-amd64-desktop
+Maintainer: root <root@fv-az586-867.tnmrllozk34ujkoifxudwjbaxh.phxx.internal.cloudapp.net>
+Installed-Size: 5901
+Provides: linux-kernel-headers
+Filename: ./5.10.185/linux-libc-dev_5.10.185-amd64-desktop-1_amd64.deb
+Size: 1174414
+MD5sum: 6a74b2e2bec19977cc6178ed9408f269
+SHA1: 3fc473304050d7349abd7a47655384ecbc063ea1
+SHA256: c412cc11c9bcc5f831426fc5e368004313ea36b90c3880c1cf7015e056bd80b7
+SHA512: 702a6df8ec8873f8e1a0edba9bbbdcae6735b715f669c33958b995ce3cf92ca965f2ef9eb407b3ab05a0e45d7a9cfcde453779e6364f78f5c3597e0e03bc11f1
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-image-5.10.185-amd64-desktop
+Architecture: amd64
+Version: 5.10.185-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-5.10.185-amd64-desktop
+Maintainer: root <root@fv-az586-867.tnmrllozk34ujkoifxudwjbaxh.phxx.internal.cloudapp.net>
+Installed-Size: 318915
+Filename: ./5.10.185/linux-image-5.10.185-amd64-desktop_5.10.185-amd64-desktop-1_amd64.deb
+Size: 73996792
+MD5sum: 4b2a8b59aeea8a944211149420af8d91
+SHA1: 82c7ad96cb1ef1ede116baef0c80a7e343925132
+SHA256: b990853bad07f21a8e533d3ee701135ae2e6bb1dd0fd0fa5ffbfed1cf9afc8fb
+SHA512: 01dec1f1c3be08f7692b8b512d7f45ccd7ef95bed34019619c22fe0a86bd9990f9bedab408277fbc3e6d162806cffe0795c695b0c158ebb5d9f022b27725895a
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 5.10.185-amd64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.10.185-amd64-desktop.
+
+Package: linux-libc-dev
+Architecture: arm64
+Version: 23.00.00.06-alpha
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-5.10.0-arm64-desktop
+Maintainer: uosserver <uosserver@uosserver-PC>
+Installed-Size: 5792
+Provides: linux-kernel-headers
+Filename: ./5.10.0/linux-libc-dev_23.00.00.06-alpha_arm64.deb
+Size: 1116704
+MD5sum: 96817bf0c699cb9618a867daea66aa7f
+SHA1: cddda665e693aebdce2290061560e8be58fcebf4
+SHA256: 0c0d3a5fc9fa750b0c8b568c872599c06ab0b102648c9e2fb6e6ec39d083aff4
+SHA512: 452bb8ebc6eeb6c8fd932c9e0935b59bc1132a31db3e1b7de1101e3b3c340187cdf8c38067d916d13db77c4a2c80e58ee83a4f2764f571d6a382a3b2ccb48ebe
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-headers-5.10.0-arm64-desktop
+Architecture: arm64
+Version: 23.00.00.06-alpha
+Priority: optional
+Section: kernel
+Source: linux-5.10.0-arm64-desktop
+Maintainer: uosserver <uosserver@uosserver-PC>
+Installed-Size: 47575
+Filename: ./5.10.0/linux-headers-5.10.0-arm64-desktop_23.00.00.06-alpha_arm64.deb
+Size: 7646220
+MD5sum: 3607216abaf7a2f695bbd1223687aec4
+SHA1: 06c8e82383cc744cccfc2854088fa46a16ed8faa
+SHA256: 34f915406946278c4f1abe0212f457988bd5bb17acebf866c172811674b1ee1e
+SHA512: 997e8329d35a94f64409c9c8deecbfebba2cc54ec203bccfdcbfc583629aa97451addd2765e3a565be0fa74ac47309dc6cffa237eeff6125558e09ea6b3c8f4d
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 5.10.0-arm64-desktop on arm64
+ This package provides kernel header files for 5.10.0-arm64-desktop on arm64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-5.10.0-arm64-desktop
+Architecture: arm64
+Version: 23.00.00.06-alpha
+Priority: optional
+Section: kernel
+Source: linux-5.10.0-arm64-desktop
+Maintainer: uosserver <uosserver@uosserver-PC>
+Installed-Size: 226607
+Filename: ./5.10.0/linux-image-5.10.0-arm64-desktop_23.00.00.06-alpha_arm64.deb
+Size: 47064696
+MD5sum: 7816f48dca78a9bd5181cd9723d566e1
+SHA1: 583cbb70f803520cc3c02dad73ff8073531e7ff7
+SHA256: db6862b76ee0ef6cc0d7e8fd9f2ea26d6868162f6a2330db5deb7d600421dac4
+SHA512: 0c5bd926a94d1ab6b0beb9f7c7275e7111aa7f29f1b301c7588ac7f140be0ca52f063f62b4924ba548b0d36437ec4bfcaf523c28bd138400beb6c56f783c2834
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 5.10.0-arm64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.10.0-arm64-desktop.
+
+Package: linux-image-6.3.9-amd64-desktop-xanmod1
+Architecture: amd64
+Version: 6.3.9-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@fv-az574-494.wxjduchn1ubupnefqsbzgbhute.dx.internal.cloudapp.net>
+Installed-Size: 399091
+Filename: ./6.3.9xanmod1/linux-image-6.3.9-amd64-desktop-xanmod1_6.3.9-1_amd64.deb
+Size: 78487516
+MD5sum: 74a341a7d90a32bd989f7c1b3b5db4c4
+SHA1: 416411303a9139b014ca23d785ec1a91be8000e0
+SHA256: ca35a184246780b5959bb279eee50d82fcef564346c180809044ff106ca34476
+SHA512: df769377414df80bf133d22370cb54943a09c3683e712dc97460cafcb2d0263fe03e51ca5790ea5b8f3d3f89128270b8e0eb0ade7bedafca93dde103a012b778
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.3.9-amd64-desktop-xanmod1
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.3.9-amd64-desktop-xanmod1.
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 6.3.9-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-upstream
+Maintainer: root <root@fv-az574-494.wxjduchn1ubupnefqsbzgbhute.dx.internal.cloudapp.net>
+Installed-Size: 6657
+Provides: linux-kernel-headers
+Filename: ./6.3.9xanmod1/linux-libc-dev_6.3.9-1_amd64.deb
+Size: 1284156
+MD5sum: ff040bde439f9de4883f435ea9b8030c
+SHA1: 2b71a842ee6ee0eb70e5dd97cceed19a45384d67
+SHA256: 197ce0f075526408e2046ec289267d054b3ceb4789cb816f2eff2d8348eaa73e
+SHA512: 6fa4b93b00322722853faf8d7aba0327c5a197d1385a8964eb378b305b158e4a546823063274eaab09c05b432640aaabb65576871590d79ff87664528a960c0e
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-headers-6.3.9-amd64-desktop-xanmod1
+Architecture: amd64
+Version: 6.3.9-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@fv-az574-494.wxjduchn1ubupnefqsbzgbhute.dx.internal.cloudapp.net>
+Installed-Size: 53751
+Filename: ./6.3.9xanmod1/linux-headers-6.3.9-amd64-desktop-xanmod1_6.3.9-1_amd64.deb
+Size: 9127496
+MD5sum: 3c81e962c25e7312a95728a7758f786c
+SHA1: 0b5e9735bd4621e7ae9966f68ed8bc6e486405b6
+SHA256: e7ea663e5dac954940f69f619351e511f5376249ea8749046850e786b65316be
+SHA512: 99ae28982e805860ad51ddfeb130f066cd3032f144cdc971395935f4684788d2e56d4f746806825afdde759bb5e047c839c6f8554e66d049d06e5036609166ef
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.3.9-amd64-desktop-xanmod1 on amd64
+ This package provides kernel header files for 6.3.9-amd64-desktop-xanmod1 on amd64
+ .
+ This is useful for people who need to build external modules
+
 Package: linux-headers-5.15.34-amd64-desktop
 Architecture: amd64
 Version: 5.15.34-amd64-desktop-2
@@ -787,6 +1231,45 @@ Description: Header files for Linux 4.19.0-6-rt-amd64
  /usr/src/linux-headers-4.19.0-6-rt-amd64, and can be used for building
  modules that load into the kernel provided by the
  linux-image-4.19.0-6-rt-amd64 package.
+
+Package: linux-headers-4.19.0-arm64-desktop
+Architecture: arm64
+Version: 4.19.90-5107
+Priority: optional
+Section: kernel
+Source: linux-4.19.0-arm64-desktop
+Maintainer: jinxiaobo <jinxiaobo@uosserver-PC>
+Installed-Size: 74570
+Filename: ./4.19.0-6/linux-headers-4.19.0-arm64-desktop_4.19.90-5107_arm64.deb
+Size: 11302288
+MD5sum: 1f289c8b99ff6887d3ecf4019be5d970
+SHA1: 69fbb4ff1b79c9045b0a1e8d3a8e207d8f092c17
+SHA256: 40c61e11ee293a23747575a744ca86d17c92ce4d8c262546fe6e5a4cfd97fd03
+SHA512: 2edb8cd5c216ef95693fb58d502697b0b7bfe257a73ce1eb8cd5258cb96c550d5f5be608a964ec0aad409b8c93fcda247538a7139d2a6c25cd5c3e71df1f8a1d
+Homepage: http://www.kernel.org/
+Description: Linux kernel headers for 4.19.0-arm64-desktop on arm64
+ This package provides kernel header files for 4.19.0-arm64-desktop on arm64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-4.19.0-arm64-desktop
+Architecture: arm64
+Version: 4.19.90-5107
+Priority: optional
+Section: kernel
+Source: linux-4.19.0-arm64-desktop
+Maintainer: jinxiaobo <jinxiaobo@uosserver-PC>
+Installed-Size: 240200
+Filename: ./4.19.0-6/linux-image-4.19.0-arm64-desktop_4.19.90-5107_arm64.deb
+Size: 49366300
+MD5sum: ea7629663e0f3957bd14637d8d7f1c50
+SHA1: ce1e033bf5e77967202b974c881108e35cdad2e0
+SHA256: 3741df57cb8c98a52b36f176a59efcb4ab328f4748417662455ab510697800eb
+SHA512: ab2edf5793af7771b2482b05f8f3123c260cb1f38022415677c0f6043d78592aa2dbb5fa125ee61fb7b1a4b9fb39da7b8c7a3d3ff7c27368dbf358303c8cbce7
+Homepage: http://www.kernel.org/
+Description: Linux kernel, version 4.19.0-arm64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 4.19.0-arm64-desktop.
 
 Package: linux-image-4.19.0-6-loongson-3
 Architecture: mips64el
@@ -1264,6 +1747,66 @@ Description: Linux kernel headers for 6.3.7xxtxtop on amd64
  .
  This is useful for people who need to build external modules
 
+Package: linux-image-5.4.248-amd64-desktop
+Architecture: amd64
+Version: 5.4.248-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-5.4.248-amd64-desktop
+Maintainer: root <root@fv-az642-362.cqpvgpoo3osu5lvmex0g05djkf.phxx.internal.cloudapp.net>
+Installed-Size: 275125
+Filename: ./5.4.248/linux-image-5.4.248-amd64-desktop_5.4.248-amd64-desktop-1_amd64.deb
+Size: 66331102
+MD5sum: 72835a0622cb325997b1edb78e732594
+SHA1: a5b18734dd32cd242da88f6493d45d0f6d451920
+SHA256: 98543e36dcc3e4081e34fba924b0079fc63fc1e9c6ddac232281d6e34c5862f0
+SHA512: 9a2783dc607532bd504db3d73379dfb5aa06fbfe3b6a607943c8a51d4fb9f6a3775cb389a12c504035d98ba6085609b4fef26c74e8e96db992aa1085965d56f4
+Homepage: http://www.kernel.org/
+Description: Linux kernel, version 5.4.248-amd64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.4.248-amd64-desktop.
+
+Package: linux-headers-5.4.248-amd64-desktop
+Architecture: amd64
+Version: 5.4.248-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-5.4.248-amd64-desktop
+Maintainer: root <root@fv-az642-362.cqpvgpoo3osu5lvmex0g05djkf.phxx.internal.cloudapp.net>
+Installed-Size: 76488
+Filename: ./5.4.248/linux-headers-5.4.248-amd64-desktop_5.4.248-amd64-desktop-1_amd64.deb
+Size: 11982954
+MD5sum: 0d6c0362f4427a929d12aa6710819a9a
+SHA1: 722301c2f4dea4d884cea875e5314a8ab34450b6
+SHA256: bb0ffbdb908917c534c9da19ddfd7916f04e1c495e94540673710ec3fe154259
+SHA512: 2360c83195374a5ddf860125afe34bfb0c76745d07ea96b7f99686e13e4d9eac89c26ca214248738c31c63ad7dbcbf87a96b7998bff2dd4d3400791fd60c917b
+Homepage: http://www.kernel.org/
+Description: Linux kernel headers for 5.4.248-amd64-desktop on amd64
+ This package provides kernel header files for 5.4.248-amd64-desktop on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 5.4.248-amd64-desktop-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-5.4.248-amd64-desktop
+Maintainer: root <root@fv-az642-362.cqpvgpoo3osu5lvmex0g05djkf.phxx.internal.cloudapp.net>
+Installed-Size: 5522
+Provides: linux-kernel-headers
+Filename: ./5.4.248/linux-libc-dev_5.4.248-amd64-desktop-1_amd64.deb
+Size: 1102452
+MD5sum: c3ad7e7789a127be52ff15886b74fbc2
+SHA1: f24c6a2f1d5a94d7d630188ce8e72ab27afb254b
+SHA256: 35c6ba7fb75a3e7e555adcc609020431365da3915b109e32d95135a055ffa0e1
+SHA512: 4c09388ddc02672e24e948140f2382e33b71a440892e9c38140ad67362234a2079c30b01e431e4cb61ec0c42de072a8384cfed11f74fd8b8edd91977b59e8263
+Homepage: http://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
 Package: linux-image-6.4.0-rc4
 Architecture: amd64
 Version: 6.4.0-rc4-1
@@ -1333,11 +1876,11 @@ Source: linux-upstream
 Maintainer: root <root@fv-az176-839.urr04s1gdzguhowldvrowxwctd.dx.internal.cloudapp.net>
 Installed-Size: 53651
 Filename: ./6.3.9/linux-headers-6.3.9-amd64-desktop_6.3.9-1_amd64.deb
-Size: 9432470
-MD5sum: 49a9c9a66e7362d4a58a1103e8b148a6
-SHA1: 1264d842e9d885d810744bb89e809456de8c8bdf
-SHA256: 5604a18386e1f6a2e227d19c75dba63804070897f1bf7f5b852dea23d3bff7bf
-SHA512: 9c9ff3e86921b3fef2437549f4c6d80c0e80cd68c89d1ceb5818d3c562f8f55fdcf61897fc091b580018a988049dd9c9fa1c1df998e0ca6165f6fed5ae90b402
+Size: 9124324
+MD5sum: 646bd1c63be45d84651ef959692652f0
+SHA1: 5f885c6337eece6757ca402c6268f65d2ebf6def
+SHA256: a3b4ac4d75ee4900d1cb3d9a8bca3eef466167d6a39b15ab7af9e449016f1524
+SHA512: 930503f8884be7e6b294a56de401ee3c77c1be0b56ad779ffca2104bd911fa7d1f9ec33a4a53c5e8f29ea0022c77cdad48d7d58e0775240c64e500b7c4d847d3
 Homepage: https://www.kernel.org/
 Description: Linux kernel headers for 6.3.9-amd64-desktop on amd64
  This package provides kernel header files for 6.3.9-amd64-desktop on amd64
@@ -1353,11 +1896,11 @@ Source: linux-upstream
 Maintainer: root <root@fv-az176-839.urr04s1gdzguhowldvrowxwctd.dx.internal.cloudapp.net>
 Installed-Size: 396652
 Filename: ./6.3.9/linux-image-6.3.9-amd64-desktop_6.3.9-1_amd64.deb
-Size: 85615284
-MD5sum: 1795c56c5323cb4b0859357bbbbd26cd
-SHA1: f2122988ceb5b161ac9a89c95dc8dc0357423f9f
-SHA256: 6ecda1b5c48480ec0522b20999b6d795d5d3505a6bc11c0977be75cc57327324
-SHA512: 638ac408f9ff99982a57581ba619bc73c8c5b776584ce6b2991bc8d75d355d4b2bb52cb0dd65d66765a7a6cc1b92de37b3fcf5fce5ae81dd89385de87f4e68f3
+Size: 78303448
+MD5sum: 1caa18071d1e608b54442f8248998547
+SHA1: 987bbc2a48cf6b7c4315a5d56349c397683c2483
+SHA256: c586094c21e2f3c11efc22a34fd9f98a62ca49f9952f18429cd7fc236c3b4445
+SHA512: d7a5d96db6ed88a73ad61ff57bc3ac4f616aaf9d979b7fb4062d068ea3d57f1f67e8c1d44237620900fcea350477ff8da5c4dcf57c18e6b9225f3b9ab93012bd
 Homepage: https://www.kernel.org/
 Description: Linux kernel, version 6.3.9-amd64-desktop
  This package contains the Linux kernel, modules and corresponding other
@@ -1374,11 +1917,11 @@ Maintainer: root <root@fv-az176-839.urr04s1gdzguhowldvrowxwctd.dx.internal.cloud
 Installed-Size: 6651
 Provides: linux-kernel-headers
 Filename: ./6.3.9/linux-libc-dev_6.3.9-1_amd64.deb
-Size: 1326424
-MD5sum: eaae8f9c07b0cd692af820f7fa6c8d10
-SHA1: d486e180de2f48428724b9ccfbf951cb426ca11f
-SHA256: 3a1c85d1a052e4bcddc8b671cc15d459d471cca0825a7fcccca9534d366f3a7b
-SHA512: bb4472f6aaa1e22ed3f40eb5b8fe24916427c08c2aa60c8066090de949b514fe919a8bae6e91770a819595dab30009686b4f12d69a911926bf6f05c685122ef2
+Size: 1283444
+MD5sum: 99689835ea0790cdfc099142dade7dd4
+SHA1: a8683877e5aaa18b48af6ad161ce8de25ebfb22f
+SHA256: 1170e420d9177b4c01c35ed405058f5cea8d649e47737c9c3bf6152b5bb70ace
+SHA512: bed254d4c3edddf124b260caf42379f189d1ab4fb006580c91747cf1dffde1a7f330d5387b68b3aed3b8f72f9d07fcacd958854e23bcc10319ac3192ce170e63
 Homepage: https://www.kernel.org/
 Description: Linux support headers for userspace development
  This package provides userspaces headers from the Linux kernel.  These headers
@@ -1547,4 +2090,63 @@ Description: Linux for 64-bit PCs (meta-package)
  .
  This kernel also runs on a Xen hypervisor.  It supports both privileged
  (dom0) and unprivileged (domU) operation.
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 4.19.287-amd64-desktop-1
+Priority: optional
+Section: devel
+Source: linux-4.19.287-amd64-desktop
+Maintainer: root <root@fv-az565-420.g5zjwapuycbepc44mdivmxuwya.dx.internal.cloudapp.net>
+Installed-Size: 5277
+Provides: linux-kernel-headers
+Filename: ./4.19.287/linux-libc-dev_4.19.287-amd64-desktop-1_amd64.deb
+Size: 1048140
+MD5sum: 77d471cce6582433af170589c25e033c
+SHA1: 074447a11a8a54448f245e23bda96e07aee88860
+SHA256: 27d1b2cb1ae315885604c2958c2c005bc244ce84eafb9587abce133ddf1c3963
+SHA512: 0480d6eb397974cabf119f4798147466fb648c2fb0e368e0765962d88f25a90196d7458eba1dc30116f008195a6ea1afc2df964f6051a09ac0ddbfe2c5ba53dc
+Homepage: http://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-headers-4.19.287-amd64-desktop
+Architecture: amd64
+Version: 4.19.287-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-4.19.287-amd64-desktop
+Maintainer: root <root@fv-az565-420.g5zjwapuycbepc44mdivmxuwya.dx.internal.cloudapp.net>
+Installed-Size: 74438
+Filename: ./4.19.287/linux-headers-4.19.287-amd64-desktop_4.19.287-amd64-desktop-1_amd64.deb
+Size: 11516800
+MD5sum: 0b8000502cf18080d76728b771a9afe0
+SHA1: fa0659611c90662e3c5f419d2a1378a4580aad25
+SHA256: a016792a6abba03816f2697f8df3d87e16de1b5f4945233f0ebb3d230bc6eb2d
+SHA512: ac9d2a416aef9445e4c65d56b01b857bf063fa762782568bd50fc48099c4dbbd70389143eff158a0cf0810c51511e478852a8dfa14a3ad2131552295c5a49362
+Homepage: http://www.kernel.org/
+Description: Linux kernel headers for 4.19.287-amd64-desktop on amd64
+ This package provides kernel header files for 4.19.287-amd64-desktop on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-4.19.287-amd64-desktop
+Architecture: amd64
+Version: 4.19.287-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-4.19.287-amd64-desktop
+Maintainer: root <root@fv-az565-420.g5zjwapuycbepc44mdivmxuwya.dx.internal.cloudapp.net>
+Installed-Size: 248159
+Filename: ./4.19.287/linux-image-4.19.287-amd64-desktop_4.19.287-amd64-desktop-1_amd64.deb
+Size: 57876322
+MD5sum: b281aedef03ee3522177be51b4df7cb8
+SHA1: 2b9e8f3ee4356a4fbf5e0a52f5e283db06660ef9
+SHA256: 4c475ffbb92f539beb3cc89e90887ce2b9ebf208afd1573cf6a141c86cc88c7c
+SHA512: bcecf397c02ad0ba3e45a994e6781ace6a58de296ffc32403d3f0b8c4d1b8b9fc6ff02909b59ef7566eb5245552341014aa0be554919907c1f014b96cdaef932
+Homepage: http://www.kernel.org/
+Description: Linux kernel, version 4.19.287-amd64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 4.19.287-amd64-desktop.
 
