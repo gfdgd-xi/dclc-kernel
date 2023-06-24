@@ -100,6 +100,27 @@ Description: Linux kernel headers for version 6.3.7 on 64 bit x86 SMP
  This is for sites that want the latest kernel headers.  Please read
  /usr/share/doc/linux-headers-6.3.7-060307/debian.README.gz for details.
 
+Package: linux-headers-2.6.27-02062760
+Architecture: all
+Version: 2.6.27-02062760.201805131655
+Priority: optional
+Section: devel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 27642
+Provides: linux-headers, linux-headers-2.6
+Depends: coreutils | fileutils (>= 4.0)
+Filename: ./2.6.27.60/linux-headers-2.6.27-02062760_2.6.27-02062760.201805131655_all.deb
+Size: 5950078
+MD5sum: 4b2512c81cb676d27bace14ad93bc212
+SHA1: 4c93b6b37c74e6f3159c57578e7c1a642ea6e38b
+SHA256: ad52b4028cc2f491072c6de07a0741282043ecc973a631410d53c363cbd8bdae
+SHA512: e1747ebc47ff40cc253c3d030bc06d43873878a7b2f5a442fef8150cef14509fd0d532456b1c9710568b64d181edf368511f399ef16cf9748e7cb94f12cacece
+Description: Header files related to Linux kernel version 2.6.27
+ This package provides kernel header files for version 2.6.27, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-headers-2.6.27-02062760/debian.README.gz for details
+
 Package: linux-libc-dev
 Architecture: amd64
 Version: 6.3.8-1
