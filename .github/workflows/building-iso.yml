@@ -47,7 +47,7 @@ jobs:
           sudo chroot ~/deepin15 bash /tmp/github.sh
           sudo chroot ~/deepin15 bash -c "echo deb http://github.com/gfdgd-xi/dclc-kernel/raw/main/ ./ > /etc/apt/sources.list.d/gfdgdxi-kernel-list.list"
           sudo chroot ~/deepin15 apt update
-          sudo chroot ~/deepin15 apt install linux-kernel-dclc-gfdgdxi -y
+          sudo chroot ~/deepin15 apt install linux-kernel-dclc-qitong -y
           sudo chroot ~/deepin15 bash -c "echo deb http://kernel.dclc.gfdgdxi.top/ ./ > /etc/apt/sources.list.d/gfdgdxi-kernel-list.list"
           sudo chroot ~/deepin15 apt update
           sudo chroot ~/deepin15 apt clean
