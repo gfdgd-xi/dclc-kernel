@@ -746,6 +746,66 @@ Description: Linux kernel headers for 6.3.5 on amd64
  .
  This is useful for people who need to build external modules
 
+Package: linux-headers-6.1.35-amd64-desktop
+Architecture: amd64
+Version: 6.1.35-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@fv-az612-160.gqp4uj4dnjkevoqu2sjlt0n5ta.cx.internal.cloudapp.net>
+Installed-Size: 52875
+Filename: ./6.1.35/linux-headers-6.1.35-amd64-desktop_6.1.35-amd64-desktop-1_amd64.deb
+Size: 9292716
+MD5sum: ed16bea1c74221f590ad0264d5a715b9
+SHA1: 139272ab6ef4203159aa908ab9964885b8fbdcaa
+SHA256: a0f9a98a69b5cf40986f094ec0517f8420b9c8f399f77b3e4a449580f88bc88d
+SHA512: 9cda768f683d5d655c20c71fd7ae856b3afab8e754d7bf58af3a31154876488824bac5efc46bb851e8d346ab41fef7b0fb997875e3dfb79099e9e9e146d6b7fb
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.1.35-amd64-desktop on amd64
+ This package provides kernel header files for 6.1.35-amd64-desktop on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-6.1.35-amd64-desktop
+Architecture: amd64
+Version: 6.1.35-amd64-desktop-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@fv-az612-160.gqp4uj4dnjkevoqu2sjlt0n5ta.cx.internal.cloudapp.net>
+Installed-Size: 337363
+Filename: ./6.1.35/linux-image-6.1.35-amd64-desktop_6.1.35-amd64-desktop-1_amd64.deb
+Size: 77644826
+MD5sum: 59ed4459b33f2886d4f4b5331132b0d2
+SHA1: e290bb88335d4fb63740d05ee789fada0fb5b514
+SHA256: d6e1ebd5329f023bd6b2563caf09fe1a103f27dc72fda80eea165f4b3ffeae41
+SHA512: 58b295116eca91a6c9055b48a956df4dd4b735adfc549cd2726a962cf940ba70da70ca1790c150e6950cef10a52304d53c87da2a06fe0c294c98dc5d5d603f00
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.1.35-amd64-desktop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.1.35-amd64-desktop.
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 6.1.35-amd64-desktop-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-upstream
+Maintainer: root <root@fv-az612-160.gqp4uj4dnjkevoqu2sjlt0n5ta.cx.internal.cloudapp.net>
+Installed-Size: 6620
+Provides: linux-kernel-headers
+Filename: ./6.1.35/linux-libc-dev_6.1.35-amd64-desktop-1_amd64.deb
+Size: 1315828
+MD5sum: dbf1d17b3c41f025138b950aea23cdc6
+SHA1: e99c0cd59b4932614dc661869409d5eaf37edd65
+SHA256: 7d084487d74c0c2b8fbe4e190651553e93b2e00f1bdb70fc5cabb8e171c17ed4
+SHA512: 0c05b9564634b77e5b2e40fd040cc457476f8732c4d0d6ba384619e9d76bed8b264d6ea6b7abfa05df98659d47900d96c59f811dacc0602d1d0ae4d080b8abca
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
 Package: linux-image-6.3.9-amd64-desktop-xanmod1
 Architecture: amd64
 Version: 6.3.9-1
