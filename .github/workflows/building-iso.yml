@@ -65,11 +65,7 @@ jobs:
           sudo mv ~/deepin15/backup/*.squashfs ~/squashfs/deepin-15-$kernel-amd64.squashfs
           sudo chroot ~/deepin15 bash -c "mv /boot/initrd.img-* /initrd.img-$kernel"
           sudo chroot ~/deepin15 bash -c "mv /boot/vmlinuz-* /vmlinuz-$kernel"
-          curl -F "file=@$HOME/deepin15/vmlinuz-$kernel" "$UPLOADURL"
-          curl -F "file=@$HOME/deepin15/initrd.img-$kernel" "$UPLOADURL"
-          curl -F "file=@$HOME/squashfs/deepin-15-$kernel-amd64.squashfs" "$UPLOADURL"
           
-
           sudo mv $HOME/squashfs/deepin-15-$kernel-amd64.squashfs ~/deepin15.squashfs
           sudo mv $HOME/deepin15/initrd.img-$kernel ~/initrd.img
           sudo mv $HOME/deepin15/vmlinuz-$kernel ~/vmlinuz
