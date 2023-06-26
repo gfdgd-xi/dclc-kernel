@@ -519,6 +519,27 @@ Description: Header files for Linux amd64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel amd64 configuration.
 
+Package: linux-kernel-dclc-gfdgdxi
+Architecture: amd64
+Version: 6.4
+Priority: optional
+Section: utils
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
+Filename: ./head/linux-kernel-dclc-gfdgdxi_6.4_amd64.deb
+Size: 848
+MD5sum: ce80af39677ba3e19bad3dff54ee3340
+SHA1: a01fe5f6c2b02d064bf3deebd870e6f03999f0fd
+SHA256: c6f983678bca0b86ad27704e10042774ef9b57166d7f616b6b14e68eec4774fe
+SHA512: df087a77c36e66d185923c44f227c60930fd9e25f1b712f865cb998658ced6d09fd988bd151d07e0e96cbd7c1f1bf49230dbe01b72924a2f1bc2e9555f775885
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Severity: serious
+Certainty: possible
+Check: binaries
+Type: binary, udeb
+
 Package: linux-image-octeon
 Architecture: mips64el
 Version: 4.19+105+deb10u1
@@ -622,6 +643,27 @@ Certainty: possible
 Check: binaries
 Type: binary, udeb
 
+Package: linux-kernel-dclc-gfdgdxi-4
+Architecture: amd64
+Version: 4.20.17
+Priority: optional
+Section: utils
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-4.20.17-amd64-desktop, linux-image-4.20.17-amd64-desktop
+Filename: ./head/linux-kernel-dclc-gfdgdxi-4_4.20.17_amd64.deb
+Size: 852
+MD5sum: 431ed49f425d249d1db8db90aa67c7c0
+SHA1: b70a7bcc32dfcf3530ebddba0dc73dd2bfdfb80b
+SHA256: e78b313e66edd9dd3a0671c364a39ee9280f3cd1929f79bb9c6d4d1481969e94
+SHA512: 9f8263d653cef109f9e17319edaad5d7f4a45e8a2350151a7f4752662c39bd9ab5697012eadc36317af611b0a5c36aa7705c77f526041554081ca41189180651
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Severity: serious
+Certainty: possible
+Check: binaries
+Type: binary, udeb
+
 Package: linux-headers-octeon
 Architecture: mips64el
 Version: 4.19+105+deb10u1
@@ -640,6 +682,27 @@ SHA512: 3dc2c16cabb6b5108e70a46197b016473ebe826edaa55115b60459e20811b7ac5cf45970
 Description: Header files for Linux octeon configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel octeon configuration.
+
+Package: linux-kernel-dclc-gfdgdxi-4
+Architecture: amd64
+Version: 4.20.17
+Priority: optional
+Section: utils
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-4.20.17-amd64-desktop, linux-image-4.20.17-amd64-desktop
+Filename: ./head/linux-kernel-dclc-gfdgdxi-4.20.17_amd64.deb
+Size: 688
+MD5sum: 08c7adc3d701383d72aaceb7636c1e89
+SHA1: a84ab8bcab3e8ba8492ef3fb6e4b78f7270d6328
+SHA256: 4a3d64eccbebbfd06f52b84e0e72e2be83f7935d5d75576104dd69e8fb58d85c
+SHA512: 14f0b723126ce17df2fb26470c4c1f93fb6ad3ef71828ba8ca487850a92442e4ec327e60ad2f90d243ca49d98b52d19cbc58e473757f8c65ff7bb66b044da6e7
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Severity: serious
+Certainty: possible
+Check: binaries
+Type: binary, udeb
 
 Package: linux-headers-deepin-experiment-amd64
 Architecture: amd64
@@ -866,6 +929,27 @@ Description: Linux for 64-bit PCs (meta-package), PREEMPT_RT
  with AMD64, Intel 64 or VIA Nano processors.
  .
  This kernel includes the PREEMPT_RT realtime patch set.
+
+Package: linux-kernel-dclc-gfdgdxi
+Architecture: amd64
+Version: 6.4
+Priority: optional
+Section: utils
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
+Filename: ./head/linux-kernel-dclc-gfdgdxi_4.20.17_amd64.deb
+Size: 684
+MD5sum: 25d59678dadbd211b07c475c9543abd2
+SHA1: 59751292a25e6078599db5898f6bdb91f6a8dde3
+SHA256: 20328ba9898b8ffe4ec407a2d775fe7c66b1ff1b94711a4e1b638878546c9e10
+SHA512: 6c317665007e38188662aa82697622f3a61fbefd4fa1e50c257122a1d15b5670fdb7e6604e393ad155c1a618563601fb6479b987c62da3de5bdfab17d2153082
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Severity: serious
+Certainty: possible
+Check: binaries
+Type: binary, udeb
 
 Package: linux-image-deepin-experiment-amd64
 Architecture: amd64
