@@ -181,6 +181,66 @@ Description: Linux kernel, version 5.15.118-amd64-desktop
  This package contains the Linux kernel, modules and corresponding other
  files, version: 5.15.118-amd64-desktop.
 
+Package: linux-headers-6.1.35-amd64-desktop-hwe-xanmod1
+Architecture: amd64
+Version: 6.1.35-amd64-desktop-hwe-xanmod1-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@fv-az349-367.3t0xkmjykhgubkuqaxvs1rllgg.bx.internal.cloudapp.net>
+Installed-Size: 53060
+Filename: ./6.1.35xanmod1/linux-headers-6.1.35-amd64-desktop-hwe-xanmod1_6.1.35-amd64-desktop-hwe-xanmod1-1_amd64.deb
+Size: 9002992
+MD5sum: bf31f9f495a3693b714aaded75da3056
+SHA1: db63c6f273ccf7dfaa1a31a7157bc314c03029e2
+SHA256: ab752c4503b5adee8f090228d1adb7fbd923119b37cf96a4357796d9898b1912
+SHA512: 6ee7542a4889a154a735aec383303cfcace2d066d05d07c02dc7c8a4047426b0882fb254d4164a0ccf2c0dab9b23db83738e62e71c72f769e4d7102abd4bdf7b
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.1.35-amd64-desktop-hwe-xanmod1 on amd64
+ This package provides kernel header files for 6.1.35-amd64-desktop-hwe-xanmod1 on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 6.1.35-amd64-desktop-hwe-xanmod1-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-upstream
+Maintainer: root <root@fv-az349-367.3t0xkmjykhgubkuqaxvs1rllgg.bx.internal.cloudapp.net>
+Installed-Size: 6627
+Provides: linux-kernel-headers
+Filename: ./6.1.35xanmod1/linux-libc-dev_6.1.35-amd64-desktop-hwe-xanmod1-1_amd64.deb
+Size: 1274672
+MD5sum: 471d7e3ec3978f3af71858af2aafe0fd
+SHA1: 69806fd84f1062f8ffc0291d770a5c3c69b9cf02
+SHA256: 1cce244f66f3f13fe7ee52014320c5ce5e6247654a09d1a528cc785e86ad1d16
+SHA512: d83902d0ac6c8945f16d5e8665d9eee2512d0d7f6c8ce76f3fbd479ef0c00bd31a06747f428fda74b1da9a4cc44fde7afab48098b520af9bc4fe4828ac458320
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-image-6.1.35-amd64-desktop-hwe-xanmod1
+Architecture: amd64
+Version: 6.1.35-amd64-desktop-hwe-xanmod1-1
+Priority: optional
+Section: kernel
+Source: linux-upstream
+Maintainer: root <root@fv-az349-367.3t0xkmjykhgubkuqaxvs1rllgg.bx.internal.cloudapp.net>
+Installed-Size: 338819
+Filename: ./6.1.35xanmod1/linux-image-6.1.35-amd64-desktop-hwe-xanmod1_6.1.35-amd64-desktop-hwe-xanmod1-1_amd64.deb
+Size: 72033960
+MD5sum: bbee98d2ddd22b532f27383aa3d9392a
+SHA1: 45766fa13ab2a693afdcb5b7a8ecfa0b63c3792d
+SHA256: 7eb4ceaad7cefa29e08b487df179d456e2fb9c0177cf151ddbee4ac207bf1dd7
+SHA512: 928b7e6af782dd468f1a9779eafe230e328df9e6b9e6c77dd0028d061cb6858a7d0842c33d5fa510c35f93618e6993b5e439bab20dd92ed2429f8ac860e32859
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.1.35-amd64-desktop-hwe-xanmod1
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.1.35-amd64-desktop-hwe-xanmod1.
+
 Package: linux-libc-dev
 Architecture: amd64
 Version: 6.3.8-1
@@ -378,6 +438,27 @@ Homepage: https://www.kernel.org/
 Description: Linux kernel, version 6.3.8-amd64-desktop
  This package contains the Linux kernel, modules and corresponding other
  files, version: 6.3.8-amd64-desktop.
+
+Package: linux-kernel-6.1.35-qitong
+Architecture: amd64
+Version: 6.1.35
+Priority: optional
+Section: utils
+Maintainer: linux qitong <sweetcandymini@foxmail.com>
+Installed-Size: 0
+Depends: linux-headers-6.1.35-amd64-desktop-hwe-xanmod1,linux-image-6.1.35-amd64-desktop-hwe-xanmod1
+Filename: ./head/linux-kernel-6.1.35-qitong_6.1.35_amd64.deb
+Size: 852
+MD5sum: 69aec1df9edd81ec75f3c05c426e0efe
+SHA1: 36d355cebfaffc90824f05265df29133d6dd0c0f
+SHA256: 66158206bd9e40fa4a2ade76fff8af07b65d86eab18f6a9c1a619972fa40ada0
+SHA512: 9888b36631d6369f0fba2994b7b15f4e7088272b5d5f4f1cddd72751927d059915c1b36198c98734c6ebd75f13f0c74f2edefe6a9ff729be1f34e7b08ad513f2
+Homepage: https://github.com/Linux-qitong/dclc-kernel/
+Description: 内核 6.1.35xanmod1（虚包）
+Severity: serious
+Certainty: possible
+Check: binaries
+Type: binary, udeb
 
 Package: linux-headers-deepin-server-amd64
 Architecture: amd64
@@ -1816,11 +1897,11 @@ Source: linux-upstream
 Maintainer: root <root@fv-az590-445.wplo2yftg53erdu2vm2f1fqbde.bx.internal.cloudapp.net>
 Installed-Size: 398338
 Filename: ./6.2.16/linux-image-6.2.16-amd64-desktop_6.2.16-amd64-desktop-1_amd64.deb
-Size: 85836636
-MD5sum: 9fd491b5b08b92a69c4e976213f0cf82
-SHA1: d3fba5b6154a76c3a1d5e3c34961628cc7d9e24f
-SHA256: 808922f9b55fded0c8c9b02da535b405fe584a70505ae9e2e88106480bb9cb20
-SHA512: 83f9fb5fb6dd9f1ffb2706bb087878a28e9afdb233b96bc4fc1c440d2b3d38183e5fa81e5e2344b56ed1b05f44f3b5bd0ff34efb7e82428b226cef30c059aed6
+Size: 78518452
+MD5sum: dbd0a6def2883bcf326e36c033691020
+SHA1: f5b21433cb79e1e80fc0ff8ba4612fe3229945c7
+SHA256: c557204128508b7b918cc1abc429dcd7b7852c981a93b570b11dd2f3f3569e14
+SHA512: 6be1a9c3355c05898bf11f282111412d4cee117f363745cda10edfe0fd5aef383419b99af1eadb7bec404f46c798a974a563049b78059ff488dd44cf7316d563
 Homepage: https://www.kernel.org/
 Description: Linux kernel, version 6.2.16-amd64-desktop
  This package contains the Linux kernel, modules and corresponding other
@@ -1837,11 +1918,11 @@ Maintainer: root <root@fv-az590-445.wplo2yftg53erdu2vm2f1fqbde.bx.internal.cloud
 Installed-Size: 6666
 Provides: linux-kernel-headers
 Filename: ./6.2.16/linux-libc-dev_6.2.16-amd64-desktop-1_amd64.deb
-Size: 1327496
-MD5sum: 140567105ab45149382867bfd28b87e9
-SHA1: ea83c95f47ddceeaaea5311c360e882937e8a35e
-SHA256: d8424f3685ff97a6bba13a4f0b63c847ad22151486926863c882097cb2dd7346
-SHA512: f18c8752fd55cdec58cb10504775343e86775fae12e1c025bedb92d098450913e57f21e7cc59d41416217e0db09dcc525789d1b44671c79bb47575b9419c51d5
+Size: 1284448
+MD5sum: af4f3a44b698c5e0b1b21a1386467f25
+SHA1: 9f89408f8454ab505ce515e7587258106520fdc0
+SHA256: 0b7eea23afe647f4834c1f1f16ccbc338ab910a79f2e856ce96babcb6b895be5
+SHA512: 6661f022a4cc6118bbaa700d7d94b58d0606a0c1f73db21a35c6ad2f1f28e201500188c37d85ec48dc037730596e9c2ce8d7662108606e249198acdd22fa77b1
 Homepage: https://www.kernel.org/
 Description: Linux support headers for userspace development
  This package provides userspaces headers from the Linux kernel.  These headers
@@ -1856,11 +1937,11 @@ Source: linux-upstream
 Maintainer: root <root@fv-az590-445.wplo2yftg53erdu2vm2f1fqbde.bx.internal.cloudapp.net>
 Installed-Size: 53443
 Filename: ./6.2.16/linux-headers-6.2.16-amd64-desktop_6.2.16-amd64-desktop-1_amd64.deb
-Size: 9389288
-MD5sum: 49bf65b49ab45702da6861e667686ef8
-SHA1: 68cdc27a3f98a07cfd71ff773fa2b34c1f023bea
-SHA256: 2d21b169440758ff98f3d5a44631647179fe73f85769362433ab11b591f7d44f
-SHA512: 33bb6a1e0db83596cfc579717c2e1aa4b9910e1d867280da1313e4155c3813ed7627a057b526a54537530db2417ccc3eafd5e1030f8cd85820025759cccea55c
+Size: 9082568
+MD5sum: 55c7dfddccaed6f5877da6c6ff49d7dd
+SHA1: 639638430765f1cc686c1ef049ac62d99c44b268
+SHA256: 6ef2b59b42f81f4d718b0625434e9892e0886d3cf4096aa689e7649b5fa42419
+SHA512: c2a3b0f7602f357f233c93c7d520e6a8491d2408e497b79f0d4975525dc54348de472bf92978b3c4c9298d600160c5a452f28febbe3c78a7d6d31f540d2907fb
 Homepage: https://www.kernel.org/
 Description: Linux kernel headers for 6.2.16-amd64-desktop on amd64
  This package provides kernel header files for 6.2.16-amd64-desktop on amd64
