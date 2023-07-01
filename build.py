@@ -17,7 +17,7 @@ def Write(path: str):
     lists = os.listdir(path)
     lists = sorted(lists, key=str.lower)
     for i in lists:
-        if i == "index.html" or i == "CNAME" or i == "build.py" or i == "build.sh" or i == ".git" or i == ".github" or "deb-" == i[:3]:
+        if i == "index.html" or i == "CNAME" or i == "build.py" or i == "build.sh" or i == ".git" or i == ".github" or "deb" == i[:3]:
             continue
         if os.path.isdir(f"{path}/{i}"):
             htmlstring += f'\n          <li><a href="{i}">{i}/</a></li>'
@@ -52,7 +52,7 @@ def Dir(path: str):
     Write(path)
     for i in os.listdir(path):
         print(f"{path}/{i}")
-        if os.path.isdir(f"{path}/{i}") and i != ".git" and i != ".github" and i != "deb":
+        if os.path.isdir(f"{path}/{i}") and i != ".git" and i != ".github" and i != "deb"  and "deb" != i[:3]:
             Dir(f"{path}/{i}")
 Dir(".")
 print("构建完成！")
