@@ -14,8 +14,10 @@ def Write(path: str):
         <ul>
             <li><a href="..">../</a></li>
 """
-    for i in os.listdir(path):
-        if i == "index.html" or i == "CNAME" or i == "build.py" or i == "build.sh" or i == ".git" or i == ".github":
+    lists = os.listdir(path)
+    lists = sorted(lists, key=str.lower)
+    for i in lists:
+        if i == "index.html" or i == "CNAME" or i == "build.py" or i == "build.sh" or i == ".git" or i == ".github" or "deb-" == i[:3]:
             continue
         if os.path.isdir(f"{path}/{i}"):
             htmlstring += f'\n          <li><a href="{i}">{i}/</a></li>'
