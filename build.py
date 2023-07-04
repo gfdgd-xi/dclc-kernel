@@ -9,6 +9,22 @@ def Write(path: str):
         <meta charset="UTF-8">
         <title>文件目录</title>
     </head>
+    <style  type="text/css">
+        pre {
+            overflow: auto;
+        }
+
+        a {
+            word-break:break-all;
+            word-wrap:break-word;
+        }
+
+        h2 {
+            overflow: auto;
+            word-break:break-all;
+            word-wrap:break-word;
+        }
+    </style>
     <body>
         <h1>文件目录</h1>
         <ul>
@@ -26,6 +42,10 @@ def Write(path: str):
     htmlstring += f"""     </ul>
         <hr/>
         <h3>更新时间：{datetime.datetime.now().strftime("%Y年%m月%d日 %H:%M:%S")}</h3>
+        <hr/>
+        <h2>添加 apt 源</h2>
+        <pre><code>wget http://kernel.dclc.gfdgdxi.top/sources/github.sh ; bash github.sh ; rm github.sh</code></pre>
+        <p>项目地址：<a href="https://github.com/gfdgd-xi/dclc-kernel/">https://github.com/gfdgd-xi/dclc-kernel/</a></p>
         <hr/>
         <h1 id="copyright">©2020~2023 gfdgd xi</h1>
 </body>
