@@ -36,9 +36,14 @@ def Write(path: str):
         if i == "index.html" or i == "CNAME" or i == "build.py" or i == "build.sh" or i == ".git" or i == ".github" or "deb" == i[:3]:
             continue
         if os.path.isdir(f"{path}/{i}"):
-            htmlstring += f'\n          <li><a href="{i}">{i}/</a></li>'
+            htmlstring += f'\n          <li><a href="{i}"><img src="/icons/folder.svg" width=20px style="width=20px;vertical-align:middle;">  {i}/</a></li>'
         else:
-            htmlstring += f'\n          <li><a href="{i}">{i}</a></li>'
+            if ".deb" == os.path.splitext(i)[1]:
+                htmlstring += f'\n          <li><a href="{i}"><img src="/icons/deb.svg" width=20px style="width=20px;vertical-align:middle;">  {i}</a></li>'
+            elif ".jpg" == os.path.splitext(i)[1]:
+                htmlstring += f'\n          <li><a href="{i}"><img src="/icons/image-jpeg.svg" width=20px style="width=20px;vertical-align:middle;">  {i}</a></li>'
+            else:
+                htmlstring += f'\n          <li><a href="{i}"><img src="/icons/text-x-source.svg" width=20px style="width=20px;vertical-align:middle;">  {i}</a></li>'
     htmlstring += f"""     </ul>
         <hr/>
         <h3>更新时间：{datetime.datetime.now().strftime("%Y年%m月%d日 %H:%M:%S")}</h3>
