@@ -36,7 +36,7 @@ def Write(path: str):
         if i == "index.html" or i == "CNAME" or i == "build.py" or i == "build.sh" or i == ".git" or i == ".github" or "deb" == i[:3]:
             continue
         if os.path.isdir(f"{path}/{i}"):
-            htmlstring += f'\n          <li><a href="{i}"><img src="/icons/folder.svg" width=20px style="width=20px;vertical-align:middle;">  {i}/</a></li>'
+            htmlstring += f'\n          <li><a href="{i}/"><img src="/icons/folder.svg" width=20px style="width=20px;vertical-align:middle;">  {i}/</a></li>'
         else:
             if ".deb" == os.path.splitext(i)[1]:
                 htmlstring += f'\n          <li><a href="{i}"><img src="/icons/deb.svg" width=20px style="width=20px;vertical-align:middle;">  {i}</a></li>'
