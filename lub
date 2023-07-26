@@ -619,7 +619,7 @@ If you don't specify, the backup will be saved to /$backupdir"
 	[ "$yn" != "y" ] && { destroytree $bindingdir; rm $exclude; exit 1; }
 	stime=`date`
 	mkdir -p "/$backupdir"
-	mksquashfs /$bindingdir "/$backupdir/backup$today.squashfs" -ef $exclude -comp xz
+	mksquashfs /$bindingdir "/$backupdir/backup$today.squashfs"  -ef $exclude -comp xz -Xbcj x86
 	destroytree $bindingdir
 	rm $exclude
 	cp /boot/initrd.img-`uname -r` "/$backupdir"
