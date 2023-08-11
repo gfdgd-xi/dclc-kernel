@@ -393,6 +393,25 @@ Description: Linux kernel headers for 4.19.291-amd64-desktop on amd64
  .
  This is useful for people who need to build external modules
 
+Package: linux-headers-4.19.291-amd64-desktop-hwe
+Source: linux-4.19.291-amd64-desktop-hwe
+Version: 4.19.291-amd64-desktop-hwe-1
+Architecture: amd64
+Maintainer: root <root@fv-az257-52.xm13d311ygiehixdrdiphxfwwd.dx.internal.cloudapp.net>
+Installed-Size: 74396
+Filename: ./4.19.291-hwe/linux-headers-4.19.291-amd64-desktop-hwe_4.19.291-amd64-desktop-hwe-1_amd64.deb
+Size: 11516244
+MD5sum: c3ccd8ebbb9e34520309a0515d50e1f7
+SHA1: 16945c5c649189c145d546a5ce8434955bcc4747
+SHA256: a5ce34b56c00806ac10c38d8b3b5f7f0f4fae0a81c31ccab37a74f7759ce5dc7
+Section: kernel
+Priority: optional
+Homepage: http://www.kernel.org/
+Description: Linux kernel headers for 4.19.291-amd64-desktop-hwe on amd64
+ This package provides kernel header files for 4.19.291-amd64-desktop-hwe on amd64
+ .
+ This is useful for people who need to build external modules
+
 Package: linux-headers-5.10.0-arm64-desktop
 Source: linux-5.10.0-arm64-desktop
 Version: 23.00.00.06-alpha
@@ -3431,6 +3450,24 @@ Homepage: http://www.kernel.org/
 Description: Linux kernel, version 4.19.291-amd64-desktop
  This package contains the Linux kernel, modules and corresponding other
  files, version: 4.19.291-amd64-desktop.
+
+Package: linux-image-4.19.291-amd64-desktop-hwe
+Source: linux-4.19.291-amd64-desktop-hwe
+Version: 4.19.291-amd64-desktop-hwe-1
+Architecture: amd64
+Maintainer: root <root@fv-az257-52.xm13d311ygiehixdrdiphxfwwd.dx.internal.cloudapp.net>
+Installed-Size: 241795
+Filename: ./4.19.291-hwe/linux-image-4.19.291-amd64-desktop-hwe_4.19.291-amd64-desktop-hwe-1_amd64.deb
+Size: 56493434
+MD5sum: 942d11836a6895287b0df9083d173538
+SHA1: 196453cda00c9ff978943ee9c609c96d185dc756
+SHA256: 3458ae9a74b48277e21ae49753dadd36de64fbb729592e42dc11bb12763d0a6c
+Section: kernel
+Priority: optional
+Homepage: http://www.kernel.org/
+Description: Linux kernel, version 4.19.291-amd64-desktop-hwe
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 4.19.291-amd64-desktop-hwe.
 
 Package: linux-image-5.10.0-arm64-desktop
 Source: linux-5.10.0-arm64-desktop
@@ -6655,71 +6692,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi_5.19.17_amd64.deb
-Size: 682
-MD5sum: ea9bdc93cbaa68b66569dc18db1ebd11
-SHA1: 72bd03e261ccd949bca01e3705f98019f5dab892
-SHA256: 03cbe1eb99b10588bceb00095c0506b73c42608dc3ae31926aa5b0a658af6832
-Section: utils
-Priority: optional
-Homepage: https://github.com/gfdgd-xi/dclc-kernel
-Description: 内核（虚包）
-Certainty: possible
-Check: binaries
-Severity: serious
-Type: binary, udeb
-
-Package: linux-kernel-dclc-gfdgdxi
-Version: 6.4
-Architecture: amd64
-Maintainer: gfdgd xi <3025613752@qq.com>
-Installed-Size: 0
-Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi_5.10.186_amd64.deb
+Filename: ./head/linux-kernel-dclc-gfdgdxi_5.15.119_amd64.deb
 Size: 684
-MD5sum: fa4b8548c68123112063967fe6959fa8
-SHA1: 1328aaaad04bcd2de1f880c3013a1fe595b47e3c
-SHA256: d1a62562ef9316cf441348399bd2fed373ef663a3f995b9271b327fac69d1cef
-Section: utils
-Priority: optional
-Homepage: https://github.com/gfdgd-xi/dclc-kernel
-Description: 内核（虚包）
-Certainty: possible
-Check: binaries
-Severity: serious
-Type: binary, udeb
-
-Package: linux-kernel-dclc-gfdgdxi
-Version: 6.4
-Architecture: amd64
-Maintainer: gfdgd xi <3025613752@qq.com>
-Installed-Size: 0
-Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi_6.3.10_amd64.deb
-Size: 684
-MD5sum: 62b799535e05629497fec23d0a4ead3a
-SHA1: 7a7d5d6989f95763380f5df13ea93abec70d71c6
-SHA256: 9b58455d2754b62e7899334fa5546f144e4e89a7802f9c43947493b2ec6156dd
-Section: utils
-Priority: optional
-Homepage: https://github.com/gfdgd-xi/dclc-kernel
-Description: 内核（虚包）
-Certainty: possible
-Check: binaries
-Severity: serious
-Type: binary, udeb
-
-Package: linux-kernel-dclc-gfdgdxi
-Version: 6.4
-Architecture: amd64
-Maintainer: gfdgd xi <3025613752@qq.com>
-Installed-Size: 0
-Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi_6.4_amd64.deb
-Size: 848
-MD5sum: 706d1886aa85e351345a2a23966f2df2
-SHA1: 20455defc1d064eaa327bc303c9a4884d91483cc
-SHA256: 12294c29abf563a0e0045c493e857b69d1041399a2751b51259ac0082810815a
+MD5sum: b015cf88e1512824d4497e151702dbcb
+SHA1: bd6fef547b40a58c59a564612f391846176b8bec
+SHA256: 47e73c0fb60b248d3758da889ab916f12119a149df60b576ed82217d8db027b8
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -6755,11 +6732,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi_4.20.17_amd64.deb
+Filename: ./head/linux-kernel-dclc-gfdgdxi_6.3.10_amd64.deb
 Size: 684
-MD5sum: 25d59678dadbd211b07c475c9543abd2
-SHA1: 59751292a25e6078599db5898f6bdb91f6a8dde3
-SHA256: 20328ba9898b8ffe4ec407a2d775fe7c66b1ff1b94711a4e1b638878546c9e10
+MD5sum: 62b799535e05629497fec23d0a4ead3a
+SHA1: 7a7d5d6989f95763380f5df13ea93abec70d71c6
+SHA256: 9b58455d2754b62e7899334fa5546f144e4e89a7802f9c43947493b2ec6156dd
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -6775,11 +6752,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi_4.19.288_amd64.deb
+Filename: ./head/linux-kernel-dclc-gfdgdxi_5.10.186_amd64.deb
 Size: 684
-MD5sum: afb1720c360d7855c1294caa60aa8fbb
-SHA1: 1435b293e2e438901cfcd87c4454d36f8d51faac
-SHA256: b5f5cf5298a41fb64ec24699a70047a521ad7f35be995328186f924f1ee29d95
+MD5sum: fa4b8548c68123112063967fe6959fa8
+SHA1: 1328aaaad04bcd2de1f880c3013a1fe595b47e3c
+SHA256: d1a62562ef9316cf441348399bd2fed373ef663a3f995b9271b327fac69d1cef
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -6815,11 +6792,71 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi_5.15.119_amd64.deb
+Filename: ./head/linux-kernel-dclc-gfdgdxi_4.20.17_amd64.deb
 Size: 684
-MD5sum: b015cf88e1512824d4497e151702dbcb
-SHA1: bd6fef547b40a58c59a564612f391846176b8bec
-SHA256: 47e73c0fb60b248d3758da889ab916f12119a149df60b576ed82217d8db027b8
+MD5sum: 25d59678dadbd211b07c475c9543abd2
+SHA1: 59751292a25e6078599db5898f6bdb91f6a8dde3
+SHA256: 20328ba9898b8ffe4ec407a2d775fe7c66b1ff1b94711a4e1b638878546c9e10
+Section: utils
+Priority: optional
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Certainty: possible
+Check: binaries
+Severity: serious
+Type: binary, udeb
+
+Package: linux-kernel-dclc-gfdgdxi
+Version: 6.4
+Architecture: amd64
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
+Filename: ./head/linux-kernel-dclc-gfdgdxi_5.4.249_amd64.deb
+Size: 684
+MD5sum: 9b041bf0df8955ed04ae92e2a3f1d7d1
+SHA1: 24bc33a312914b9901d02ec32b04c21033290ec5
+SHA256: 65bc69fc3e83599036e716b28d95052800ca15389e41fe03bbe8ba2e6d1c6459
+Section: utils
+Priority: optional
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Certainty: possible
+Check: binaries
+Severity: serious
+Type: binary, udeb
+
+Package: linux-kernel-dclc-gfdgdxi
+Version: 6.4
+Architecture: amd64
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
+Filename: ./head/linux-kernel-dclc-gfdgdxi_6.4_amd64.deb
+Size: 848
+MD5sum: 83da983223e50e8d1d7b6ed9aca15f43
+SHA1: f025583b111aae012826404a0ae9901b4314a336
+SHA256: 57b109f30aa236fb366e83ca5e5fc380738d9303c6839f9173c062d1a98af6f5
+Section: utils
+Priority: optional
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Certainty: possible
+Check: binaries
+Severity: serious
+Type: binary, udeb
+
+Package: linux-kernel-dclc-gfdgdxi
+Version: 6.4
+Architecture: amd64
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
+Filename: ./head/linux-kernel-dclc-gfdgdxi_4.19.288_amd64.deb
+Size: 684
+MD5sum: afb1720c360d7855c1294caa60aa8fbb
+SHA1: 1435b293e2e438901cfcd87c4454d36f8d51faac
+SHA256: b5f5cf5298a41fb64ec24699a70047a521ad7f35be995328186f924f1ee29d95
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -6855,11 +6892,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi_5.4.249_amd64.deb
-Size: 684
-MD5sum: 9b041bf0df8955ed04ae92e2a3f1d7d1
-SHA1: 24bc33a312914b9901d02ec32b04c21033290ec5
-SHA256: 65bc69fc3e83599036e716b28d95052800ca15389e41fe03bbe8ba2e6d1c6459
+Filename: ./head/linux-kernel-dclc-gfdgdxi_5.19.17_amd64.deb
+Size: 682
+MD5sum: ea9bdc93cbaa68b66569dc18db1ebd11
+SHA1: 72bd03e261ccd949bca01e3705f98019f5dab892
+SHA256: 03cbe1eb99b10588bceb00095c0506b73c42608dc3ae31926aa5b0a658af6832
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -7215,11 +7252,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-4.20.17-amd64-desktop, linux-image-4.20.17-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi-4_4.20.17_amd64.deb
-Size: 852
-MD5sum: 340c41895b14fcc1b49704f854c9738d
-SHA1: 57091587697103a56e88b9efe874ba29dc53fe71
-SHA256: e25a74a573a5090acc494524f26e45631b8ad646ef5bf590b87895207ae62f40
+Filename: ./head/linux-kernel-dclc-gfdgdxi-4.20.17_amd64.deb
+Size: 688
+MD5sum: 08c7adc3d701383d72aaceb7636c1e89
+SHA1: a84ab8bcab3e8ba8492ef3fb6e4b78f7270d6328
+SHA256: 4a3d64eccbebbfd06f52b84e0e72e2be83f7935d5d75576104dd69e8fb58d85c
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -7235,11 +7272,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-4.20.17-amd64-desktop, linux-image-4.20.17-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi-4.20.17_amd64.deb
-Size: 688
-MD5sum: 08c7adc3d701383d72aaceb7636c1e89
-SHA1: a84ab8bcab3e8ba8492ef3fb6e4b78f7270d6328
-SHA256: 4a3d64eccbebbfd06f52b84e0e72e2be83f7935d5d75576104dd69e8fb58d85c
+Filename: ./head/linux-kernel-dclc-gfdgdxi-4_4.20.17_amd64.deb
+Size: 852
+MD5sum: 07ae2a78efce702c2e71a777387b80d7
+SHA1: 952adcb3174b0e9e1a0cbe4016c47733e4a92d1d
+SHA256: 5c7b6a149614b2f55bf85b755a3f54b56ffbb49900072dca709df88776c44af7
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -7276,10 +7313,10 @@ Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-5.10.186-amd64-desktop, linux-image-5.10.186-amd64-desktop
 Filename: ./head/linux-kernel-dclc-gfdgdxi-4_5.10.186_amd64.deb
-Size: 2024
-MD5sum: f12f25bf3503147cd514d72b54991bab
-SHA1: 7e7f44a74569c0bbbaa3f28ed702a269608739c0
-SHA256: ad79c19fb5304e01d376989d7e40c150af3022bbd77f6f41b9b6b6e8b3e6a8c1
+Size: 2020
+MD5sum: 74df124b796c41b1213fc182b1229d2a
+SHA1: 4f2a686f7819fcb595ddcad1cf7fead497da4b27
+SHA256: b1173cabf11225339608996f8f6493406029adf7c807eeec363f638dfc6b827a
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -7340,6 +7377,26 @@ Size: 864
 MD5sum: 43edb763eceac111beadb8be9629a1b7
 SHA1: 9e1acf229023e7825ad1a3e648561784d231bce8
 SHA256: c526f860b61fe536395201537a573f5df902beefc116535a8604ecd622cce0ee
+Section: utils
+Priority: optional
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Certainty: possible
+Check: binaries
+Severity: serious
+Type: binary, udeb
+
+Package: linux-kernel-dclc-gfdgdxi-4-hwe
+Version: 4.19.291
+Architecture: amd64
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-4.19.291-amd64-desktop-hwe, linux-image-4.19.291-amd64-desktop-hwe
+Filename: ./head/linux-kernel-dclc-gfdgdxi-4-hwe_4.19.291_amd64.deb
+Size: 860
+MD5sum: 837329c23a108487f5dc0ed1a2870f7e
+SHA1: e273acf2b1b2aee6de10e438edb47a474a100c36
+SHA256: 68893598484ec8f9021ee1a870847d5540893efc75470b8f83f285d26191dc05
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -7556,10 +7613,10 @@ Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-5.19.17-amd64-desktop, linux-image-5.19.17-amd64-desktop
 Filename: ./head/linux-kernel-dclc-gfdgdxi-5_5.19.17_amd64.deb
-Size: 2024
-MD5sum: 35f8ac39942573f10d890620dc0b3418
-SHA1: 3b6cf2cc6881f86d2676ad38b49e60b234ed9d5e
-SHA256: ffab210896b8840b0b61bb11e41c5545f8440404db2e48f6f8be17d8c158a704
+Size: 2020
+MD5sum: 757b1303108d6e1d08842bc8282de95c
+SHA1: 412ad90ea301799a902df016aa6b63664a75ba1f
+SHA256: 7d41af393abb077c617867980d93b9664477a2b5ce6dd984a50ca15272c81f84
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -7616,10 +7673,10 @@ Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-5.4.249-amd64-desktop, linux-image-5.4.249-amd64-desktop
 Filename: ./head/linux-kernel-dclc-gfdgdxi-5_5.4.249_amd64.deb
-Size: 2016
-MD5sum: 236b0986664e9ef0c84be9f699c1e7a0
-SHA1: 7120affd7b75f3aa6702116e8a699cccccffeb75
-SHA256: ac065f48823cf9600dad56183e9dc7ecee21448af192201513322ac70752be67
+Size: 2020
+MD5sum: b1401641bab7ad183e493c5319048c1a
+SHA1: f3fa9d5371e4a274f88741a91da09756590a544b
+SHA256: e709034e32eb4f7ba6d3029bce4efcfaea37c7c8ef8c96801761015c330db3c1
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -8056,10 +8113,10 @@ Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-4.19.288-amd64-desktop, linux-image-4.19.288-amd64-desktop
 Filename: ./head/linux-kernel-dclc-gfdgdxi-6_4.19.288_amd64.deb
-Size: 2028
-MD5sum: 5d1f183ccc43282a76e880a0127f94e2
-SHA1: dfe8ff853345f0929935f7f725f5411cd8efe95e
-SHA256: 4382f07df1aef4ae8063b520e4f461a024a9054eee30232fb3c021b15171dcc5
+Size: 2024
+MD5sum: e0db2f7f79e2079a28d14a69fdc90a57
+SHA1: 5ed9a14312bfd8bc0ea0206a92e125ba510c6559
+SHA256: e7329ca499eef3cdb39a80cc9e503ce7970f0133c0e230906171b9ba9a64f793
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -8116,10 +8173,10 @@ Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.1.37-amd64-desktop, linux-image-6.1.37-amd64-desktop
 Filename: ./head/linux-kernel-dclc-gfdgdxi-6_6.1.37_amd64.deb
-Size: 856
-MD5sum: 8b20d055bda01d35bc4070bfe020c0a0
-SHA1: 81b075e3cdfd3a8dc6c1de43cedaef6e206c8c93
-SHA256: 1057bac820323b6ef22232b2c80f2ce53e6ffb3877711476abf9fcd8c0274310
+Size: 852
+MD5sum: ee5de63670c0e11daca827a3b530d6f4
+SHA1: fdb73d440fc03d9ed937041d2f420b14016741d5
+SHA256: f07e7408d9f4de3fe8790c39a56d79287a85dc570fae1e0764e29fc4180397ae
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -8275,11 +8332,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.3.11-amd64-desktop, linux-image-6.3.11-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi-6_6.3.11_amd64.deb
-Size: 852
-MD5sum: 7a0138aadd192cefb3cd63d24fa78193
-SHA1: 05cde84bf84b2deb035aeb0f465c19a00b120d6a
-SHA256: 8c6347da6df49541070b27149ad5ced3f2fc56d45a0e15bd4486d9eed939d441
+Filename: ./head/linux-kernel-dclc-gfdgdxi-6.3.11_amd64.deb
+Size: 690
+MD5sum: c58b68b3c9ec371485ca106e45cbfc5f
+SHA1: c9dc7ba2e64752e82f2fe05233b53fbe37dd36bb
+SHA256: fa444c8af37e65822caeef4af190733ffa51d3936dfcb2d09c761ea31a7b1335
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -8295,11 +8352,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.3.11-amd64-desktop, linux-image-6.3.11-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi-6.3.11_amd64.deb
-Size: 690
-MD5sum: c58b68b3c9ec371485ca106e45cbfc5f
-SHA1: c9dc7ba2e64752e82f2fe05233b53fbe37dd36bb
-SHA256: fa444c8af37e65822caeef4af190733ffa51d3936dfcb2d09c761ea31a7b1335
+Filename: ./head/linux-kernel-dclc-gfdgdxi-6_6.3.11_amd64.deb
+Size: 852
+MD5sum: 845d48e662bdf21a832dbfc143478f09
+SHA1: d6dbf012b7be53cde12451b625b399adfdc24037
+SHA256: ff3368b59af3b49cdf73fbd6255b225d3d339b593c03336a6bde7fc030bf6962
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -8376,10 +8433,10 @@ Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.4-amd64-desktop, linux-image-6.4-amd64-desktop
 Filename: ./head/linux-kernel-dclc-gfdgdxi-6_6.4_amd64.deb
-Size: 2016
-MD5sum: 2927d47250757bb2f913dddf095af756
-SHA1: 733e3e78cc04b2b21477b45a11003fd7b2113415
-SHA256: ef3226c5397ff11928ef0b5dffff47d21cb0c6d7cd898e5a6a5180f4d626b25a
+Size: 2012
+MD5sum: 5c99a44189672381b609d1dee4bbdf27
+SHA1: 55e5448260ac2a171b6dbf7dd9f66043bcd92994
+SHA256: b6ce17878dd5f79ef9fd5ea5289f53727f7d62395eb8c3476565c2b79309c2f6
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -8417,9 +8474,9 @@ Installed-Size: 0
 Depends: linux-headers-6.4.1-amd64-desktop, linux-image-6.4.1-amd64-desktop
 Filename: ./head/linux-kernel-dclc-gfdgdxi-6_6.4.1_amd64.deb
 Size: 848
-MD5sum: 3415733e76503ca38bc094a6f7b242cc
-SHA1: bd42c14b235199d82666f2424f5b1f39d79084f2
-SHA256: 6f8feb9ff42b8e68dc70ff441e600f899e46b0307dc50dcf228d568b61487d51
+MD5sum: ae362cc891e7210f5e49760a3763114f
+SHA1: e101d3464187d021ca26a65b64020241c7c3029a
+SHA256: a58596148f130eec108058c74f518171f5bf40f38784da212da3722542749580
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -8935,11 +8992,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.1.33-rt11-xanmod1-amd64-desktop, linux-image-6.1.33-rt11-xanmod1-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi-xanmod-6.1.33-rt11-xanmod1_amd64.deb
-Size: 700
-MD5sum: ef088653e9872d1e0ef2bf12bb756447
-SHA1: a236f13fbd8ce5dc1ee48b41a4257d07c850fa80
-SHA256: c48334614eb3e864807637edd0bf9d1a36fe2a23a35253c99c4285e4b10dbe97
+Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod_6.1.33-rt11-xanmod1_amd64.deb
+Size: 868
+MD5sum: 2cfd3b2f481bda547e1d8a2a3b243f47
+SHA1: da02cac9370b00b21c0cb8b66b7dea2729c6962b
+SHA256: 9209baf09aebda72e2214f7054ad8d8377dbb14272e352da55a99072bdbb44e4
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -8955,11 +9012,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.1.33-rt11-xanmod1-amd64-desktop, linux-image-6.1.33-rt11-xanmod1-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod_6.1.33-rt11-xanmod1_amd64.deb
-Size: 868
-MD5sum: 1fe5ec17977a702871060dbcf3572d44
-SHA1: c6ca5c138e4a285dae2732da4abb3cd7b89ee681
-SHA256: 54147d6d7c8b2c6021a5c304408c60c765e8e11cd2b2ab20734239de45b25c56
+Filename: ./head/linux-kernel-dclc-gfdgdxi-xanmod-6.1.33-rt11-xanmod1_amd64.deb
+Size: 700
+MD5sum: ef088653e9872d1e0ef2bf12bb756447
+SHA1: a236f13fbd8ce5dc1ee48b41a4257d07c850fa80
+SHA256: c48334614eb3e864807637edd0bf9d1a36fe2a23a35253c99c4285e4b10dbe97
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -8997,9 +9054,9 @@ Installed-Size: 0
 Depends: linux-headers-6.1.36-xanmod1-amd64-desktop, linux-image-6.1.36-xanmod1-amd64-desktop
 Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod_6.1.36-xanmod1_amd64.deb
 Size: 864
-MD5sum: 2d8d5a43a4a3228750ffcbb4b421f858
-SHA1: ccc625493bda02b88472d6768a1376a05fe1a496
-SHA256: d5f33706ce2f5e46362fe9b74f0356962566ddd6ec69a64244306328aaa45335
+MD5sum: 2734a65a556ba4e8430deb041fd29217
+SHA1: 16cc94a400fb2151ec717eb7822f6dac2e1a1688
+SHA256: 980dab0ffbbea3ddcb5800ec3d79bc971e5615dfb074ad6dfbe75e8d09334610
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9016,10 +9073,10 @@ Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.1.37-xanmod1-amd64-desktop, linux-image-6.1.37-xanmod1-amd64-desktop
 Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod_6.1.37-xanmod1_amd64.deb
-Size: 872
-MD5sum: 5c163654a2a7a116e0e25c98862803ea
-SHA1: 49d69c8302450fa936eb4592f10ef57b55392fd2
-SHA256: 620dde562ceade725c8cb97f8ad478d82636796d0c976d0b7d4823718fe51750
+Size: 868
+MD5sum: fa7a5117458d08f136fa6f202d2f23cb
+SHA1: 84df150df40bc1576a548718f2bc472a6784a4ca
+SHA256: 9888dbfc4b47ca9f2d63442613262a76cdd8b5ba59d38b3db279cf66de5ea2f6
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9135,11 +9192,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.3.10-xanmod1-amd64-desktop, linux-image-6.3.10-xanmod1-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi-xanmod-6.3.10-xanmod1_amd64.deb
-Size: 696
-MD5sum: d58e27cc564630afa6a6258b9fb15eaa
-SHA1: 8016f7de2f65faa1b644b374acae8cae868fdce3
-SHA256: 12bc53bc8a2b2a972c9e85c7d84e15c9052ebb5d77c64fd7d71b36704b87813a
+Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod_6.3.10-xanmod1_amd64.deb
+Size: 864
+MD5sum: 862e36227bd170b8208713a4f3b4ef4e
+SHA1: 3f70751a439cbe7ba285aee6e9488f73369ce33e
+SHA256: 1f110a330272dd2864615f589355d3b1fbdfb5a13d87bc67875a4eb5ca9e1383
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9155,11 +9212,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.3.10-xanmod1-amd64-desktop, linux-image-6.3.10-xanmod1-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod_6.3.10-xanmod1_amd64.deb
-Size: 864
-MD5sum: 1de9bee0d2bc0ef1913f08d4dffb9ee4
-SHA1: 878a9074449fd202adfb1e910b1d75ffcd38434e
-SHA256: c3d162eb885b2321e147fb20cf9c894bb3f0a52abc709087c70fcda0afd02673
+Filename: ./head/linux-kernel-dclc-gfdgdxi-xanmod-6.3.10-xanmod1_amd64.deb
+Size: 696
+MD5sum: d58e27cc564630afa6a6258b9fb15eaa
+SHA1: 8016f7de2f65faa1b644b374acae8cae868fdce3
+SHA256: 12bc53bc8a2b2a972c9e85c7d84e15c9052ebb5d77c64fd7d71b36704b87813a
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9177,9 +9234,9 @@ Installed-Size: 0
 Depends: linux-headers-6.3.11-xanmod1-amd64-desktop, linux-image-6.3.11-xanmod1-amd64-desktop
 Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod_6.3.11-xanmod1_amd64.deb
 Size: 864
-MD5sum: e9c52b5e0df5eae73c59dfb1ba4cee86
-SHA1: cf3d7dc4069de02b3c5870fb03861f30b76368a6
-SHA256: be0a2f73a8ad9e7aab23f4fdc7127e1023f0f532dede6d7d4c695b14f1ad0183
+MD5sum: bfda108b912db4a6fdbeb4863c539141
+SHA1: 4ae96384a3c257ca1ed7007fedb99325c446620e
+SHA256: e7f771768ea8b11bfcd82ad8b91691a3799015aea388767ff83210a7bf047073
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9235,11 +9292,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.4.0-xanmod2-amd64-desktop, linux-image-6.4.0-xanmod2-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod_6.4.0-xanmod2_amd64.deb
-Size: 868
-MD5sum: 4be165a3472a681617d8cf360998a6a4
-SHA1: 2ac23ab4895ea44e8b691f268909d6847f0424f2
-SHA256: d205c82a91086ffc691d6e35c145040793e92c7f8df83e998f36d4418a4e0cf8
+Filename: ./head/linux-kernel-dclc-gfdgdxi-xanmod-6.4.0-xanmod2_amd64.deb
+Size: 702
+MD5sum: 727f2fb24a076616597c040ec9b48de7
+SHA1: 89ff16cbcf23a8f5aa360998026409fcce792454
+SHA256: 3e082f94c21f929c690460d046a7098b1271b4dcba12112b98304026b6939870
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9255,11 +9312,31 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.4.0-xanmod2-amd64-desktop, linux-image-6.4.0-xanmod2-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi-xanmod-6.4.0-xanmod2_amd64.deb
-Size: 702
-MD5sum: 727f2fb24a076616597c040ec9b48de7
-SHA1: 89ff16cbcf23a8f5aa360998026409fcce792454
-SHA256: 3e082f94c21f929c690460d046a7098b1271b4dcba12112b98304026b6939870
+Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod_6.4.0-xanmod2_amd64.deb
+Size: 868
+MD5sum: 0d414d41742182cf8de58a92b314e26a
+SHA1: c8347957abe8df6148feaff7300888e61efa983d
+SHA256: 55d4699cf9a8804bbb621c3e46c7b42e6c9368e42ff138fc15a3c98324427d0b
+Section: utils
+Priority: optional
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Certainty: possible
+Check: binaries
+Severity: serious
+Type: binary, udeb
+
+Package: linux-kernel-dclc-gfdgdxi-6-xanmod
+Version: 6.4.1-xanmod1
+Architecture: amd64
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-6.4.1-xanmod1-amd64-desktop, linux-image-6.4.1-xanmod1-amd64-desktop
+Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod_6.4.1-xanmod1_amd64.deb
+Size: 864
+MD5sum: f6c63c0d4b46c800aef24971a6a22cd1
+SHA1: e485484b33d41198ab81a8290e0a5447a3aa33d5
+SHA256: 5e6c057e708c5cd570e61ea4db20ef6e14ab26eb926e345fddf26b2fd08123f9
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9280,26 +9357,6 @@ Size: 698
 MD5sum: 4f43b58fea0402b1db2d2a9c57d49879
 SHA1: 127e6d27a0f18a8229b12f8f5656a49ce7030a58
 SHA256: c15c88f96df85f0808187fbd4079708d1729b2d9abd6a4963676f37f69c4f959
-Section: utils
-Priority: optional
-Homepage: https://github.com/gfdgd-xi/dclc-kernel
-Description: 内核（虚包）
-Certainty: possible
-Check: binaries
-Severity: serious
-Type: binary, udeb
-
-Package: linux-kernel-dclc-gfdgdxi-6-xanmod
-Version: 6.4.1-xanmod1
-Architecture: amd64
-Maintainer: gfdgd xi <3025613752@qq.com>
-Installed-Size: 0
-Depends: linux-headers-6.4.1-xanmod1-amd64-desktop, linux-image-6.4.1-xanmod1-amd64-desktop
-Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod_6.4.1-xanmod1_amd64.deb
-Size: 864
-MD5sum: 8055633867260f2b500b25fc1606ebe7
-SHA1: 4451f8732174e5e84ddc0c7b0202abc592837612
-SHA256: 28fc254cea1819167e1ea344e257a4789b0cc4527c395d7c0bee3037807123e2
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9395,11 +9452,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.1.33-rt11-xanmod1-amd64-desktop-hwe, linux-image-6.1.33-rt11-xanmod1-amd64-desktop-hwe
-Filename: ./head/linux-kernel-dclc-gfdgdxi-xanmod-6-hwe_6.1.33-rt11-xanmod1_amd64.deb
-Size: 708
-MD5sum: f7e325bc7a9f661cde654e8355048c8d
-SHA1: 4501df9bbc4e4b89033a79c3f3d01ace91620548
-SHA256: 33d410d3be9db16be0ff088134118e36cd7016b775c61272236cc02b24425194
+Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod-hwe_6.1.33-rt11-xanmod1_amd64.deb
+Size: 872
+MD5sum: 7bd5db707d9ee66f7a4ee20cac753909
+SHA1: 35fe291edd60cec1bf2df324af4b61db2739007b
+SHA256: 63abad1270ff45292d94f8a9c22e1ce04338d96050256ecb7225e663df78083b
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9415,11 +9472,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.1.33-rt11-xanmod1-amd64-desktop-hwe, linux-image-6.1.33-rt11-xanmod1-amd64-desktop-hwe
-Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod-hwe_6.1.33-rt11-xanmod1_amd64.deb
-Size: 872
-MD5sum: e4d9540cc77de7834c204c22f91e2118
-SHA1: 8ee81ac8736813c64cf47b7eac11286a58f78843
-SHA256: e0a764f2cebf6509719df41ae83de07b18d7a3b9f4214f71c6543bb344053469
+Filename: ./head/linux-kernel-dclc-gfdgdxi-xanmod-6-hwe_6.1.33-rt11-xanmod1_amd64.deb
+Size: 708
+MD5sum: f7e325bc7a9f661cde654e8355048c8d
+SHA1: 4501df9bbc4e4b89033a79c3f3d01ace91620548
+SHA256: 33d410d3be9db16be0ff088134118e36cd7016b775c61272236cc02b24425194
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9437,9 +9494,9 @@ Installed-Size: 0
 Depends: linux-headers-6.1.37-xanmod1-amd64-desktop-hwe, linux-image-6.1.37-xanmod1-amd64-desktop-hwe
 Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod-hwe_6.1.37-xanmod1_amd64.deb
 Size: 868
-MD5sum: 32a85bd0c0fd2ad0f1c75fbb936a942c
-SHA1: d9640b1de8d3688fcbdbff5f9553c2920fd16465
-SHA256: 5a3d804572ced48948cc58ecafa62306f7052ca4f0e7d6fac8a2fe0cc719cdeb
+MD5sum: 57fbefc16a092a2f6d0e3d24a53f5260
+SHA1: 26adc0c61147baf5d66709da40eb41c76aabfb73
+SHA256: 62029480e46efacaf3ba4be483fb2164937d7ab944de60f62476d755520d6d4a
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9515,11 +9572,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.3.11-xanmod1-amd64-desktop-hwe, linux-image-6.3.11-xanmod1-amd64-desktop-hwe
-Filename: ./head/linux-kernel-dclc-gfdgdxi-xanmod-6-hwe_6.3.11-xanmod1_amd64.deb
-Size: 706
-MD5sum: d6480e42572f4f1bbd2a6e114c6a7803
-SHA1: 38e0dd7d58338cd609a058713bc622d97dee0aa6
-SHA256: 0bc35dde40fcf3f6ddd66ad71da9f8bc898e99ed9f5ad77ec725770671581819
+Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod-hwe_6.3.11-xanmod1_amd64.deb
+Size: 872
+MD5sum: d84ede9779ef49a108502319de658d15
+SHA1: 06e5e7acda91d15b7e625172061a178b0f993b51
+SHA256: 13ec5f13da2a688688545ed3974613492285e057f9dd781becab62164d5deda5
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9535,11 +9592,11 @@ Architecture: amd64
 Maintainer: gfdgd xi <3025613752@qq.com>
 Installed-Size: 0
 Depends: linux-headers-6.3.11-xanmod1-amd64-desktop-hwe, linux-image-6.3.11-xanmod1-amd64-desktop-hwe
-Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod-hwe_6.3.11-xanmod1_amd64.deb
-Size: 872
-MD5sum: 77b677d1e0e9bd1343c533db4d9ad95e
-SHA1: 9a9fcc7e211fb565d83e6dcbd04f746f15595bf3
-SHA256: 9d4ac06650c41fd545f24bbb316ea03d2577c4d174d25ed9feee40bac155a81a
+Filename: ./head/linux-kernel-dclc-gfdgdxi-xanmod-6-hwe_6.3.11-xanmod1_amd64.deb
+Size: 706
+MD5sum: d6480e42572f4f1bbd2a6e114c6a7803
+SHA1: 38e0dd7d58338cd609a058713bc622d97dee0aa6
+SHA256: 0bc35dde40fcf3f6ddd66ad71da9f8bc898e99ed9f5ad77ec725770671581819
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9597,9 +9654,9 @@ Installed-Size: 0
 Depends: linux-headers-6.4.1-xanmod1-amd64-desktop-hwe, linux-image-6.4.1-xanmod1-amd64-desktop-hwe
 Filename: ./head/linux-kernel-dclc-gfdgdxi-6-xanmod-hwe_6.4.1-xanmod1_amd64.deb
 Size: 868
-MD5sum: bfce1a2924945a1aecb72d881ba2c76e
-SHA1: 41c553739c28b43744b220e309513fd341c1d01e
-SHA256: ffab8165271319b63c18cdfb4c119b5855f31916c307993e5979f22c1abaa849
+MD5sum: e25a8d813ddfd80b008e0541d594d89c
+SHA1: 62aed3f75df7e5f3860c8da0540b120a1f741666
+SHA256: 117290f8fbaf4ec66ec3a06e37e7ba0da329111a61d05f0fbc791a9f28e35d73
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -9720,6 +9777,26 @@ Size: 860
 MD5sum: bff25e0d96ccc6570ca12ca33bd1546a
 SHA1: 454f5765f26cca2d19da2716efb55bbb916016c1
 SHA256: d146dda77823c1b80867b61a53375d8ee280bd92a757bf48137a3117c33f780f
+Section: utils
+Priority: optional
+Homepage: https://github.com/gfdgd-xi/dclc-kernel
+Description: 内核（虚包）
+Certainty: possible
+Check: binaries
+Severity: serious
+Type: binary, udeb
+
+Package: linux-kernel-dclc-gfdgdxi-hwe
+Version: 4.19.291
+Architecture: amd64
+Maintainer: gfdgd xi <3025613752@qq.com>
+Installed-Size: 0
+Depends: linux-headers-4.19.291-amd64-desktop-hwe, linux-image-4.19.291-amd64-desktop-hwe
+Filename: ./head/linux-kernel-dclc-gfdgdxi-hwe_4.19.291_amd64.deb
+Size: 860
+MD5sum: a12c4b8940dc4d9df297e60c61b80fb3
+SHA1: 3b050480c32221e32ef36a77b87621c2204ae7ef
+SHA256: 9b11379cfa3bbe9c0ac8f1e3369d85b6d6fa58456e552c4eccfebdec6d3eed3e
 Section: utils
 Priority: optional
 Homepage: https://github.com/gfdgd-xi/dclc-kernel
@@ -11042,6 +11119,25 @@ Description: Linux support headers for userspace development
  are used by the installed headers for GNU glibc and other system libraries.
 
 Package: linux-libc-dev
+Source: linux-4.19.291-amd64-desktop-hwe
+Version: 4.19.291-amd64-desktop-hwe-1
+Architecture: amd64
+Maintainer: root <root@fv-az257-52.xm13d311ygiehixdrdiphxfwwd.dx.internal.cloudapp.net>
+Installed-Size: 5277
+Provides: linux-kernel-headers
+Filename: ./4.19.291-hwe/linux-libc-dev_4.19.291-amd64-desktop-hwe-1_amd64.deb
+Size: 1048122
+MD5sum: 63d435115f49b62245bea18f3ded1966
+SHA1: bb12b37135db176773fc42c54fededacac31bb44
+SHA256: 219c0310a84ed356668497aa0ad856ec5211f672418ad94ada40f35b6be41afa
+Section: devel
+Priority: optional
+Homepage: http://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
 Source: linux-5.10.185-amd64-desktop
 Version: 5.10.185-amd64-desktop-1
 Architecture: amd64
@@ -12285,14 +12381,14 @@ Package: linux-libc-dev
 Source: linux-upstream
 Version: 6.3.10-1
 Architecture: amd64
-Maintainer: root <root@fv-az244-433.2dmmb0nmsnvutc1liyrbff0gyd.jx.internal.cloudapp.net>
-Installed-Size: 6657
+Maintainer: root <root@fv-az216-796.pt1oxs52cqpu1cpb5jojekw3tg.jx.internal.cloudapp.net>
+Installed-Size: 6651
 Provides: linux-kernel-headers
-Filename: ./6.3.10-xanmod1/linux-libc-dev_6.3.10-1_amd64.deb
-Size: 1284188
-MD5sum: f5a5fa9cfd71d9acf9f699841e798fa9
-SHA1: e20cebe5b04f1d061662001154ef923880622420
-SHA256: fc3ade92b7954c12ca219e030fae36cc79a4bb5770ea551344354c784b390c02
+Filename: ./6.3.10/linux-libc-dev_6.3.10-1_amd64.deb
+Size: 1283416
+MD5sum: 9053d7a72d98025a3f8b341f6bc3ecb5
+SHA1: c57b94e0a10e76a0965cdf59e4623f21a6ea13b5
+SHA256: da51c1317318ae516b66c6c0dd17f94a1a8042c2ec663ce7bf93232e7afcde35
 Section: devel
 Priority: optional
 Multi-Arch: same
@@ -12305,14 +12401,14 @@ Package: linux-libc-dev
 Source: linux-upstream
 Version: 6.3.10-1
 Architecture: amd64
-Maintainer: root <root@fv-az216-796.pt1oxs52cqpu1cpb5jojekw3tg.jx.internal.cloudapp.net>
-Installed-Size: 6651
+Maintainer: root <root@fv-az244-433.2dmmb0nmsnvutc1liyrbff0gyd.jx.internal.cloudapp.net>
+Installed-Size: 6657
 Provides: linux-kernel-headers
-Filename: ./6.3.10/linux-libc-dev_6.3.10-1_amd64.deb
-Size: 1283416
-MD5sum: 9053d7a72d98025a3f8b341f6bc3ecb5
-SHA1: c57b94e0a10e76a0965cdf59e4623f21a6ea13b5
-SHA256: da51c1317318ae516b66c6c0dd17f94a1a8042c2ec663ce7bf93232e7afcde35
+Filename: ./6.3.10-xanmod1/linux-libc-dev_6.3.10-1_amd64.deb
+Size: 1284188
+MD5sum: f5a5fa9cfd71d9acf9f699841e798fa9
+SHA1: e20cebe5b04f1d061662001154ef923880622420
+SHA256: fc3ade92b7954c12ca219e030fae36cc79a4bb5770ea551344354c784b390c02
 Section: devel
 Priority: optional
 Multi-Arch: same
@@ -12345,14 +12441,14 @@ Package: linux-libc-dev
 Source: linux-upstream
 Version: 6.3.11-1
 Architecture: amd64
-Maintainer: root <root@fv-az167-845.10vc1fp43w4ejfym3u1nh0imhc.jx.internal.cloudapp.net>
-Installed-Size: 6651
+Maintainer: root <root@fv-az795-491.xf54hq4xvzaujoiinxtcwc2bjc.dx.internal.cloudapp.net>
+Installed-Size: 6657
 Provides: linux-kernel-headers
-Filename: ./6.3.11-hwe/linux-libc-dev_6.3.11-1_amd64.deb
-Size: 1283536
-MD5sum: e57c378b6a4fd4ba53769e1add9a6dac
-SHA1: 09dcbd04aae40c42967a5e79d7fe850637983d05
-SHA256: 4692dffa1c14a8f82af5889e48eea9c7564345d49d569d36a89d75345efd55e8
+Filename: ./6.3.11-xanmod1-hwe/linux-libc-dev_6.3.11-1_amd64.deb
+Size: 1284052
+MD5sum: d42e81c973a2782490cf3ff94473e67b
+SHA1: c9494cd0758bb28ec796e91d171437ccf39ff85e
+SHA256: cdaf3d35dbe4867786e20e5bc924f808062c4ef63019d3c403ed95d1876577dc
 Section: devel
 Priority: optional
 Multi-Arch: same
@@ -12385,54 +12481,14 @@ Package: linux-libc-dev
 Source: linux-upstream
 Version: 6.3.11-1
 Architecture: amd64
-Maintainer: root <root@fv-az795-491.xf54hq4xvzaujoiinxtcwc2bjc.dx.internal.cloudapp.net>
-Installed-Size: 6657
-Provides: linux-kernel-headers
-Filename: ./6.3.11-xanmod1-hwe/linux-libc-dev_6.3.11-1_amd64.deb
-Size: 1284052
-MD5sum: d42e81c973a2782490cf3ff94473e67b
-SHA1: c9494cd0758bb28ec796e91d171437ccf39ff85e
-SHA256: cdaf3d35dbe4867786e20e5bc924f808062c4ef63019d3c403ed95d1876577dc
-Section: devel
-Priority: optional
-Multi-Arch: same
-Homepage: https://www.kernel.org/
-Description: Linux support headers for userspace development
- This package provides userspaces headers from the Linux kernel.  These headers
- are used by the installed headers for GNU glibc and other system libraries.
-
-Package: linux-libc-dev
-Source: linux-upstream
-Version: 6.3.12-1
-Architecture: amd64
-Maintainer: root <root@fv-az617-863.hcfpgifte0xepbsh32kqmfendf.bx.internal.cloudapp.net>
+Maintainer: root <root@fv-az167-845.10vc1fp43w4ejfym3u1nh0imhc.jx.internal.cloudapp.net>
 Installed-Size: 6651
 Provides: linux-kernel-headers
-Filename: ./6.3.12/linux-libc-dev_6.3.12-1_amd64.deb
-Size: 1283496
-MD5sum: fe6c4b2b6ae3f6e03ed1d3009433ae86
-SHA1: a4332fec484c91200f7bd75ed32238966fe99729
-SHA256: c45334f956f24741a0f18cf63237808b714e5735f45781d7ac5dc118acce7011
-Section: devel
-Priority: optional
-Multi-Arch: same
-Homepage: https://www.kernel.org/
-Description: Linux support headers for userspace development
- This package provides userspaces headers from the Linux kernel.  These headers
- are used by the installed headers for GNU glibc and other system libraries.
-
-Package: linux-libc-dev
-Source: linux-upstream
-Version: 6.3.12-1
-Architecture: amd64
-Maintainer: root <root@fv-az502-439.rnf0fj0ddyxuxntxdrihjbsf4h.dx.internal.cloudapp.net>
-Installed-Size: 6657
-Provides: linux-kernel-headers
-Filename: ./6.3.12-xanmod1-hwe/linux-libc-dev_6.3.12-1_amd64.deb
-Size: 1284112
-MD5sum: 30cd7d8609cd9d60b4c0cc1ada692e01
-SHA1: 02ffd7861775d7aeada93a25d20397312a564eba
-SHA256: f568f1a1b74184d2572867c3873782dfe3b318783be72d734656297832391405
+Filename: ./6.3.11-hwe/linux-libc-dev_6.3.11-1_amd64.deb
+Size: 1283536
+MD5sum: e57c378b6a4fd4ba53769e1add9a6dac
+SHA1: 09dcbd04aae40c42967a5e79d7fe850637983d05
+SHA256: 4692dffa1c14a8f82af5889e48eea9c7564345d49d569d36a89d75345efd55e8
 Section: devel
 Priority: optional
 Multi-Arch: same
@@ -12465,6 +12521,26 @@ Package: linux-libc-dev
 Source: linux-upstream
 Version: 6.3.12-1
 Architecture: amd64
+Maintainer: root <root@fv-az502-439.rnf0fj0ddyxuxntxdrihjbsf4h.dx.internal.cloudapp.net>
+Installed-Size: 6657
+Provides: linux-kernel-headers
+Filename: ./6.3.12-xanmod1-hwe/linux-libc-dev_6.3.12-1_amd64.deb
+Size: 1284112
+MD5sum: 30cd7d8609cd9d60b4c0cc1ada692e01
+SHA1: 02ffd7861775d7aeada93a25d20397312a564eba
+SHA256: f568f1a1b74184d2572867c3873782dfe3b318783be72d734656297832391405
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.3.12-1
+Architecture: amd64
 Maintainer: root <root@fv-az306-793.jmregfajfmhelj5hmjabl4nu2g.cx.internal.cloudapp.net>
 Installed-Size: 6651
 Provides: linux-kernel-headers
@@ -12473,6 +12549,26 @@ Size: 1283340
 MD5sum: da64da5135b08a00e489432c6049e4df
 SHA1: efa9c703f61d112a037bc6e95fec0e239fa38366
 SHA256: 0187ed128d515c3d71fbb894194c14aa31b4f9056db6bbe492c2340db48a1586
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.3.12-1
+Architecture: amd64
+Maintainer: root <root@fv-az617-863.hcfpgifte0xepbsh32kqmfendf.bx.internal.cloudapp.net>
+Installed-Size: 6651
+Provides: linux-kernel-headers
+Filename: ./6.3.12/linux-libc-dev_6.3.12-1_amd64.deb
+Size: 1283496
+MD5sum: fe6c4b2b6ae3f6e03ed1d3009433ae86
+SHA1: a4332fec484c91200f7bd75ed32238966fe99729
+SHA256: c45334f956f24741a0f18cf63237808b714e5735f45781d7ac5dc118acce7011
 Section: devel
 Priority: optional
 Multi-Arch: same
@@ -12625,26 +12721,6 @@ Package: linux-libc-dev
 Source: linux-upstream
 Version: 6.4.0-1
 Architecture: amd64
-Maintainer: root <root@fv-az471-189.4fngvl3g3twezghy3dubkofrre.dx.internal.cloudapp.net>
-Installed-Size: 6703
-Provides: linux-kernel-headers
-Filename: ./6.4/linux-libc-dev_6.4.0-1_amd64.deb
-Size: 1293568
-MD5sum: eafee15f4f297cff60e26abd801f5c72
-SHA1: 591e9cec9ed19624e81611745fa7e93ce9c1c097
-SHA256: 38380ea50427fea1dd014f56c16997e11e014111181a6c46e4d302ef002b2e0b
-Section: devel
-Priority: optional
-Multi-Arch: same
-Homepage: https://www.kernel.org/
-Description: Linux support headers for userspace development
- This package provides userspaces headers from the Linux kernel.  These headers
- are used by the installed headers for GNU glibc and other system libraries.
-
-Package: linux-libc-dev
-Source: linux-upstream
-Version: 6.4.0-1
-Architecture: amd64
 Maintainer: root <root@fv-az587-620.n5r5fjoihw3epm2rwe1s04yyyc.gx.internal.cloudapp.net>
 Installed-Size: 6703
 Provides: linux-kernel-headers
@@ -12673,6 +12749,26 @@ Size: 1294312
 MD5sum: 8adc923abc000183c878d27ce71aaf9f
 SHA1: 5f6a769e1aa6f29c21ffb3cce851c879464af91a
 SHA256: 45c2e356eef5289a04b192493220da3a46d4933f7c324b3534101ee1a32b840e
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.4.0-1
+Architecture: amd64
+Maintainer: root <root@fv-az471-189.4fngvl3g3twezghy3dubkofrre.dx.internal.cloudapp.net>
+Installed-Size: 6703
+Provides: linux-kernel-headers
+Filename: ./6.4/linux-libc-dev_6.4.0-1_amd64.deb
+Size: 1293568
+MD5sum: eafee15f4f297cff60e26abd801f5c72
+SHA1: 591e9cec9ed19624e81611745fa7e93ce9c1c097
+SHA256: 38380ea50427fea1dd014f56c16997e11e014111181a6c46e4d302ef002b2e0b
 Section: devel
 Priority: optional
 Multi-Arch: same
@@ -12725,26 +12821,6 @@ Package: linux-libc-dev
 Source: linux-upstream
 Version: 6.4.1-1
 Architecture: amd64
-Maintainer: root <root@fv-az451-778.zkhrb0euhfxurc1edhqu2t3cih.jx.internal.cloudapp.net>
-Installed-Size: 6709
-Provides: linux-kernel-headers
-Filename: ./6.4.1-xanmod1-hwe/linux-libc-dev_6.4.1-1_amd64.deb
-Size: 1294300
-MD5sum: f87106ba1fb0d69ad5dde029cef6395f
-SHA1: 90d570c18a528372854c42c7a33ec1c239858f1b
-SHA256: 31f4d072c1a8c735d97c4b2be654e975ffaf96c7dd5b252634d8aa75cc25ab49
-Section: devel
-Priority: optional
-Multi-Arch: same
-Homepage: https://www.kernel.org/
-Description: Linux support headers for userspace development
- This package provides userspaces headers from the Linux kernel.  These headers
- are used by the installed headers for GNU glibc and other system libraries.
-
-Package: linux-libc-dev
-Source: linux-upstream
-Version: 6.4.1-1
-Architecture: amd64
 Maintainer: root <root@fv-az370-387.3txz4wqopyzepmqexx20lynywb.cx.internal.cloudapp.net>
 Installed-Size: 6703
 Provides: linux-kernel-headers
@@ -12785,14 +12861,14 @@ Package: linux-libc-dev
 Source: linux-upstream
 Version: 6.4.1-1
 Architecture: amd64
-Maintainer: root <root@fv-az583-120.gfcyaji220iezjk42vdvpdjtnh.phxx.internal.cloudapp.net>
-Installed-Size: 6703
+Maintainer: root <root@fv-az451-778.zkhrb0euhfxurc1edhqu2t3cih.jx.internal.cloudapp.net>
+Installed-Size: 6709
 Provides: linux-kernel-headers
-Filename: ./6.4.1-hwe/linux-libc-dev_6.4.1-1_amd64.deb
-Size: 1293752
-MD5sum: 3fb2701b845a8720eaefef830695fbbe
-SHA1: 5ad884396dfdb24778282d35e54cfdb036fe311e
-SHA256: e35633dc06cce017fc50d39e32800d23ae1e78a95d481cd044dc0a5af700c427
+Filename: ./6.4.1-xanmod1-hwe/linux-libc-dev_6.4.1-1_amd64.deb
+Size: 1294300
+MD5sum: f87106ba1fb0d69ad5dde029cef6395f
+SHA1: 90d570c18a528372854c42c7a33ec1c239858f1b
+SHA256: 31f4d072c1a8c735d97c4b2be654e975ffaf96c7dd5b252634d8aa75cc25ab49
 Section: devel
 Priority: optional
 Multi-Arch: same
@@ -12803,16 +12879,16 @@ Description: Linux support headers for userspace development
 
 Package: linux-libc-dev
 Source: linux-upstream
-Version: 6.4.2-1
+Version: 6.4.1-1
 Architecture: amd64
-Maintainer: root <root@fv-az1107-710.jh0akusfc4oe1n41bitxa3lklh.dx.internal.cloudapp.net>
+Maintainer: root <root@fv-az583-120.gfcyaji220iezjk42vdvpdjtnh.phxx.internal.cloudapp.net>
 Installed-Size: 6703
 Provides: linux-kernel-headers
-Filename: ./6.4.2-hwe/linux-libc-dev_6.4.2-1_amd64.deb
-Size: 1293664
-MD5sum: ad19b840d5c1bacefe83dab574204054
-SHA1: 74963b17113aade0ac7967226b9003d5b52e7d84
-SHA256: a57234045ad0e931d92b5699b8c6163e96cab5de1949aae006d6aa99a6c4f23c
+Filename: ./6.4.1-hwe/linux-libc-dev_6.4.1-1_amd64.deb
+Size: 1293752
+MD5sum: 3fb2701b845a8720eaefef830695fbbe
+SHA1: 5ad884396dfdb24778282d35e54cfdb036fe311e
+SHA256: e35633dc06cce017fc50d39e32800d23ae1e78a95d481cd044dc0a5af700c427
 Section: devel
 Priority: optional
 Multi-Arch: same
@@ -12865,6 +12941,26 @@ Package: linux-libc-dev
 Source: linux-upstream
 Version: 6.4.2-1
 Architecture: amd64
+Maintainer: root <root@fv-az1107-710.jh0akusfc4oe1n41bitxa3lklh.dx.internal.cloudapp.net>
+Installed-Size: 6703
+Provides: linux-kernel-headers
+Filename: ./6.4.2-hwe/linux-libc-dev_6.4.2-1_amd64.deb
+Size: 1293664
+MD5sum: ad19b840d5c1bacefe83dab574204054
+SHA1: 74963b17113aade0ac7967226b9003d5b52e7d84
+SHA256: a57234045ad0e931d92b5699b8c6163e96cab5de1949aae006d6aa99a6c4f23c
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.4.2-1
+Architecture: amd64
 Maintainer: root <root@fv-az442-343.2zqlei4p5yee3ip1pi5zld35qb.gx.internal.cloudapp.net>
 Installed-Size: 6709
 Provides: linux-kernel-headers
@@ -12873,46 +12969,6 @@ Size: 1294544
 MD5sum: c3580fd0e611673081e71e9e72b452de
 SHA1: 38df7c7ac01dec1c0559d90452c819f38b0cce4f
 SHA256: fddc1b5e0811f107fdf9c3f692b4f514913af99fc7be53d6fe95806fff884cf2
-Section: devel
-Priority: optional
-Multi-Arch: same
-Homepage: https://www.kernel.org/
-Description: Linux support headers for userspace development
- This package provides userspaces headers from the Linux kernel.  These headers
- are used by the installed headers for GNU glibc and other system libraries.
-
-Package: linux-libc-dev
-Source: linux-upstream
-Version: 6.4.3-1
-Architecture: amd64
-Maintainer: root <root@fv-az622-585>
-Installed-Size: 6703
-Provides: linux-kernel-headers
-Filename: ./6.4.3/linux-libc-dev_6.4.3-1_amd64.deb
-Size: 1293564
-MD5sum: 73dac252a9e94df2ed7ea2ef31651c51
-SHA1: a7f0b4908038ff57fee3151a9f7fc7d74f2017e7
-SHA256: 43987eed0e6acfb4e8a95f2e93e3b320faa4d24e4b31dfe83589901ebd4d09c0
-Section: devel
-Priority: optional
-Multi-Arch: same
-Homepage: https://www.kernel.org/
-Description: Linux support headers for userspace development
- This package provides userspaces headers from the Linux kernel.  These headers
- are used by the installed headers for GNU glibc and other system libraries.
-
-Package: linux-libc-dev
-Source: linux-upstream
-Version: 6.4.3-1
-Architecture: amd64
-Maintainer: root <root@fv-az1235-995.jxuq51gidw4uha4ybs0rcmn31f.dx.internal.cloudapp.net>
-Installed-Size: 6703
-Provides: linux-kernel-headers
-Filename: ./6.4.3-hwe/linux-libc-dev_6.4.3-1_amd64.deb
-Size: 1293684
-MD5sum: d890583a1f699c32cfc0880793a58431
-SHA1: d7942f0485ca9f0f2804d01bad918d8d3c6a02a4
-SHA256: af761075349fa7d17f69b626fa99ce8824782f8b122168e12c826ac41c5ae077
 Section: devel
 Priority: optional
 Multi-Arch: same
@@ -12945,6 +13001,26 @@ Package: linux-libc-dev
 Source: linux-upstream
 Version: 6.4.3-1
 Architecture: amd64
+Maintainer: root <root@fv-az622-585>
+Installed-Size: 6703
+Provides: linux-kernel-headers
+Filename: ./6.4.3/linux-libc-dev_6.4.3-1_amd64.deb
+Size: 1293564
+MD5sum: 73dac252a9e94df2ed7ea2ef31651c51
+SHA1: a7f0b4908038ff57fee3151a9f7fc7d74f2017e7
+SHA256: 43987eed0e6acfb4e8a95f2e93e3b320faa4d24e4b31dfe83589901ebd4d09c0
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.4.3-1
+Architecture: amd64
 Maintainer: root <root@fv-az1230-275.pnbcmxnyn2burpnk1ig1bplgja.jx.internal.cloudapp.net>
 Installed-Size: 6709
 Provides: linux-kernel-headers
@@ -12963,36 +13039,16 @@ Description: Linux support headers for userspace development
 
 Package: linux-libc-dev
 Source: linux-upstream
-Version: 6.4.4-1
+Version: 6.4.3-1
 Architecture: amd64
-Maintainer: root <root@fv-az1030-573.0z3bz3dbib5etlgfrg5jtymgxc.cx.internal.cloudapp.net>
-Installed-Size: 6702
+Maintainer: root <root@fv-az1235-995.jxuq51gidw4uha4ybs0rcmn31f.dx.internal.cloudapp.net>
+Installed-Size: 6703
 Provides: linux-kernel-headers
-Filename: ./6.4.4/linux-libc-dev_6.4.4-1_amd64.deb
-Size: 1293644
-MD5sum: beb746495d070ac1d7c47c255cf330e2
-SHA1: 735cc624d6dbe34a2a44a0c2a5267830a476b269
-SHA256: d7f7bdcc8b813f9bfa6d2be781cbcf134fdcc6ddf04d8969621bb999f2e36a68
-Section: devel
-Priority: optional
-Multi-Arch: same
-Homepage: https://www.kernel.org/
-Description: Linux support headers for userspace development
- This package provides userspaces headers from the Linux kernel.  These headers
- are used by the installed headers for GNU glibc and other system libraries.
-
-Package: linux-libc-dev
-Source: linux-upstream
-Version: 6.4.4-1
-Architecture: amd64
-Maintainer: root <root@fv-az442-477.2zqlei4p5yee3ip1pi5zld35qb.gx.internal.cloudapp.net>
-Installed-Size: 6708
-Provides: linux-kernel-headers
-Filename: ./6.4.4-xanmod1/linux-libc-dev_6.4.4-1_amd64.deb
-Size: 1294356
-MD5sum: bd967ce849ac6248fd8688654b76b6ab
-SHA1: f94351df9e7c5b2e85cd39f64c3d89d606480ea2
-SHA256: d74883984bc0a3756b453163e23ba29e818be04680fa335d8c00cd96ac8bb275
+Filename: ./6.4.3-hwe/linux-libc-dev_6.4.3-1_amd64.deb
+Size: 1293684
+MD5sum: d890583a1f699c32cfc0880793a58431
+SHA1: d7942f0485ca9f0f2804d01bad918d8d3c6a02a4
+SHA256: af761075349fa7d17f69b626fa99ce8824782f8b122168e12c826ac41c5ae077
 Section: devel
 Priority: optional
 Multi-Arch: same
@@ -13025,6 +13081,26 @@ Package: linux-libc-dev
 Source: linux-upstream
 Version: 6.4.4-1
 Architecture: amd64
+Maintainer: root <root@fv-az1030-573.0z3bz3dbib5etlgfrg5jtymgxc.cx.internal.cloudapp.net>
+Installed-Size: 6702
+Provides: linux-kernel-headers
+Filename: ./6.4.4/linux-libc-dev_6.4.4-1_amd64.deb
+Size: 1293644
+MD5sum: beb746495d070ac1d7c47c255cf330e2
+SHA1: 735cc624d6dbe34a2a44a0c2a5267830a476b269
+SHA256: d7f7bdcc8b813f9bfa6d2be781cbcf134fdcc6ddf04d8969621bb999f2e36a68
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.4.4-1
+Architecture: amd64
 Maintainer: root <root@fv-az567-981.lj1xk2mgdexu3igr4w2lmfxu3c.gx.internal.cloudapp.net>
 Installed-Size: 6708
 Provides: linux-kernel-headers
@@ -13033,6 +13109,26 @@ Size: 1294376
 MD5sum: 01169ca6ac27ede86cc7675752f3b220
 SHA1: 82fd96f5105c3081e97900494e8fdce4aadffdb9
 SHA256: e4963f10e6276383a663b92fe06fcc6c9d87e99b875dc7452190cc669cfa83cc
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.4.4-1
+Architecture: amd64
+Maintainer: root <root@fv-az442-477.2zqlei4p5yee3ip1pi5zld35qb.gx.internal.cloudapp.net>
+Installed-Size: 6708
+Provides: linux-kernel-headers
+Filename: ./6.4.4-xanmod1/linux-libc-dev_6.4.4-1_amd64.deb
+Size: 1294356
+MD5sum: bd967ce849ac6248fd8688654b76b6ab
+SHA1: f94351df9e7c5b2e85cd39f64c3d89d606480ea2
+SHA256: d74883984bc0a3756b453163e23ba29e818be04680fa335d8c00cd96ac8bb275
 Section: devel
 Priority: optional
 Multi-Arch: same
@@ -13185,26 +13281,6 @@ Package: linux-libc-dev
 Source: linux-upstream
 Version: 6.5.0-rc2-1
 Architecture: amd64
-Maintainer: root <root@fv-az175-70.21qx1tynj5oe3kn0ixoa5row0g.dx.internal.cloudapp.net>
-Installed-Size: 6790
-Provides: linux-kernel-headers
-Filename: ./6.5-rc2/linux-libc-dev_6.5.0-rc2-1_amd64.deb
-Size: 1309492
-MD5sum: 7cbd50d40229e4108f6c1a209c8d2f60
-SHA1: d5d2f2f6d86493ef9a78a30caed9d8f6d16e324e
-SHA256: 6f922cd45618c9562e71c5fe38205386562fad0b8f6ea8c11e54f22e5847a77e
-Section: devel
-Priority: optional
-Multi-Arch: same
-Homepage: https://www.kernel.org/
-Description: Linux support headers for userspace development
- This package provides userspaces headers from the Linux kernel.  These headers
- are used by the installed headers for GNU glibc and other system libraries.
-
-Package: linux-libc-dev
-Source: linux-upstream
-Version: 6.5.0-rc2-1
-Architecture: amd64
 Maintainer: root <root@fv-az313-39.3rkc33k45ywepd1w3xegrc430a.cx.internal.cloudapp.net>
 Installed-Size: 6790
 Provides: linux-kernel-headers
@@ -13223,16 +13299,16 @@ Description: Linux support headers for userspace development
 
 Package: linux-libc-dev
 Source: linux-upstream
-Version: 6.5.0-rc3-1
+Version: 6.5.0-rc2-1
 Architecture: amd64
-Maintainer: root <root@fv-az592-683.hfr0y2hpm4xe1o1mk5vg4mfmbb.cx.internal.cloudapp.net>
+Maintainer: root <root@fv-az175-70.21qx1tynj5oe3kn0ixoa5row0g.dx.internal.cloudapp.net>
 Installed-Size: 6790
 Provides: linux-kernel-headers
-Filename: ./6.5-rc3-hwe/linux-libc-dev_6.5.0-rc3-1_amd64.deb
-Size: 1309416
-MD5sum: b2916970997c7570aac6cd7670dc37ee
-SHA1: ede5e4f562933221ab2759ccb1cd2c8cbac9a829
-SHA256: adeade3df3c95ee0dd4a899d32f21c4141e215ca8b887de6d2b943d4be428a23
+Filename: ./6.5-rc2/linux-libc-dev_6.5.0-rc2-1_amd64.deb
+Size: 1309492
+MD5sum: 7cbd50d40229e4108f6c1a209c8d2f60
+SHA1: d5d2f2f6d86493ef9a78a30caed9d8f6d16e324e
+SHA256: 6f922cd45618c9562e71c5fe38205386562fad0b8f6ea8c11e54f22e5847a77e
 Section: devel
 Priority: optional
 Multi-Arch: same
@@ -13253,6 +13329,26 @@ Size: 1309512
 MD5sum: 6c6d59eaf5b4871ac1f88257cd3713e7
 SHA1: ab3fadb98eb36a938af376af6abbe846b1033fcf
 SHA256: 62cc48366855d0bf165dd372e451ec88ff5428af397b32a13a8f96eb7161593c
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.5.0-rc3-1
+Architecture: amd64
+Maintainer: root <root@fv-az592-683.hfr0y2hpm4xe1o1mk5vg4mfmbb.cx.internal.cloudapp.net>
+Installed-Size: 6790
+Provides: linux-kernel-headers
+Filename: ./6.5-rc3-hwe/linux-libc-dev_6.5.0-rc3-1_amd64.deb
+Size: 1309416
+MD5sum: b2916970997c7570aac6cd7670dc37ee
+SHA1: ede5e4f562933221ab2759ccb1cd2c8cbac9a829
+SHA256: adeade3df3c95ee0dd4a899d32f21c4141e215ca8b887de6d2b943d4be428a23
 Section: devel
 Priority: optional
 Multi-Arch: same
